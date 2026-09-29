@@ -13,6 +13,17 @@ Posts are written in one batch each morning at about 5 AM Pacific: one file for 
 - Only state facts you confirmed in search results. If unsure, write about the everyday feeling of the moment instead of specifics.
 - No partisan opinions. Do not treat tragedies lightly. Do not name private individuals.
 
+## Value to readers (every post must pass this)
+Google and readers both ignore filler. A post is only worth publishing if someone who reads it walks away knowing or able to do something they could not before.
+- Start from a real question a reader has today, such as "What time is the game and where can I watch it?", "Which coffee deals are real today?", "Is my beach under a flood advisory?", "What is Orange Shirt Day?". The title and the first paragraph answer it directly.
+- Include specifics confirmed in search results: times (with time zone), dates, places, prices, deadlines, how to watch, where to go, who to call, official links. A post with no specific fact or concrete step is not ready.
+- For everyday-life topics without news (sleep, lunch, budgeting), give concrete, widely accepted steps a reader can use today, and cite a reputable source (government agency, health system, university, established publication) for any claim.
+- Add 2 to 4 `keyPoints`: short, scannable lines with the most useful specifics. They must not just repeat the title.
+- Add 1 to 3 `sources`: the pages from your search results that confirm the post's facts, with their real titles and URLs. Never invent or guess a URL; only list pages that appeared in your search results. Prefer official and primary sources.
+- Do not pad. Do not restate the title or dek in the body. Cut any paragraph that only sets a mood.
+- If a topic has nothing new or useful to say today, choose a different topic. Do not write two posts that give the same advice in different words, including across recent days.
+- Check the last 7 days of `posts/`, not just yesterday, for repeated topics and angles.
+
 ## Honesty about AI (read this first)
 EveryHour is openly written with AI. The site says so on every post and on the About page. The posts must never pretend otherwise.
 - Never invent personal experiences, memories, habits, possessions, family members, homes, jobs, bills, health history, or anything else presented as something the author did, has, or lived through. No "I used to...", "my rent...", "last night I...", "when I go for a walk...", "my coworker...".
@@ -25,7 +36,7 @@ EveryHour is openly written with AI. The site says so on every post and on the A
 - Warm, plain and grounded. It should sound like a thoughtful person talking, not marketing. Follow the honesty rules above.
 - Complete sentences and courteous phrasing. Plain wording is fine even if slightly redundant.
 - No stock idioms, no hype, no sales copy, no em-dash asides, no "not X, but Y" constructions, no rhetorical colon reveals.
-- 150 to 280 words in 3 to 5 short paragraphs.
+- 200 to 350 words in 3 to 5 short paragraphs, plus the key points and sources.
 - End with one small, practical, relatable takeaway.
 
 ## SEO
@@ -46,6 +57,8 @@ Save as `posts/YYYY-MM-DD-HH-<slug>.json`, using the Pacific date and 24-hour ho
   "keywords": ["phrase", "phrase", "phrase"],
   "publishedAt": "2026-09-29T02:00:00Z",
   "readMin": 1,
+  "keyPoints": ["Short, specific fact or step.", "Another one."],
+  "sources": [{"title": "Page title as shown in search", "url": "https://..."}],
   "body": ["Paragraph one.", "Paragraph two.", "Paragraph three."]
 }
 ```

@@ -58,6 +58,11 @@ def load_posts():
             p["readMin"] = p.get("readMin") or max(1, round(sum(len(x.split()) for x in p["body"]) / 230))
             if p["dt"] > datetime.now(timezone.utc):  # scheduled for a later hour: publish when its hour arrives
                 continue
+            kp = p.get("keyPoints") or []
+            p["keyPoints"] = [str(x).strip() for x in kp if str(x).strip()][:5] if isinstance(kp, list) else []
+            src = p.get("sources") or []
+            p["sources"] = [{"title": str(x.get("title") or x["url"]).strip(), "url": x["url"].strip()}
+                            for x in src if isinstance(x, dict) and str(x.get("url", "")).startswith(("http://", "https://"))][:5] if isinstance(src, list) else []
             s = p.get("sponsor")
             if s and not (s.get("name") and str(s.get("url", "")).startswith(("http://", "https://"))):
                 p["sponsor"] = None
@@ -281,6 +286,15 @@ def build():
         older = posts[i + 1] if i + 1 < len(posts) else None
         related = [q for q in posts if q is not p and q["topic_slug"] == p["topic_slug"]][:4]
         paras = "".join(f"<p>{e(x)}</p>" for x in p["body"])
+        keybox = ""
+        if p["keyPoints"]:
+            keybox = ('<aside class="keypoints" aria-label="What to know"><h2>What to know</h2><ul>'
+                      + "".join(f"<li>{e(x)}</li>" for x in p["keyPoints"]) + "</ul></aside>")
+        srcs = ""
+        if p["sources"]:
+            srcs = ('<section class="sources"><h2>Sources</h2><ul>'
+                    + "".join(f'<li><a href="{e(x["url"])}" rel="noopener" target="_blank">{e(x["title"])}</a></li>' for x in p["sources"])
+                    + '</ul><p>Facts were checked against these sources when the post was written. Details can change, so check them for the latest.</p></section>')
         tags = "".join(f'<span class="tag">{e(t)}</span>' for t in p["tags"])
         np = ""
         if older:
@@ -296,7 +310,9 @@ def build():
   <h1>{e(p['title'])}</h1>
   <p class="dek">{e(p['dek'])}</p>
   <div class="meta"><span>By <a href="/about/" rel="author">{e(AUTHOR)}</a></span><span class="sep"></span><a href="/about/#how-posts-are-made">Written with AI</a><span class="sep"></span><time datetime="{p['dt'].isoformat()}">{e(long_date(p['local']))}, {hour_label(p['local'])}</time><span class="sep"></span><span>{p['readMin']} min read</span></div>
+  {keybox}
   <div class="body">{paras}</div>
+  {srcs}
   {'<div class="tags">' + tags + '</div>' if tags else ''}
   {sponsor_box(p)}
   <nav class="nextprev" aria-label="More posts">{np}</nav>
@@ -308,6 +324,7 @@ def build():
             "mainEntityOfPage": p["url"], "url": p["url"], "articleSection": p["topic"],
             "keywords": ", ".join(p["keywords"]), "wordCount": sum(len(x.split()) for x in p["body"]),
             "author": person(), "publisher": person(), "inLanguage": "en-US",
+            **({"citation": [x["url"] for x in p["sources"]]} if p["sources"] else {}),
         }, {
             "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": CFG["title"], "item": SITE + "/"},
