@@ -1,0 +1,15 @@
+{
+  "site_url": "https://geteveryhour.lol",
+  "domain": "geteveryhour.lol",
+  "title": "EveryHour",
+  "tagline": "A daily, hourly",
+  "description": "Short, relatable thoughts on what the world is talking about today, written by Tineessa Nelson and published every hour.",
+  "author": "Tineessa Nelson",
+  "author_bio": "Tineessa Nelson writes EveryHour: one short, relatable thought on whatever the world is talking about, every hour of the day. She writes from California.",
+  "timezone": "America/Los_Angeles",
+  "home_post_count": 40,
+  "newsletter": {
+    "provider": "buttondown",
+    "username": "tineessanelson"
+  }
+}
