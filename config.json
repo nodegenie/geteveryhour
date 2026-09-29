@@ -3,9 +3,9 @@
   "domain": "geteveryhour.lol",
   "title": "EveryHour",
   "tagline": "A daily, hourly",
-  "description": "Short, relatable thoughts on what the world is talking about today, written by Tineessa Nelson and published every hour.",
+  "description": "Short, relatable thoughts on what the world is talking about today, published every hour. Posts are written with AI and published by Tineessa Nelson.",
   "author": "Tineessa Nelson",
-  "author_bio": "Tineessa Nelson writes EveryHour: one short, relatable thought on whatever the world is talking about, every hour of the day. She writes from California.",
+  "author_bio": "Tineessa Nelson runs EveryHour. The posts are written with AI, using topics researched each day, and she is responsible for what the site publishes. She is based in California.",
   "timezone": "America/Los_Angeles",
   "home_post_count": 40,
   "newsletter": {

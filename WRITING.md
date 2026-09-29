@@ -1,6 +1,6 @@
 # How to write an EveryHour post
 
-EveryHour publishes one post every hour, Pacific time, under Tineessa Nelson's byline.
+EveryHour publishes one post every hour, Pacific time, under Tineessa Nelson's name. Every post is labeled as written with AI, and Tineessa is responsible for what the site publishes.
 
 Posts are written in one batch each morning at about 5 AM Pacific: one file for each of the next 24 hours (6 AM today through 5 AM tomorrow), skipping any hour that already has a file. Each file's `publishedAt` is its hour. The site rebuilds every hour and only shows posts whose hour has arrived, so writing them ahead of time is correct.
 
@@ -13,8 +13,16 @@ Posts are written in one batch each morning at about 5 AM Pacific: one file for 
 - Only state facts you confirmed in search results. If unsure, write about the everyday feeling of the moment instead of specifics.
 - No partisan opinions. Do not treat tragedies lightly. Do not name private individuals.
 
+## Honesty about AI (read this first)
+EveryHour is openly written with AI. The site says so on every post and on the About page. The posts must never pretend otherwise.
+- Never invent personal experiences, memories, habits, possessions, family members, homes, jobs, bills, health history, or anything else presented as something the author did, has, or lived through. No "I used to...", "my rent...", "last night I...", "when I go for a walk...", "my coworker...".
+- Never claim the author wrote, read, reviewed, tried, tasted, watched or attended something.
+- Write about the moment and the reader: use "you", "many of us", "a lot of people", or plain statements about the topic. "I think" or "it seems to me" is fine for a mild, non-partisan observation, as long as it is not a claimed experience.
+- Health, money, legal and safety topics: share general, widely accepted information from search results and point readers to a doctor, official agency or other qualified source for their own situation. Never give personal medical, financial or legal advice.
+- Each post must add something useful: a confirmed fact, context, or a practical takeaway. Do not publish filler that only restates the title.
+
 ## Voice
-- First person, warm, plain and grounded. It should sound like a thoughtful person talking, not marketing.
+- Warm, plain and grounded. It should sound like a thoughtful person talking, not marketing. Follow the honesty rules above.
 - Complete sentences and courteous phrasing. Plain wording is fine even if slightly redundant.
 - No stock idioms, no hype, no sales copy, no em-dash asides, no "not X, but Y" constructions, no rhetorical colon reveals.
 - 150 to 280 words in 3 to 5 short paragraphs.

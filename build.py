@@ -189,7 +189,7 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <footer class="site">
   <span>&copy; {datetime.now(TZ).year} {e(AUTHOR)}</span>
   <a href="/feed.xml">RSS</a><a href="/sitemap.xml">Sitemap</a>
-  <span>A new post every hour, Pacific time.</span>
+  <span>A new post every hour, Pacific time. Posts are <a href="/about/#how-posts-are-made">written with AI</a>.</span>
 </footer>
 </div>
 </body>
@@ -295,7 +295,7 @@ def build():
   <div class="eyebrow">{e(p['topic'])}</div>
   <h1>{e(p['title'])}</h1>
   <p class="dek">{e(p['dek'])}</p>
-  <div class="meta"><span>By <a href="/about/" rel="author">{e(AUTHOR)}</a></span><span class="sep"></span><time datetime="{p['dt'].isoformat()}">{e(long_date(p['local']))}, {hour_label(p['local'])}</time><span class="sep"></span><span>{p['readMin']} min read</span></div>
+  <div class="meta"><span>By <a href="/about/" rel="author">{e(AUTHOR)}</a></span><span class="sep"></span><a href="/about/#how-posts-are-made">Written with AI</a><span class="sep"></span><time datetime="{p['dt'].isoformat()}">{e(long_date(p['local']))}, {hour_label(p['local'])}</time><span class="sep"></span><span>{p['readMin']} min read</span></div>
   <div class="body">{paras}</div>
   {'<div class="tags">' + tags + '</div>' if tags else ''}
   {sponsor_box(p)}
@@ -340,6 +340,11 @@ def build():
 <p>EveryHour is a small daily publication by {e(AUTHOR)}. Every hour, a new short post goes up about something people are talking about that day. Some posts are about the news, some are about work or money, and some are about the ordinary parts of a day that everyone recognizes.</p>
 <p>Each post is meant to take a minute or two to read and to leave you with one practical thought you can use.</p>
 <p>Posts are published on Pacific time. You can follow along here, through the <a href="/feed.xml">RSS feed</a>, or by email.</p>
+<h2 id="how-posts-are-made">How posts are made</h2>
+<p>EveryHour is written with AI. Each morning, an AI system searches for what people are talking about that day, including news, sports, weather, culture and observances, and writes that day's posts following a set of written guidelines. The posts are then scheduled so that one appears each hour.</p>
+<p>{e(AUTHOR)} created EveryHour, wrote the guidelines the posts follow, and is responsible for everything the site publishes. The guidelines require that posts only state facts found in search results at the time of writing, stay away from partisan opinions, and never invent personal stories or experiences.</p>
+<p>AI can still get things wrong, and news can change after a post is written. Please treat posts as short reflections, not professional advice, and check anything important with a trusted source.</p>
+<p>Sponsored posts are clearly labeled, and sponsors do not choose or review what a post says.</p>
 </div></div>"""
     about_ld = {"@context": "https://schema.org", "@type": "ProfilePage", "mainEntity": person()}
     write("/about/", page(f"About | {CFG['title']}", f"About EveryHour and its writer, {AUTHOR}.", SITE + "/about/", body, jsonld=[about_ld]))
