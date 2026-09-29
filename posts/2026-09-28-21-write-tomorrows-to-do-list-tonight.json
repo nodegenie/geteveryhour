@@ -3,14 +3,24 @@
   "title": "Writing tomorrow's to-do list tonight makes mornings easier",
   "dek": "Five minutes with a notepad on a weeknight can save the first hour of tomorrow.",
   "topic": "Work",
-  "tags": ["productivity", "to-do list", "evening routine", "work"],
-  "keywords": ["to-do list the night before", "plan tomorrow tonight", "evening planning routine", "productive morning tips"],
+  "tags": [
+    "productivity",
+    "to-do list",
+    "evening routine",
+    "work"
+  ],
+  "keywords": [
+    "to-do list the night before",
+    "plan tomorrow tonight",
+    "evening planning routine",
+    "productive morning tips"
+  ],
   "publishedAt": "2026-09-29T04:00:00Z",
   "readMin": 1,
   "body": [
     "By nine on a Monday night, most of us are done thinking about work. The problem is that tomorrow morning, we will have to start thinking about it again, usually before the coffee is ready.",
-    "I have found that the hardest part of a morning is deciding what to do first. When I sit down with no plan, I answer emails, check a few messages, and look up an hour later without having started anything that matters.",
-    "Writing a short list the night before takes care of that. It does not need to be long. Three things are enough: the one task that would make tomorrow a good day, one thing that is overdue, and one small thing I can finish quickly.",
+    "For a lot of people, the hardest part of a morning is deciding what to do first. Without a plan, it is easy to answer emails, check a few messages, and look up an hour later without having started anything that matters.",
+    "Writing a short list the night before takes care of that. It does not need to be long. Three things are enough: the one task that would make tomorrow a good day, one thing that is overdue, and one small thing you can finish quickly.",
     "So before the evening gets away from you, take five minutes and write those three things down. Put the list somewhere you will see it first thing. Then close the notebook and let the rest of the night be yours."
   ]
 }
