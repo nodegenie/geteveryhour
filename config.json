@@ -11,5 +11,9 @@
   "newsletter": {
     "provider": "buttondown",
     "username": "tineessanelson"
+  },
+  "sponsor": {
+    "price": "$5",
+    "payment_link": ""
   }
 }

@@ -99,3 +99,12 @@ footer.site{margin-top:28px;font-family:var(--mono);font-size:11.5px;color:var(-
 footer.site a{color:var(--muted)}
 
 @media (max-width:480px){body{font-size:17px}.item{grid-template-columns:52px 1fr}.nextprev{grid-template-columns:1fr}.nextprev .newer{grid-column:1;text-align:left}}
+
+.sponsor{margin-top:28px;padding:16px 18px;border-radius:12px;border:1px solid var(--rule);background:var(--surface);display:grid;gap:4px}
+.sponsor-label{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sponsor-name{font-family:var(--display);font-weight:700;font-size:19px;color:var(--accent);text-decoration:none}
+.sponsor-name:hover{text-decoration:underline}
+.sponsor p{margin:0;font-size:16px}
+.sponsor small{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.sponsor small a{color:var(--muted)}
+.sponsor-cta{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:15px;padding:12px 18px;border-radius:8px;background:var(--accent);color:var(--bg);text-decoration:none}

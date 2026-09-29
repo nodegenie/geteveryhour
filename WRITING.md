@@ -2,10 +2,13 @@
 
 EveryHour publishes one post every hour, Pacific time, under Tineessa Nelson's byline.
 
-## Choosing the topic
+Posts are written in one batch each morning: 24 files, one for each hour of the day, 12 AM through 11 PM Pacific. Each file's `publishedAt` is its hour. The site rebuilds every hour and only shows posts whose hour has arrived, so writing them ahead of time is correct.
+
+## Choosing the topics
+- Pick 24 different topics for the day, one per hour, and match each one to its time of day (mornings: commutes, coffee, getting started; midday: work and lunch; evenings: sports, TV, family, winding down; late night: sleep and quiet thoughts).
 - Search for what people are talking about today: news, trending topics, sports, weather, culture, tech, money, holidays and observances, the season, the day of the week.
-- Pick ONE topic that is timely today and relatable to ordinary people.
-- Read the last 24 hours of posts in `posts/` first. Do not repeat a topic or an angle that is already covered.
+- Every topic should be timely today and relatable to ordinary people.
+- Read the previous day's posts in `posts/` first. Do not repeat a topic or an angle that is already covered, and do not repeat a topic within the same day.
 - Rotate topics through the day across: Everyday life, Work, Money, Tech, Culture, Sports, Wellness, Relationships, News, Seasons.
 - Only state facts you confirmed in search results. If unsure, write about the everyday feeling of the moment instead of specifics.
 - No partisan opinions. Do not treat tragedies lightly. Do not name private individuals.
@@ -39,8 +42,23 @@ Save as `posts/YYYY-MM-DD-HH-<slug>.json`, using the Pacific date and 24-hour ho
 }
 ```
 
-`publishedAt` is the top of the current hour in UTC (minutes and seconds are 00).
+`publishedAt` is the top of that post's hour in UTC (minutes and seconds are 00). Example: 7 AM Pacific on September 29, 2026 (PDT, UTC-7) is `2026-09-29T14:00:00Z`.
 
 If a file for the same Pacific date and hour already exists, do not write another one.
 
-Run `python3 build.py` to check the post builds without errors, then commit only the new file in `posts/` with the message `Post: <title>` and push to `main`. The site deploys itself.
+Run `python3 build.py` to check the posts build without errors (scheduled posts are skipped silently until their hour; that is expected). Commit the new files in `posts/` and any change to `sponsors/queue.json` in one commit with the message `Posts for YYYY-MM-DD`, and push to `main`. The site deploys itself.
+
+
+## Sponsors
+Paid sponsors are listed in `sponsors/queue.json` (a JSON array). Each entry looks like:
+```json
+{"id": "cs_...", "name": "Business name", "url": "https://example.com", "blurb": "One sentence about the business.", "paidAt": "2026-09-29T15:00:00Z", "placedIn": null}
+```
+- Place each entry whose `placedIn` is null into exactly ONE of the day's posts. Only one sponsor per post.
+- Choose the post whose topic fits the business best; otherwise use a daytime hour (8 AM to 8 PM).
+- Add it to the post file as:
+  `"sponsor": {"name": "...", "url": "https://...", "blurb": "..."}`
+- The blurb is one plain sentence, under 140 characters, rewritten in a neutral voice if needed. Do not mention the sponsor in the post body.
+- Set that entry's `placedIn` to the post's file name.
+- Do not place a business that is adult content, gambling, weapons, drugs, a political campaign, a crypto or get-rich scheme, or anything deceptive. Leave `placedIn` as null, add `"hold": "<reason>"`, and report it so Tineessa can refund it.
+- If there are more unplaced sponsors than posts, place 24 and leave the rest for the next day.

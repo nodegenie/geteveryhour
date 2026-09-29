@@ -54,6 +54,11 @@ def load_posts():
             p["tags"] = p.get("tags") or []
             p["keywords"] = p.get("keywords") or p["tags"]
             p["readMin"] = p.get("readMin") or max(1, round(sum(len(x.split()) for x in p["body"]) / 230))
+            if p["dt"] > datetime.now(timezone.utc):  # scheduled for a later hour: publish when its hour arrives
+                continue
+            s = p.get("sponsor")
+            if s and not (s.get("name") and str(s.get("url", "")).startswith(("http://", "https://"))):
+                p["sponsor"] = None
             posts.append(p)
         except Exception as ex:  # a bad file should not take the site down
             errors.append(f"{f.name}: {ex}")
@@ -113,6 +118,19 @@ def signup_block():
 </section>"""
 
 
+def sponsor_box(p):
+    s = p.get("sponsor")
+    if not s:
+        return ""
+    blurb = f"<p>{e(s.get('blurb'))}</p>" if s.get("blurb") else ""
+    return f"""<aside class="sponsor" aria-label="Sponsor">
+  <div class="sponsor-label">Sponsored</div>
+  <a class="sponsor-name" href="{e(s['url'])}" rel="sponsored noopener" target="_blank">{e(s['name'])}</a>
+  {blurb}
+  <small>This hour is sponsored by {e(s['name'])}. <a href="/sponsor/">Feature your business</a></small>
+</aside>"""
+
+
 def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_head="", noindex=False):
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in (jsonld or []))
     robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="index,follow,max-image-preview:large">'
@@ -148,7 +166,7 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <div class="wrap">
 <header class="site">
   <a class="brand" href="/"><b>{e(CFG['title'])}</b><span>{e(CFG['tagline'])}</span></a>
-  <nav class="top" aria-label="Site"><a href="/archive/">Archive</a><a href="/about/">About</a>{'<a href="#subscribe">Subscribe</a>' if signup_block() else ''}</nav>
+  <nav class="top" aria-label="Site"><a href="/archive/">Archive</a><a href="/about/">About</a><a href="/sponsor/">Sponsor</a>{'<a href="#subscribe">Subscribe</a>' if signup_block() else ''}</nav>
 </header>
 <main id="main">
 {body}
@@ -268,6 +286,7 @@ def build():
   <div class="meta"><span>By <a href="/about/" rel="author">{e(AUTHOR)}</a></span><span class="sep"></span><time datetime="{p['dt'].isoformat()}">{e(long_date(p['local']))}, {hour_label(p['local'])}</time><span class="sep"></span><span>{p['readMin']} min read</span></div>
   <div class="body">{paras}</div>
   {'<div class="tags">' + tags + '</div>' if tags else ''}
+  {sponsor_box(p)}
   <nav class="nextprev" aria-label="More posts">{np}</nav>
   {rel}
 </article>"""
@@ -310,12 +329,32 @@ def build():
     about_ld = {"@context": "https://schema.org", "@type": "ProfilePage", "mainEntity": person()}
     write("/about/", page(f"About | {CFG['title']}", f"About EveryHour and its writer, {AUTHOR}.", SITE + "/about/", body, jsonld=[about_ld]))
 
+    # sponsor page
+    sp = CFG.get("sponsor", {})
+    link = (sp.get("payment_link") or "").strip()
+    price = sp.get("price", "$5")
+    cta = (f'<p><a class="sponsor-cta" href="{e(link)}" rel="noopener">Sponsor an hour for {e(price)}</a></p>'
+           if link else '<p class="pagedek"><strong>Sponsorships open soon.</strong></p>')
+    body = f"""<h1 class="page">Feature your business on EveryHour</h1>
+<div class="post"><div class="body" style="border:0;padding-top:12px">
+<p>EveryHour publishes a new post every hour about something people are talking about that day. For {e(price)}, your business can sponsor one of those posts.</p>
+<h2 class="day" style="color:var(--ink)">What you get</h2>
+<p>Your business name, a link to your website, and one sentence about what you do appear in a clearly labeled "Sponsored" box on one post. Each post has only one sponsor. The post stays on the site permanently, and it is included in the archive, the topic pages, the RSS feed and the sitemap.</p>
+<p>Where it makes sense, I match your business to a post about a related topic. A coffee shop might appear on a morning post, and a gym on a post about fall routines.</p>
+<p>You also get a link to the post that you can share with your own customers.</p>
+<h2 class="day" style="color:var(--ink)">How it works</h2>
+<p>At checkout, you enter your business name, your website and one sentence about your business. Payments received by 5 AM Pacific are placed in one of that day's posts. Payments received later are placed in the next day's posts.</p>
+<p>Sponsor links are marked as sponsored, as search engines and advertising rules require. I review each business before it is published and will refund anything I cannot run, such as adult content, gambling, weapons or political campaigns.</p>
+{cta}
+</div></div>"""
+    write("/sponsor/", page(f"Sponsor an hour | {CFG['title']}", f"Feature your business in an EveryHour post for {price}.", SITE + "/sponsor/", body))
+
     # 404
     body = '<h1 class="page">That page is not here</h1><p class="pagedek">The link may be old or mistyped. The <a href="/">latest posts</a> and the <a href="/archive/">archive</a> are good places to start.</p>'
     (OUT / "404.html").write_text(page(f"Page not found | {CFG['title']}", CFG["description"], SITE + "/404.html", body, noindex=True))
 
     # sitemap
-    urls = [(SITE + "/", posts[0]["dt"] if posts else now), (SITE + "/archive/", posts[0]["dt"] if posts else now), (SITE + "/about/", None)]
+    urls = [(SITE + "/", posts[0]["dt"] if posts else now), (SITE + "/archive/", posts[0]["dt"] if posts else now), (SITE + "/about/", None), (SITE + "/sponsor/", None)]
     urls += [(f"{SITE}/topics/{s}/", next(p["dt"] for p in posts if p["topic_slug"] == s)) for s, _ in topics]
     urls += [(p["url"], p["dt"]) for p in posts]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

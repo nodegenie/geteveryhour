@@ -5,7 +5,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "5 8 * * *"   # daily rebuild so the "Today" strip and dates stay current
+    - cron: "1 * * * *"   # hourly rebuild: publishes each scheduled post when its hour arrives
 
 permissions:
   contents: read
