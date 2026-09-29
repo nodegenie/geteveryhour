@@ -136,6 +136,9 @@ def sponsor_box(p):
 def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_head="", noindex=False, image="/og/home.png"):
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in (jsonld or []))
     robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="index,follow,max-image-preview:large">'
+    gsv = CFG.get("google_site_verification", "").strip()
+    if gsv:  # Google Search Console URL-prefix verification (config.json)
+        robots += f'\n<meta name="google-site-verification" content="{e(gsv)}">'
     return f"""<!doctype html>
 <html lang="en">
 <head>
