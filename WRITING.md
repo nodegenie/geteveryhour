@@ -2,7 +2,7 @@
 
 EveryHour publishes one post every hour, Pacific time, under Tineessa Nelson's byline.
 
-Posts are written in one batch each morning: 24 files, one for each hour of the day, 12 AM through 11 PM Pacific. Each file's `publishedAt` is its hour. The site rebuilds every hour and only shows posts whose hour has arrived, so writing them ahead of time is correct.
+Posts are written in one batch each morning at about 5 AM Pacific: one file for each of the next 24 hours (6 AM today through 5 AM tomorrow), skipping any hour that already has a file. Each file's `publishedAt` is its hour. The site rebuilds every hour and only shows posts whose hour has arrived, so writing them ahead of time is correct.
 
 ## Choosing the topics
 - Pick 24 different topics for the day, one per hour, and match each one to its time of day (mornings: commutes, coffee, getting started; midday: work and lunch; evenings: sports, TV, family, winding down; late night: sleep and quiet thoughts).
