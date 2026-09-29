@@ -335,7 +335,9 @@ def build():
     price = sp.get("price", "$5")
     cta = (f'<p><a class="sponsor-cta" href="{e(link)}" rel="noopener">Sponsor an hour for {e(price)}</a></p>'
            if link else '<p class="pagedek"><strong>Sponsorships open soon.</strong></p>')
-    body = f"""<h1 class="page">Feature your business on EveryHour</h1>
+    body = f"""<p class="sponsor" id="paid-note" hidden><strong>Thank you. Your payment went through.</strong> Your business will appear in one of the next day's posts, and you will receive a Stripe receipt by email.</p>
+<script>if(/[?&]paid=1/.test(location.search))document.getElementById('paid-note').hidden=false;</script>
+<h1 class="page">Feature your business on EveryHour</h1>
 <div class="post"><div class="body" style="border:0;padding-top:12px">
 <p>EveryHour publishes a new post every hour about something people are talking about that day. For {e(price)}, your business can sponsor one of those posts.</p>
 <h2 class="day" style="color:var(--ink)">What you get</h2>
