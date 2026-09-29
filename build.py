@@ -13,6 +13,8 @@ from email.utils import format_datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import og
+
 ROOT = Path(__file__).parent
 OUT = ROOT / "_site"
 CFG = json.loads((ROOT / "config.json").read_text())
@@ -131,7 +133,7 @@ def sponsor_box(p):
 </aside>"""
 
 
-def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_head="", noindex=False):
+def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_head="", noindex=False, image="/og/home.png"):
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in (jsonld or []))
     robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="index,follow,max-image-preview:large">'
     return f"""<!doctype html>
@@ -151,7 +153,12 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{e(canonical)}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{SITE}{image}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{e(title)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE}{image}">
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
 {extra_head}
@@ -236,6 +243,8 @@ def build():
     OUT.mkdir()
     shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / "CNAME").write_text(CFG["domain"] + "\n")
+    og.card(OUT / "og" / "home.png", "Relatable thoughts on what the world is talking about, every hour.", CFG["tagline"])
+    og.card(OUT / "og" / "sponsor.png", f"Feature your business on EveryHour for {CFG.get('sponsor', {}).get('price', '$5')}", "Sponsor an hour")
     (OUT / ".nojekyll").write_text("")
 
     counts = {}
@@ -306,7 +315,10 @@ def build():
                 f'<meta property="article:author" content="{e(AUTHOR)}">'
                 f'<meta property="article:section" content="{e(p["topic"])}">'
                 f'<meta name="keywords" content="{e(", ".join(p["keywords"]))}">')
-        write(p["path"], page(f"{p['title']} | {CFG['title']}", p["dek"], p["url"], body, og_type="article", jsonld=ld, extra_head=head))
+        img = "/og" + p["path"].rstrip("/") + ".png"
+        og.card(OUT / img.lstrip("/"), p["title"], f"{p['topic']} · {p['local']:%A} {hour_label(p['local']).replace(chr(8201), ' ')}")
+        ld[0]["image"] = SITE + img
+        write(p["path"], page(f"{p['title']} | {CFG['title']}", p["dek"], p["url"], body, og_type="article", jsonld=ld, extra_head=head, image=img))
 
     # topics
     for slug, name in topics:
@@ -349,7 +361,7 @@ def build():
 <p>Sponsor links are marked as sponsored, as search engines and advertising rules require. I review each business before it is published and will refund anything I cannot run, such as adult content, gambling, weapons or political campaigns.</p>
 {cta}
 </div></div>"""
-    write("/sponsor/", page(f"Sponsor an hour | {CFG['title']}", f"Feature your business in an EveryHour post for {price}.", SITE + "/sponsor/", body))
+    write("/sponsor/", page(f"Sponsor an hour | {CFG['title']}", f"Feature your business in an EveryHour post for {price}.", SITE + "/sponsor/", body, image="/og/sponsor.png"))
 
     # 404
     body = '<h1 class="page">That page is not here</h1><p class="pagedek">The link may be old or mistyped. The <a href="/">latest posts</a> and the <a href="/archive/">archive</a> are good places to start.</p>'
