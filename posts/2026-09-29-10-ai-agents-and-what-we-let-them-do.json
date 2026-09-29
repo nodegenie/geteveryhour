@@ -1,0 +1,27 @@
+{
+  "slug": "ai-agents-and-what-we-let-them-do",
+  "title": "AI agents can now make calls and spend money for us",
+  "dek": "New personal AI agents can have phone numbers, wallets and computer access, which makes it worth thinking about what we hand over.",
+  "topic": "Tech",
+  "tags": [
+    "ai",
+    "tech",
+    "privacy",
+    "agents"
+  ],
+  "keywords": [
+    "AI agents",
+    "personal AI assistant",
+    "AI agent safety",
+    "should I use an AI agent"
+  ],
+  "publishedAt": "2026-09-29T17:00:00Z",
+  "readMin": 1,
+  "body": [
+    "This week several companies launched personal AI agents that can have their own phone numbers, digital wallets and access to a computer. The idea is that they can handle errands for you, like making calls, filling out forms or buying things.",
+    "I can see why people are excited. Most of us have a pile of small tasks we never want to do, like waiting on hold or comparing prices. Handing those off sounds wonderful on a busy Tuesday morning.",
+    "I also think this is a moment to slow down a little. Giving a tool access to your money or your accounts is a big step. The same week these agents launched, the tech news was also full of stories about AI safety and how to keep agents inside the limits people set for them.",
+    "My approach is to start small. I would let a tool help me research or draft something before I let it spend money or send messages in my name. I want to see how it behaves before I give it the keys.",
+    "If you try one of these agents, give it one low-stakes job first, and read the settings for what it can access before you connect anything important."
+  ]
+}
