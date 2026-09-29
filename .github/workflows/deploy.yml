@@ -5,7 +5,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "1 * * * *"   # hourly rebuild: publishes each scheduled post when its hour arrives
+    - cron: "3,13,23,33,43,53 * * * *"   # frequent rebuilds: GitHub often skips scheduled runs, so several tries per hour
 
 permissions:
   contents: read
