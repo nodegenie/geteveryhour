@@ -1,7 +1,7 @@
 {
   "slug": "national-vfw-day",
-  "title": "National VFW Day is a good time to thank the veterans you know",
-  "dek": "Today is National VFW Day, which honors the Veterans of Foreign Wars and the veterans who keep their local posts going.",
+  "title": "National VFW Day: the VFW's history and its free VA claims help",
+  "dek": "September 29 marks the VFW's 1899 founding. Here is what the group does for veterans today, including free help filing VA claims.",
   "topic": "Relationships",
   "tags": [
     "veterans",
@@ -17,11 +17,31 @@
   ],
   "publishedAt": "2026-09-30T04:00:00Z",
   "readMin": 1,
+  "keyPoints": [
+    "The VFW was founded September 29, 1899, by veterans of the Spanish-American War and Philippine Insurrection.",
+    "VFW-accredited service officers help with VA disability, pension and education claims at no cost.",
+    "Start a claim at claims.vfw.org or find a service officer by state on vfw.org.",
+    "VA reports VFW-represented veterans recovered $16.2 billion in compensation and pension in fiscal 2025."
+  ],
+  "sources": [
+    {
+      "title": "VA Claims & Separation Benefits - VFW",
+      "url": "https://www.vfw.org/assistance/va-claims-separation-benefits"
+    },
+    {
+      "title": "NATIONAL VFW DAY - September 29, 2026 - National Day Calendar",
+      "url": "https://nationaldaycalendar.com/celebrations/vfw-day-september-29"
+    },
+    {
+      "title": "VFW Day: Celebrate the Legacy - VFW",
+      "url": "https://www.vfw.org/media-and-events/latest-releases/archives/2024/9/vfw-day-celebrate-the-legacy"
+    }
+  ],
   "body": [
-    "Today is National VFW Day, which honors the Veterans of Foreign Wars. Many towns have a VFW post, and in a lot of places it is one of the steady gathering spots for veterans and their families.",
-    "I think many of us drive past those buildings without thinking much about them. Inside, veterans are often doing quiet work. They help each other with paperwork and benefits, organize events and simply keep each other company.",
-    "Most of us know at least one veteran, whether it is a grandparent, a neighbor or a coworker. We may thank them on holidays in November, but an ordinary Tuesday evening can be a good time, too, because it catches them by surprise.",
-    "A thank you does not need to be big. A short message that says you are grateful and are thinking of them is enough. If they want to share a story, listen. If they do not, that is fine as well.",
-    "Before you go to bed tonight, send a note to one veteran in your life. Keep it short and sincere."
+    "National VFW Day marks the founding of the Veterans of Foreign Wars on September 29, 1899, by veterans of the Spanish-American War and the Philippine Insurrection. The National Day Calendar notes that the VFW helped establish the Veterans Administration and the national cemetery system and pushed for passage of the GI Bill. The VFW says it and its Auxiliary have more than 1.4 million members.",
+    "One of the most practical things the VFW does is help with VA paperwork. Its VA-accredited service officers help veterans and eligible family members with disability compensation, pension, death benefits, education and rehabilitation programs, and VA hearings and appeals. The VFW says this help is free to anyone, and you do not need to be a member.",
+    "According to the VFW, the VA reports that veterans represented by the VFW recovered $16.2 billion in compensation and pension in fiscal year 2025. Service members within 180 days of leaving active duty can also use VFW Pre-Discharge offices on or near major military installations to file claims before they separate.",
+    "If you know a veteran who has put off a claim because the forms feel overwhelming, this is useful to pass along. Claims can be started at claims.vfw.org, and the VFW's assistance page has a state-by-state directory of service officers. For anyone's specific situation, a service officer or the VA is the right place to get answers.",
+    "Tonight, if a veteran in your life has mentioned VA paperwork, send them a short thank you along with the link to the VFW's free claims help."
   ]
 }

@@ -1,7 +1,7 @@
 {
   "slug": "urban-national-wildlife-refuge-day",
-  "title": "Urban National Wildlife Refuge Day and the nature close to home",
-  "dek": "Today is Urban National Wildlife Refuge Day, a good excuse to find the wild places tucked near our cities.",
+  "title": "Urban National Wildlife Refuge Day: find a refuge near your city",
+  "dek": "September 29 is Urban National Wildlife Refuge Day. More than 100 federal refuges sit within 25 miles of big cities, and October brings a fee-free day.",
   "topic": "Seasons",
   "tags": [
     "nature",
@@ -17,11 +17,31 @@
   ],
   "publishedAt": "2026-09-29T21:00:00Z",
   "readMin": 1,
+  "keyPoints": [
+    "More than 100 national wildlife refuges sit within 25 miles of a city of 250,000 or more people.",
+    "The first urban refuge was John Heinz at Tinicum near Philadelphia.",
+    "National Wildlife Refuge Week runs October 10 to 17, 2026, starting with Urban Wildlife Conservation Day on October 10.",
+    "Refuges that normally charge an entrance fee are free on Sunday, October 11, 2026."
+  ],
+  "sources": [
+    {
+      "title": "On Urban Wildlife Conservation Day, Find Nearby Nature | U.S. Fish & Wildlife Service",
+      "url": "https://www.fws.gov/story/urban-wildlife-conservation-day-find-nearby-nature"
+    },
+    {
+      "title": "National Wildlife Refuge Week | U.S. Fish & Wildlife Service",
+      "url": "https://www.fws.gov/story/national-wildlife-refuge-week"
+    },
+    {
+      "title": "Interior celebrates national wildlife refuges in urban areas | U.S. Department of the Interior",
+      "url": "https://www.doi.gov/pressreleases/interior-celebrates-national-wildlife-refuges-urban-areas"
+    }
+  ],
   "body": [
-    "Today is Urban National Wildlife Refuge Day. It is a quiet observance, but I like the idea behind it. It celebrates the protected wild places that sit close to cities where most of us live.",
-    "Many people assume they need to drive for hours to see real nature. Often it is much closer. There can be wetlands at the edge of town, marshes near the airport or a stretch of trail along a river where birds stop to rest.",
-    "Fall is a lovely time to go looking. The light is softer in the afternoon, the air is starting to change in many places, and a slow walk feels like exactly the right speed for this season.",
-    "Even an hour in a place like that can reset something. A lot of people come home noticing birds on the power lines and trees changing on their own street, things they walk past every day without seeing.",
-    "This week, look up the nearest wildlife refuge or nature preserve to where you live, and plan one slow walk there before October gets busy."
+    "Today, September 29, is Urban National Wildlife Refuge Day. The Department of the Interior says the day was designated in 2018 through bipartisan congressional resolutions to highlight the refuges that sit close to where most Americans live.",
+    "According to the U.S. Fish and Wildlife Service, more than 100 national wildlife refuges are within 25 miles of a city of 250,000 or more people. Examples include John Heinz at Tinicum near Philadelphia, the country's first urban refuge, Valle de Oro in Albuquerque, Masonville Cove in Baltimore and Detroit River International Wildlife Refuge in southeast Michigan. Depending on the refuge, you can walk trails, watch birds, fish or paddle a kayak.",
+    "To find one near you, the Fish and Wildlife Service has a location finder on fws.gov that covers its 570 national wildlife refuges. Each refuge page lists hours, trails and events, so it is worth checking before you go.",
+    "If today is too busy, mark your calendar for next month. National Wildlife Refuge Week runs October 10 to 17, 2026, and begins with Urban Wildlife Conservation Day on Saturday, October 10. On Sunday, October 11, refuges that normally charge an entrance fee offer free admission, and many plan special events during the week.",
+    "Tonight, look up the closest refuge to your home on fws.gov and check whether it has an event on October 10 or 11."
   ]
 }

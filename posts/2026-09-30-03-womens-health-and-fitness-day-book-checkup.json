@@ -1,7 +1,7 @@
 {
   "slug": "womens-health-and-fitness-day-book-checkup",
-  "title": "Women's Health and Fitness Day is a reminder to book a checkup",
-  "dek": "National Women's Health and Fitness Day falls on September 30, a good nudge to put that overdue checkup on the calendar.",
+  "title": "Women's Health and Fitness Day and which checkups to book",
+  "dek": "National Women's Health and Fitness Day is September 30. Here is official guidance on common screenings by age and how to find yours.",
   "topic": "Wellness",
   "tags": [
     "health",
@@ -16,11 +16,31 @@
   ],
   "publishedAt": "2026-09-30T10:00:00Z",
   "readMin": 1,
+  "keyPoints": [
+    "The USPSTF recommends a screening mammogram every other year for women ages 40 to 74.",
+    "HealthCare.gov lists Pap tests for women 21 to 65 and bone density screening after 65 or after menopause.",
+    "Many plans must cover these with no copay when you use an in-network provider.",
+    "MyHealthfinder at odphp.health.gov suggests screenings for you; your doctor can advise on your own situation."
+  ],
+  "sources": [
+    {
+      "title": "Preventive care benefits for women | HealthCare.gov",
+      "url": "https://www.healthcare.gov/preventive-care-women/"
+    },
+    {
+      "title": "Recommendation: Breast Cancer: Screening | United States Preventive Services Taskforce",
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening"
+    },
+    {
+      "title": "Get Screened - MyHealthfinder | odphp.health.gov",
+      "url": "https://odphp.health.gov/myhealthfinder/doctor-visits/screening-tests/get-screened"
+    }
+  ],
   "body": [
-    "Three in the morning is when a lot of minds like to bring up everything that has been put off. For many people, that list includes a routine checkup that has not been scheduled in a while.",
-    "The timing fits, because September 30 is National Women's Health and Fitness Day, a day that promotes women's health at every age. I think it is a useful nudge for anyone, since so many of us take care of other people's appointments and let our own slide to the bottom of the list.",
-    "Many of us wait until something feels wrong before calling a doctor. It can help to think of a checkup as ordinary maintenance, the same way you would think about an oil change. It is often easier to book when you feel fine, and your doctor can tell you which checkups and screenings make sense for you.",
-    "The fitness side of the day does not have to be complicated either. A walk around the block after lunch, a few minutes of stretching before bed, or taking the stairs once or twice a day all add up over time. If you have health concerns, ask your doctor before starting something new.",
-    "Since you cannot call the office right now, write a note on your phone that says to book the appointment. Set a reminder for 9 a.m., and make the call before the day gets busy."
+    "September 30 is National Women's Health and Fitness Day, which promotes health for women at every age. It is a good day to find out which checkups and screenings you may be due for, especially if your own appointments tend to slide while you manage everyone else's.",
+    "Official guidance gives a starting point. HealthCare.gov lists well-woman visits for all women, Pap tests to screen for cervical cancer for women ages 21 to 65, and bone density screening for women over 65 or younger women who have gone through menopause. The U.S. Preventive Services Task Force recommends a screening mammogram every other year for women ages 40 to 74.",
+    "Cost is a common reason people put this off. HealthCare.gov says all Marketplace plans and many other plans must cover these preventive services for women without a copayment or coinsurance, generally when you see an in-network provider. A quick call to your plan can confirm what yours covers.",
+    "Your own schedule depends on your age, health history and family history, so treat the list above as general information. The federal MyHealthfinder tool at odphp.health.gov offers preventive care suggestions based on a few questions, and your doctor or nurse can tell you what makes sense for you. The fitness side of the day can stay simple, like a walk after lunch, and it is wise to check with your doctor before starting something new.",
+    "Since the office is closed at this hour, set a phone reminder for 9 a.m. When it goes off, call or use your patient portal to book a well-woman visit and ask which screenings they recommend for you."
   ]
 }

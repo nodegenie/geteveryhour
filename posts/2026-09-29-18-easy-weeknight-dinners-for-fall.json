@@ -1,7 +1,7 @@
 {
   "slug": "easy-weeknight-dinners-for-fall",
-  "title": "Easy weeknight dinners for the first real weeks of fall",
-  "dek": "As evenings get darker, a few simple, warm dinners make Tuesday nights feel a lot less rushed.",
+  "title": "Easy weeknight dinners for fall, plus how long leftovers last",
+  "dek": "Three simple fall dinners that stretch into tomorrow's lunch, with the USDA's rules for storing and reheating the extras safely.",
   "topic": "Everyday life",
   "tags": [
     "dinner",
@@ -17,11 +17,27 @@
   ],
   "publishedAt": "2026-09-30T01:00:00Z",
   "readMin": 1,
+  "keyPoints": [
+    "Refrigerate leftovers within 2 hours of cooking, or within 1 hour if it is above 90°F.",
+    "Cooked leftovers keep 3 to 4 days in the fridge or 3 to 4 months in the freezer.",
+    "Reheat leftovers to 165°F; bring soups and sauces to a rolling boil.",
+    "Split big batches into shallow containers so they cool quickly."
+  ],
+  "sources": [
+    {
+      "title": "Leftovers and Food Safety | Food Safety and Inspection Service",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety"
+    },
+    {
+      "title": "How long will cooked food stay safe in the refrigerator?",
+      "url": "https://ask.fsis.usda.gov/article/How-long-will-cooked-food-stay-safe-in-the-refrigerator"
+    }
+  ],
   "body": [
-    "It is six o'clock, and the light outside is already starting to fade earlier than it did a month ago. In a lot of homes right now, someone is asking what is for dinner.",
-    "This is the time of year when many of us lean on a short list of easy, warm meals. A pot of soup with whatever vegetables are in the fridge. A sheet pan of chicken and potatoes that roasts while you change out of work clothes. Pasta with a jar of sauce and something green on the side.",
-    "None of these are fancy, and that is the point. On a Tuesday, most people want a dinner that gets everyone fed without a lot of dishes or decisions. The warmth of the oven and the smell of something cooking can do a lot to make a home feel settled.",
-    "It also helps to make a little extra, so tomorrow's lunch is already taken care of. That one habit can save time and money through the whole week.",
-    "Tonight, pick one meal you can make without a recipe, and double it so tomorrow is a little easier."
+    "If you are looking for a Tuesday dinner that takes little thought, three dependable options cover most kitchens. A pot of soup built from whatever vegetables are in the fridge. A sheet pan of chicken pieces and cut potatoes roasted together in a hot oven. Pasta with a jar of sauce and a bagged salad on the side. Each one uses a single pot or pan and scales up easily.",
+    "Scaling up is the useful part. Cooking a double batch tonight means tomorrow's lunch or Thursday's dinner is already done. Soup and pasta sauce also freeze well, so a big pot can cover a night next week when nobody wants to cook.",
+    "Extra food only helps if it is stored safely. The USDA's Food Safety and Inspection Service says leftovers should go into the refrigerator within 2 hours of cooking, or within 1 hour if the temperature is above 90°F. Dividing a big pot of soup or a tray of chicken into shallow containers helps it cool to 40°F or below quickly, which keeps bacteria from multiplying.",
+    "The agency says refrigerated leftovers are safe for 3 to 4 days, and frozen leftovers keep for 3 to 4 months. When you reheat them, bring them to 165°F on a food thermometer, and heat soups, sauces and gravies to a rolling boil. A strip of masking tape with the date on each container makes the 3 to 4 day rule easy to follow.",
+    "Tonight, pick the one meal your household will eat without complaint, double it, and pack the extras into shallow, dated containers before you sit down."
   ]
 }

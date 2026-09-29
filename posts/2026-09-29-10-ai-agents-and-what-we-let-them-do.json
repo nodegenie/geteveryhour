@@ -1,7 +1,7 @@
 {
   "slug": "ai-agents-and-what-we-let-them-do",
-  "title": "AI agents can now make calls and spend money for us",
-  "dek": "New personal AI agents can have phone numbers, wallets and computer access, which makes it worth thinking about what we hand over.",
+  "title": "AI agents with phone numbers and wallets: what to check first",
+  "dek": "New personal AI agents like Manus Cue and Meta's Muse can spend money and act for you. Here is what they do and which settings to check first.",
   "topic": "Tech",
   "tags": [
     "ai",
@@ -17,11 +17,31 @@
   ],
   "publishedAt": "2026-09-29T17:00:00Z",
   "readMin": 1,
+  "keyPoints": [
+    "Manus launched Cue on September 28; each agent gets its own email, phone number, wallet and computer workspace.",
+    "Cue is free in invite-only early access; users set payment budgets, but per-transaction approval details are thin.",
+    "Meta's Muse, announced September 8, uses one-time card numbers and asks approval before sensitive actions.",
+    "Before connecting accounts, check which apps an agent can reach and whether it keeps an activity log."
+  ],
+  "sources": [
+    {
+      "title": "Manus gives Cue agents phone numbers, wallets and computers",
+      "url": "https://runtimewire.com/article/manus-cue-personal-agents-launch"
+    },
+    {
+      "title": "Introducing Muse: The World's First Personal AI Agent Built for Everyone",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+    },
+    {
+      "title": "Everything That Happened in AI Today (Monday, September 28, 2026) | The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-september-28-2026/"
+    }
+  ],
   "body": [
-    "This week several companies launched personal AI agents that can have their own phone numbers, digital wallets and access to a computer. The idea is that they can handle errands for you, like making calls, filling out forms or buying things.",
-    "It is easy to see why people are excited. Most of us have a pile of small tasks we never want to do, like waiting on hold or comparing prices. Handing those off sounds wonderful on a busy Tuesday morning.",
-    "I also think this is a moment to slow down a little. Giving a tool access to your money or your accounts is a big step. The same week these agents launched, the tech news was also full of stories about AI safety and how to keep agents inside the limits people set for them.",
-    "A sensible approach is to start small. Letting a tool help with research or a draft is a smaller step than letting it spend money or send messages in your name. It makes sense to see how it behaves before handing over the keys.",
-    "If you try one of these agents, give it one low-stakes job first, and read the settings for what it can access before you connect anything important."
+    "Personal AI agents took a big step this month. On Monday, Manus launched Cue, where each agent gets its own email address, phone number, wallet and computer workspace. The agents can take calls, make payments within budgets you set and hand tasks to one another. Cue is free during an invite-only early access period, with web and desktop versions live.",
+    "Meta's Muse, announced September 8, is rolling out in the U.S. on iOS, Android and the web. Meta says it handles email, travel booking and forms, and pays through Link by Stripe or Shop Pay using one-time card numbers so your real card number is not shared. Meta also says Muse asks for approval before sensitive actions and keeps a record of what it has done and plans to do.",
+    "The controls matter because the details differ. RuntimeWire noted that Manus says users set payment budgets and keep the final decision on shared work, but its announcement does not explain in detail how individual transactions are approved. The same day, AI safety news was full of reports about agents going beyond the tasks they were given, which I think is a good reason to be careful with access.",
+    "A sensible approach is to start small. Before connecting anything, look for three things in the settings: which apps and accounts the agent can reach, whether purchases or messages need your approval each time, and whether there is a log you can review. A spending limit and a one-time or virtual card number reduce the damage if something goes wrong.",
+    "If you try one, give it a low-stakes job first, like researching options or drafting a reply, and wait to connect your bank or main email until you have seen how it behaves."
   ]
 }

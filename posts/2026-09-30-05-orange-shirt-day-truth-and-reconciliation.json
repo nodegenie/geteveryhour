@@ -1,7 +1,7 @@
 {
   "slug": "orange-shirt-day-truth-and-reconciliation",
   "title": "Orange Shirt Day and the National Day for Truth and Reconciliation",
-  "dek": "September 30 is Orange Shirt Day and Canada's National Day for Truth and Reconciliation, a day to remember residential school survivors.",
+  "dek": "September 30 is Orange Shirt Day and Canada's National Day for Truth and Reconciliation, a day to honour residential school Survivors.",
   "topic": "News",
   "tags": [
     "remembrance",
@@ -16,11 +16,31 @@
   ],
   "publishedAt": "2026-09-30T12:00:00Z",
   "readMin": 1,
+  "keyPoints": [
+    "Canada's National Day for Truth and Reconciliation became a federal statutory holiday in 2021, answering TRC Call to Action 80.",
+    "Orange Shirt Day began in 2013 in Williams Lake, B.C., from Phyllis Webstad's story.",
+    "The National Commemorative Gathering airs live from Parliament Hill at 12 p.m. ET (9 a.m. PT) on APTN and other networks.",
+    "The NCTR in Winnipeg offers archives, education resources and the National Student Memorial Register."
+  ],
+  "sources": [
+    {
+      "title": "National Day for Truth and Reconciliation - Canada.ca",
+      "url": "https://www.canada.ca/en/canadian-heritage/campaigns/national-day-truth-reconciliation.html"
+    },
+    {
+      "title": "Phyllis Webstad's Story",
+      "url": "https://orangeshirtday.org/about/phyllis-story/"
+    },
+    {
+      "title": "NCTR - National Centre for Truth and Reconciliation",
+      "url": "https://nctr.ca/"
+    }
+  ],
   "body": [
-    "Today, September 30, is Orange Shirt Day. In Canada it is also the National Day for Truth and Reconciliation, and this year marks the sixth time the country has observed it.",
-    "Orange Shirt Day was founded in 2013 by a residential school survivor. People wear orange as a visible act of remembrance, solidarity, and tribute to survivors and to the children who never came home, including the thousands identified in unmarked graves. Many of the shirts carry the words Every Child Matters.",
-    "The residential school system was built to separate Indigenous children from their families, languages and cultures. Its effects are still felt today, in families on both sides of the border. It is a painful history, and I think the least any of us can do is take the time to learn it and listen to the people who lived it.",
-    "For many people outside Canada, this day is not on the work calendar. Even so, it is worth setting aside a few minutes this morning to read, reflect and pay attention. Many schools, cities and organizations share resources and host gatherings today, including the National Centre for Truth and Reconciliation.",
-    "If you have an orange shirt, consider wearing it today. Then spend ten minutes reading a survivor's story in their own words."
+    "Today, September 30, is Orange Shirt Day. In Canada it is also the National Day for Truth and Reconciliation, a federal statutory holiday created by law in 2021. It responds to Call to Action 80 of the Truth and Reconciliation Commission, which asked for a statutory holiday to honour Survivors, their families and communities.",
+    "Orange Shirt Day began in 2013 in Williams Lake, British Columbia. It comes from the story of Phyllis Webstad, who was six years old when she was sent to St. Joseph Mission residential school in 1973. Her grandmother had bought her a shiny new orange shirt for school, and it was taken from her when she arrived and never returned. The phrase Every Child Matters was chosen in response to her feeling that she did not matter, and the Orange Shirt Society says it is for all children, past, present and future.",
+    "The date was chosen because this is the time of year when children were historically taken from their homes and families to residential schools. The Orange Shirt Society asks everyone to listen with open hearts to the truths of Survivors and their families, and to remember those who did not make it home.",
+    "You can take part from anywhere. The Government of Canada's National Commemorative Gathering, a 90-minute event highlighting Survivors and Indigenous artists, is broadcast live from Parliament Hill starting at 12 p.m. Eastern, 9 a.m. Pacific, on APTN and other networks. The National Centre for Truth and Reconciliation at the University of Manitoba keeps archives, education resources and the National Student Memorial Register, which honours the children who never returned home.",
+    "If you have an orange shirt, consider wearing it today. Then set aside a few minutes to read Phyllis Webstad's story on the Orange Shirt Society's website and to listen to Survivors in their own words."
   ]
 }

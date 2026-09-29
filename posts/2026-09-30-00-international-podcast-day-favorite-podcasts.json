@@ -1,7 +1,7 @@
 {
   "slug": "international-podcast-day-favorite-podcasts",
-  "title": "International Podcast Day and the voices that keep us company",
-  "dek": "September 30 is International Podcast Day, a good excuse to thank the podcasts that fill our commutes, chores and quiet nights.",
+  "title": "International Podcast Day and how to support the shows you love",
+  "dek": "September 30 is International Podcast Day. Here is how it started and the simple ways listeners can help the podcasts they enjoy.",
   "topic": "Culture",
   "tags": [
     "podcasts",
@@ -16,11 +16,27 @@
   ],
   "publishedAt": "2026-09-30T07:00:00Z",
   "readMin": 1,
+  "keyPoints": [
+    "International Podcast Day is September 30. It began in 2014 as National Podcast Day and went international in 2015.",
+    "Apple says ratings and reviews have no effect on its Charts or Search, though they help new listeners judge a show.",
+    "On Apple Podcasts, scroll down a show's page, pick a star rating and tap Write a Review.",
+    "Share a favorite show with #InternationalPodcastDay."
+  ],
+  "sources": [
+    {
+      "title": "About | International Podcast Day",
+      "url": "https://internationalpodcastday.com/about/"
+    },
+    {
+      "title": "Ratings and reviews - Apple Podcasts for Creators",
+      "url": "https://podcasters.apple.com/support/852-ratings-and-reviews"
+    }
+  ],
   "body": [
-    "It is officially September 30, which makes it International Podcast Day. The event started in 2014 as National Podcast Day and was renamed International Podcast Day the next year, with the goal of promoting podcasting around the world.",
-    "For a lot of people, podcasts have quietly become a steady part of the day. They often start as something to listen to on long drives. Then they turn into company while folding laundry, washing dishes, taking a walk, and sometimes winding down at night.",
-    "Part of the appeal is how personal they feel. A good host sounds like a friend telling you about something they care about. Many well-loved shows are made by one or two people with a microphone and a lot of curiosity, and that kind of independent work deserves some thanks.",
-    "There is also something nice about a medium that lets your eyes rest. After a day of screens, you can close the laptop, put on an episode, and let someone else do the talking while you look out the window.",
-    "If a podcast has made your week better, take a minute today to leave it a rating or send an episode to a friend. It costs nothing and helps the people who make it keep going."
+    "Today, September 30, is International Podcast Day. Founder Steve Lee started it in the United States in 2014 as National Podcast Day, and it was renamed International Podcast Day in 2015 after feedback from the podcast community. The organizers describe its purpose as promoting podcasting worldwide and showcasing independent creators.",
+    "If you want to mark the day, the simplest way is to support a show you already listen to. Many independent podcasts are made by one or two people, and they grow mostly when listeners tell other listeners. Sending one episode you liked to a friend, with a sentence about why, is one of the most useful things a fan can do.",
+    "Ratings and reviews help too, in a narrower way than many people assume. Apple says ratings and reviews have no effect on its Charts or Search. They still help people who land on a show's page decide whether to press play. On Apple Podcasts, you scroll down the show page, choose a star rating and tap Write a Review. Each listener can post one review per show and edit it later.",
+    "The organizers also invite people to post about their favorite shows with the hashtag #InternationalPodcastDay. Browsing that tag can be an easy way to find something new from people whose taste you already trust.",
+    "A good small plan for today is to pick one show that kept you company this year, leave it an honest rating, and send your favorite episode to one person who would enjoy it."
   ]
 }
