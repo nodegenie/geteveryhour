@@ -144,6 +144,9 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
     gsv = CFG.get("google_site_verification", "").strip()
     if gsv:  # Google Search Console URL-prefix verification (config.json)
         robots += f'\n<meta name="google-site-verification" content="{e(gsv)}">'
+    bsv = CFG.get("bing_site_verification", "").strip()
+    if bsv:  # Bing Webmaster Tools verification (config.json)
+        robots += f'\n<meta name="msvalidate.01" content="{e(bsv)}">'
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -359,7 +362,7 @@ def build():
 <p>Posts are published on Pacific time. You can follow along here, through the <a href="/feed.xml">RSS feed</a>, or by email.</p>
 <h2 id="how-posts-are-made">How posts are made</h2>
 <p>EveryHour is written with AI. Each morning, an AI system searches for what people are talking about that day, including news, sports, weather, culture and observances, and writes that day's posts following a set of written guidelines. The posts are then scheduled so that one appears each hour.</p>
-<p>{e(AUTHOR)} created EveryHour, wrote the guidelines the posts follow, and is responsible for everything the site publishes. The guidelines require that posts only state facts found in search results at the time of writing, stay away from partisan opinions, and never invent personal stories or experiences.</p>
+<p>{e(AUTHOR)} created EveryHour, wrote the guidelines the posts follow, and is responsible for everything the site publishes. The guidelines require that posts only state facts found in search results at the time of writing, stay away from partisan opinions, and never invent personal stories or experiences. Posts include a short What to know summary and link to the sources their facts were checked against.</p>
 <p>AI can still get things wrong, and news can change after a post is written. Please treat posts as short reflections, not professional advice, and check anything important with a trusted source.</p>
 <p>Sponsored posts are clearly labeled, and sponsors do not choose or review what a post says.</p>
 </div></div>"""
@@ -420,6 +423,20 @@ def build():
     (OUT / "feed.xml").write_text(rss)
 
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
+
+    # IndexNow key file (Bing, Yandex, Seznam, Naver); see indexnow.py
+    key = CFG.get("indexnow_key", "").strip()
+    if key:
+        (OUT / f"{key}.txt").write_text(key)
+
+    # llms.txt: a plain summary for AI assistants and answer engines
+    lines = [f"# {CFG['title']}", "", f"> {CFG['description']}", "",
+             f"EveryHour publishes one short post every hour, Pacific time. Posts are written with AI and published by {AUTHOR}, "
+             "who is responsible for the site. Posts list the sources their facts were checked against.", "",
+             "## Pages", f"- [About and how posts are made]({SITE}/about/)", f"- [Archive]({SITE}/archive/)",
+             f"- [RSS feed]({SITE}/feed.xml)", f"- [Sitemap]({SITE}/sitemap.xml)", "", "## Recent posts"]
+    lines += [f"- [{p['title']}]({p['url']}): {p['dek']}" for p in posts[:48]]
+    (OUT / "llms.txt").write_text("\n".join(lines) + "\n")
     print(f"Built {len(posts)} posts, {len(topics)} topics into {OUT}")
     return 0 if not errors else 0
 
