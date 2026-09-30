@@ -1,0 +1,43 @@
+{
+  "slug": "cybersecurity-awareness-month-four-steps-at-work",
+  "title": "Cybersecurity Awareness Month starts tomorrow: 4 steps for work",
+  "dek": "October is Cybersecurity Awareness Month. CISA's four basic steps take a few minutes and protect your work and personal accounts.",
+  "topic": "Work",
+  "tags": [
+    "cybersecurity",
+    "passwords",
+    "phishing",
+    "work"
+  ],
+  "keywords": [
+    "cybersecurity awareness month 2026",
+    "how to spot phishing at work",
+    "turn on multifactor authentication",
+    "password manager tips"
+  ],
+  "publishedAt": "2026-09-30T15:00:00Z",
+  "readMin": 1,
+  "keyPoints": [
+    "Cybersecurity Awareness Month has been held every October since 2004.",
+    "CISA's four steps: strong passwords, multifactor authentication, spotting phishing, and updating software.",
+    "CISA says phishing emails, texts and calls are the number one way data gets compromised.",
+    "Turn on MFA first for email, banking and social media."
+  ],
+  "sources": [
+    {
+      "title": "Cybersecurity Awareness Month | CISA",
+      "url": "https://www.cisa.gov/cybersecurity-awareness-month"
+    },
+    {
+      "title": "Cybersecurity Awareness Month - National Cybersecurity Alliance",
+      "url": "https://www.staysafeonline.org/cybersecurity-awareness-month"
+    }
+  ],
+  "body": [
+    "Tomorrow, October 1, begins Cybersecurity Awareness Month. It has been held every October since 2004, when the President and Congress set aside the month to encourage people and organizations to protect themselves online. Many workplaces will send reminders or training this month, and a Wednesday morning is a good time to get ahead of it.",
+    "The Cybersecurity and Infrastructure Security Agency, known as CISA, boils its advice down to four steps. First, use strong passwords that are long, random and unique for each account, and let a password manager remember them. Second, turn on multifactor authentication, which CISA says makes you significantly less likely to get hacked. Start with your email, bank and social media accounts.",
+    "Third, learn to recognize and report phishing. CISA calls phishing emails, texts and calls the number one way data gets compromised. At work, be especially careful with messages that create urgency, ask you to buy gift cards, change payment details or share a login code. If a request seems odd, confirm it through a channel you already trust, such as calling the person at a known number.",
+    "Fourth, keep your software updated. Updates often include security patches, so restarting when your laptop or phone asks is one of the easiest protections available. Your IT team may already push these updates automatically.",
+    "Before lunch, pick one work account that does not yet have multifactor authentication and turn it on. It usually takes less than five minutes."
+  ]
+}
