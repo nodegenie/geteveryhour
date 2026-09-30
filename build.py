@@ -26,6 +26,22 @@ FONTS = ("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght
          "&family=IBM+Plex+Mono:wght@400;500&display=swap")
 
 e = lambda s: html.escape(str(s if s is not None else ""), quote=True)
+STATS = {}  # filled in build(): day number, posts, sources, sponsors
+
+
+def goat_code():
+    return (CFG.get("goatcounter") or "").strip()
+
+
+def visitors_script():
+    """GoatCounter: counts page views without cookies, and fills any [data-visitors] with the public site total."""
+    code = goat_code()
+    if not code:
+        return ""
+    return (f'<script data-goatcounter="https://{e(code)}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>\n'
+            f'<script>fetch("https://{e(code)}.goatcounter.com/counter/TOTAL.json").then(r=>r.ok?r.json():null)'
+            '.then(j=>{if(!j)return;document.querySelectorAll("[data-visitors]").forEach(el=>{el.textContent=j.count;'
+            'el.closest("[data-visitors-wrap]")?.removeAttribute("hidden")})}).catch(()=>{})</script>')
 
 
 def slugify(s):
@@ -184,7 +200,7 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <div class="wrap">
 <header class="site">
   <a class="brand" href="/"><b>{e(CFG['title'])}</b><span>{e(CFG['tagline'])}</span></a>
-  <nav class="top" aria-label="Site"><a href="/archive/">Archive</a><a href="/about/">About</a><a href="/sponsor/">Sponsor</a>{'<a href="#subscribe">Subscribe</a>' if signup_block() else ''}</nav>
+  <nav class="top" aria-label="Site"><a href="/archive/">Archive</a><a href="/stats/">Stats</a><a href="/about/">About</a><a href="/sponsor/">Sponsor</a>{'<a href="#subscribe">Subscribe</a>' if signup_block() else ''}</nav>
 </header>
 <main id="main">
 {body}
@@ -197,9 +213,11 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <footer class="site">
   <span>&copy; {datetime.now(TZ).year} {e(AUTHOR)}</span>
   <a href="/feed.xml">RSS</a><a href="/sitemap.xml">Sitemap</a>
+  {f'<a href="/stats/">Day {STATS["day"]} &middot; {STATS["posts"]} posts<span data-visitors-wrap hidden> &middot; <span data-visitors></span> visits</span></a>' if STATS else ''}
   <span>A new post every hour, Pacific time. Posts are <a href="/about/#how-posts-are-made">written with AI</a>.</span>
 </footer>
 </div>
+{visitors_script()}
 </body>
 </html>
 """
@@ -248,6 +266,21 @@ def build():
     for err in errors:
         print("skipped", err, file=sys.stderr)
     now = datetime.now(TZ)
+    launch = datetime.fromisoformat(CFG["launch_at"]).astimezone(TZ) if CFG.get("launch_at") else (posts[-1]["local"] if posts else now)
+    STATS.update({
+        "launch": launch,
+        "day": max(1, (now.date() - launch.date()).days + 1),
+        "hours": max(0, int((now - launch).total_seconds() // 3600)),
+        "posts": len(posts),
+        "sources": sum(len(p["sources"]) for p in posts),
+        "words": sum(sum(len(x.split()) for x in p["body"]) for p in posts),
+        "sponsors": 0,
+    })
+    try:
+        q = json.loads((ROOT / "sponsors" / "queue.json").read_text())
+        STATS["sponsors"] = sum(1 for x in q if x.get("placedIn"))
+    except Exception:
+        pass
 
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -365,9 +398,27 @@ def build():
 <p>{e(AUTHOR)} created EveryHour, wrote the guidelines the posts follow, and is responsible for everything the site publishes. The guidelines require that posts only state facts found in search results at the time of writing, stay away from partisan opinions, and never invent personal stories or experiences. Posts include a short What to know summary and link to the sources their facts were checked against.</p>
 <p>AI can still get things wrong, and news can change after a post is written. Please treat posts as short reflections, not professional advice, and check anything important with a trusted source.</p>
 <p>Sponsored posts are clearly labeled, and sponsors do not choose or review what a post says.</p>
+{'<p>Visits are counted with <a href="https://www.goatcounter.com/">GoatCounter</a>, which does not use cookies or collect personal data. The totals are public on the <a href="/stats/">stats page</a>.</p>' if goat_code() else ''}
 </div></div>"""
     about_ld = {"@context": "https://schema.org", "@type": "ProfilePage", "mainEntity": person()}
     write("/about/", page(f"About | {CFG['title']}", f"About EveryHour and its writer, {AUTHOR}.", SITE + "/about/", body, jsonld=[about_ld]))
+
+    # stats: public, build-in-public numbers (visitors filled live from GoatCounter)
+    st = STATS
+    tiles = [
+        ("Day", f"{st['day']}", f"live since {long_date(st['launch'])}, {st['launch'].year}"),
+        ("Posts published", f"{st['posts']:,}", f"in {st['hours']:,} hours since launch"),
+        ("Visits", '<span data-visitors>&ndash;</span>', "counted without cookies by GoatCounter" if goat_code() else "visitor counting starts soon"),
+        ("Sources cited", f"{st['sources']:,}", "links to the pages facts were checked against"),
+        ("Words written", f"{st['words']:,}", "all written with AI"),
+        ("Sponsored hours", f"{st['sponsors']:,}", '<a href="/sponsor/">sponsor an hour</a>'),
+    ]
+    grid = "".join(f'<div class="stat"><small>{e(k)}</small><b>{v}</b><span>{d}</span></div>' for k, v, d in tiles)
+    body = f"""<h1 class="page">EveryHour in numbers</h1>
+<p class="pagedek">Built in public. These numbers update every hour; visits update live.</p>
+<div class="stats">{grid}</div>
+<p class="pagedek" style="margin-top:24px">Updated {e(long_date(now))}, {hour_label(now)} Pacific.</p>"""
+    write("/stats/", page(f"Stats | {CFG['title']}", f"EveryHour in numbers: day {st['day']}, {st['posts']} posts published, visits and sponsors, updated every hour.", SITE + "/stats/", body))
 
     # sponsor page
     sp = CFG.get("sponsor", {})
@@ -396,7 +447,7 @@ def build():
     (OUT / "404.html").write_text(page(f"Page not found | {CFG['title']}", CFG["description"], SITE + "/404.html", body, noindex=True))
 
     # sitemap
-    urls = [(SITE + "/", posts[0]["dt"] if posts else now), (SITE + "/archive/", posts[0]["dt"] if posts else now), (SITE + "/about/", None), (SITE + "/sponsor/", None)]
+    urls = [(SITE + "/", posts[0]["dt"] if posts else now), (SITE + "/archive/", posts[0]["dt"] if posts else now), (SITE + "/about/", None), (SITE + "/stats/", None), (SITE + "/sponsor/", None)]
     urls += [(f"{SITE}/topics/{s}/", next(p["dt"] for p in posts if p["topic_slug"] == s)) for s, _ in topics]
     urls += [(p["url"], p["dt"]) for p in posts]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
