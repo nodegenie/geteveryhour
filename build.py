@@ -34,14 +34,40 @@ def goat_code():
 
 
 def visitors_script():
-    """GoatCounter: counts page views without cookies, and fills any [data-visitors] with the public site total."""
+    """GoatCounter: counts page views without cookies."""
     code = goat_code()
     if not code:
         return ""
-    return (f'<script data-goatcounter="https://{e(code)}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>\n'
-            f'<script>fetch("https://{e(code)}.goatcounter.com/counter/TOTAL.json").then(r=>r.ok?r.json():null)'
-            '.then(j=>{if(!j)return;document.querySelectorAll("[data-visitors]").forEach(el=>{el.textContent=j.count;'
-            'el.closest("[data-visitors-wrap]")?.removeAttribute("hidden")})}).catch(()=>{})</script>')
+    return f'<script data-goatcounter="https://{e(code)}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
+
+
+def analytics_panel(posts):
+    """Readership from GoatCounter's public counters: total visits and the most-read posts, fetched live."""
+    code = goat_code()
+    if not code:
+        return ""
+    items = [{"p": p["path"], "t": p["title"], "h": hour_label(p["local"]).replace("\u2009", " "), "d": f"{p['local']:%b} {p['local'].day}"} for p in posts[:150]]
+    data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
+    base = f"https://{e(code)}.goatcounter.com/counter/"
+    return f"""<section class="analytics" aria-labelledby="an-h">
+  <h2 id="an-h" class="day" style="color:var(--ink)">Readership</h2>
+  <div class="an-row"><div class="stat"><small>Total visits</small><b id="an-total">&ndash;</b><span>all pages, counted without cookies</span></div>
+  <div class="stat"><small>Posts with readers</small><b id="an-read">&ndash;</b><span id="an-of">of the latest {len(items)} posts</span></div></div>
+  <h3 class="an-sub">Most-read posts</h3>
+  <ol class="an-list" id="an-list"><li class="an-empty">Loading visit counts&hellip;</li></ol>
+  <p class="an-note" id="an-note" hidden>Visit counts are not available yet. In GoatCounter, open Settings and turn on &ldquo;Allow adding visitor counts on your website.&rdquo;</p>
+</section>
+<script>(()=>{{const P={data},B="{base}",L=document.getElementById("an-list");
+const num=n=>Number(String(n).replace(/[^0-9]/g,""))||0;
+const get=u=>fetch(B+encodeURIComponent(u)+".json").then(r=>r.ok?r.json():null).catch(()=>null);
+get("TOTAL").then(j=>{{if(j)document.getElementById("an-total").textContent=j.count;else document.getElementById("an-note").hidden=false}});
+const out=[];let i=0;const next=()=>{{if(i>=P.length)return Promise.resolve();const it=P[i++];return get(it.p).then(j=>{{if(j)out.push({{...it,n:num(j.count)}})}}).then(next)}};
+Promise.all(Array.from({{length:6}},next)).then(()=>{{const r=out.filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
+document.getElementById("an-read").textContent=r.length;
+L.innerHTML="";if(!r.length){{L.innerHTML='<li class="an-empty">No visits recorded on posts yet.</li>';return}}
+r.slice(0,15).forEach(x=>{{const li=document.createElement("li");const a=document.createElement("a");a.href=x.p;a.textContent=x.t;
+const m=document.createElement("span");m.className="an-meta";m.textContent=x.d+", "+x.h;const c=document.createElement("b");c.textContent=x.n.toLocaleString()+(x.n==1?" visit":" visits");
+li.append(a,m,c);L.append(li)}})}})}})();</script>"""
 
 
 def slugify(s):
@@ -213,7 +239,7 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <footer class="site">
   <span>&copy; {datetime.now(TZ).year} {e(AUTHOR)}</span>
   <a href="/feed.xml">RSS</a><a href="/sitemap.xml">Sitemap</a>
-  {f'<a href="/stats/">Day {STATS["day"]} &middot; {STATS["posts"]} posts<span data-visitors-wrap hidden> &middot; <span data-visitors></span> visits</span></a>' if STATS else ''}
+  {f'<a href="/stats/">Day {STATS["day"]} &middot; {STATS["posts"]} posts</a>' if STATS else ''}
   <span>A new post every hour, Pacific time. Posts are <a href="/about/#how-posts-are-made">written with AI</a>.</span>
 </footer>
 </div>
@@ -408,7 +434,6 @@ def build():
     tiles = [
         ("Day", f"{st['day']}", f"live since {long_date(st['launch'])}, {st['launch'].year}"),
         ("Posts published", f"{st['posts']:,}", f"in {st['hours']:,} hours since launch"),
-        ("Visits", '<span data-visitors>&ndash;</span>', "counted without cookies by GoatCounter" if goat_code() else "visitor counting starts soon"),
         ("Sources cited", f"{st['sources']:,}", "links to the pages facts were checked against"),
         ("Words written", f"{st['words']:,}", "all written with AI"),
         ("Sponsored hours", f"{st['sponsors']:,}", '<a href="/sponsor/">sponsor an hour</a>'),
@@ -417,6 +442,7 @@ def build():
     body = f"""<h1 class="page">EveryHour in numbers</h1>
 <p class="pagedek">Built in public. These numbers update every hour; visits update live.</p>
 <div class="stats">{grid}</div>
+{analytics_panel(posts)}
 <p class="pagedek" style="margin-top:24px">Updated {e(long_date(now))}, {hour_label(now)} Pacific.</p>"""
     write("/stats/", page(f"Stats | {CFG['title']}", f"EveryHour in numbers: day {st['day']}, {st['posts']} posts published, visits and sponsors, updated every hour.", SITE + "/stats/", body))
 
