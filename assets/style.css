@@ -136,3 +136,11 @@ footer.site a{color:var(--muted)}
 .an-meta{grid-area:m;font-family:var(--mono);font-size:11.5px;color:var(--muted)}
 .an-list b{grid-area:c;font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:500;white-space:nowrap;align-self:center;font-variant-numeric:tabular-nums}
 .an-note{font-size:14px;color:var(--muted);margin-top:12px}
+.geo{margin-top:36px}
+.geo-map{position:relative;margin-top:12px;border:1px solid var(--rule);border-radius:12px;background:var(--surface);overflow:hidden}
+.geo-map img,.geo-map svg{display:block;width:100%;height:auto}
+.geo-map svg{position:absolute;inset:0}
+.geo-map circle{fill:var(--accent);fill-opacity:.55;stroke:var(--accent);stroke-width:1.2}
+.geo-list{list-style:none;margin:12px 0 0;padding:0}
+.geo-list li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--rule);font-size:15px}
+.geo-list b{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:500;font-variant-numeric:tabular-nums}

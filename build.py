@@ -5,9 +5,13 @@ No third-party packages needed. Run: python3 build.py
 """
 import html
 import json
+import os
 import re
 import shutil
 import sys
+import time
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone, timedelta
 from email.utils import format_datetime
 from pathlib import Path
@@ -68,6 +72,70 @@ L.innerHTML="";if(!r.length){{L.innerHTML='<li class="an-empty">No visits record
 r.slice(0,15).forEach(x=>{{const li=document.createElement("li");const a=document.createElement("a");a.href=x.p;a.textContent=x.t;
 const m=document.createElement("span");m.className="an-meta";m.textContent=x.d+", "+x.h;const c=document.createElement("b");c.textContent=x.n.toLocaleString()+(x.n==1?" visit":" visits");
 li.append(a,m,c);L.append(li)}})}})}})();</script>"""
+
+
+def fetch_locations(since):
+    """Visit counts by country and region from the GoatCounter API (needs GOATCOUNTER_TOKEN; the key stays on the build server)."""
+    token, code = os.environ.get("GOATCOUNTER_TOKEN", "").strip(), goat_code()
+    if not token or not code:
+        return None
+    api = f"https://{code}.goatcounter.com/api/v0/stats/locations"
+    q = urllib.parse.urlencode({"start": since.strftime("%Y-%m-%d"), "end": (datetime.now(timezone.utc) + timedelta(days=1)).strftime("%Y-%m-%d"), "limit": 100})
+
+    def get(url):
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            return json.loads(r.read().decode()).get("stats") or []
+
+    try:
+        countries = [c for c in get(f"{api}?{q}") if int(c.get("count") or 0) > 0 and c.get("id")]
+        out = []
+        for c in countries[:40]:
+            regions = []
+            try:
+                time.sleep(0.3)  # API allows 4 requests a second
+                regions = [r for r in get(f"{api}/{urllib.parse.quote(c['id'])}?{q}") if int(r.get("count") or 0) > 0]
+            except Exception:
+                pass
+            out.append({"id": c["id"], "name": c.get("name") or c["id"], "count": int(c["count"]),
+                        "regions": [{"id": r.get("id") or "", "name": r.get("name") or "", "count": int(r["count"])} for r in regions]})
+        return out
+    except Exception as ex:
+        print("location stats unavailable:", ex, file=sys.stderr)
+        return None
+
+
+def map_panel(locs):
+    """A world map with one dot per place readers came from (region when known, otherwise country)."""
+    if locs is None:
+        return ""
+    geo = json.loads((ROOT / "assets" / "map-points.json").read_text())
+    pts, W, H = geo["points"], geo["w"], geo["h"]
+    dots = []  # (x, y, label, count)
+    for c in locs:
+        placed = 0
+        for r in c["regions"]:
+            p = pts.get(r["id"])
+            if p and r["id"] != c["id"]:
+                label = f"{r['name']}, {c['name']}" if r["name"] else c["name"]
+                dots.append((p[0], p[1], label, r["count"])); placed += r["count"]
+        rest = c["count"] - placed
+        if rest > 0 and c["id"] in pts:
+            dots.append((pts[c["id"]][0], pts[c["id"]][1], c["name"], rest))
+    dots.sort(key=lambda d: -d[3])
+    total = sum(d[3] for d in dots)
+    circles = "".join(
+        f'<circle cx="{x}" cy="{y}" r="{7 + 4 * n ** 0.5:.1f}"><title>{e(lbl)}: {n:,} {"visit" if n == 1 else "visits"}</title></circle>'
+        for x, y, lbl, n in reversed(dots))
+    rows = "".join(f'<li><span>{e(lbl)}</span><b>{n:,}</b></li>' for _, _, lbl, n in dots[:12])
+    summary = (f"{total:,} {'visit' if total == 1 else 'visits'} from {len(dots)} {'place' if len(dots) == 1 else 'places'}"
+               + "." if dots else "No locations recorded yet.")
+    return f"""<section class="geo" aria-labelledby="geo-h">
+  <h2 id="geo-h" class="day" style="color:var(--ink)">Where readers are</h2>
+  <p class="an-note" style="margin-top:4px">{summary} Places are approximate (country or state) and updated every hour.</p>
+  <div class="geo-map"><img src="/assets/world-map.svg" alt="" width="{W}" height="{H}"><svg viewBox="0 0 {W} {H}" role="img" aria-label="Map of reader locations: {e(summary)}">{circles}</svg></div>
+  {f'<ol class="geo-list">{rows}</ol>' if rows else ''}
+</section>"""
 
 
 def slugify(s):
@@ -443,6 +511,7 @@ def build():
 <p class="pagedek">Built in public. These numbers update every hour; visits update live.</p>
 <div class="stats">{grid}</div>
 {analytics_panel(posts)}
+{map_panel(fetch_locations(st['launch']))}
 <p class="pagedek" style="margin-top:24px">Updated {e(long_date(now))}, {hour_label(now)} Pacific.</p>"""
     write("/stats/", page(f"Stats | {CFG['title']}", f"EveryHour in numbers: day {st['day']}, {st['posts']} posts published, visits and sponsors, updated every hour.", SITE + "/stats/", body))
 

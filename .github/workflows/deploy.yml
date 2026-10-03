@@ -26,6 +26,8 @@ jobs:
           python-version: "3.12"
       - run: pip install tzdata pillow
       - run: python build.py
+        env:
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}   # optional: read-only GoatCounter API key for the stats map
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
