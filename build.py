@@ -564,6 +564,12 @@ def build():
         sm.append(f"<url><loc>{e(u)}</loc>" + (f"<lastmod>{d.astimezone(timezone.utc):%Y-%m-%dT%H:%M:%SZ}</lastmod>" if d else "") + "</url>")
     sm.append("</urlset>")
     (OUT / "sitemap.xml").write_text("\n".join(sm) + "\n")
+    # sitemap index at a second address, so Search Console can be given a fresh URL to fetch
+    newest = max((p["dt"] for p in posts), default=now).astimezone(timezone.utc)
+    (OUT / "sitemap_index.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'<sitemap><loc>{SITE}/sitemap.xml</loc><lastmod>{newest:%Y-%m-%dT%H:%M:%SZ}</lastmod></sitemap>\n'
+        '</sitemapindex>\n')
 
     # rss
     items = []
@@ -582,7 +588,7 @@ def build():
 """
     (OUT / "feed.xml").write_text(rss)
 
-    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/sitemap_index.xml\n")
 
     # IndexNow key file (Bing, Yandex, Seznam, Naver); see indexnow.py
     key = CFG.get("indexnow_key", "").strip()
