@@ -25,6 +25,7 @@ CFG = json.loads((ROOT / "config.json").read_text())
 TZ = ZoneInfo(CFG["timezone"])
 SITE = CFG["site_url"].rstrip("/")
 import hashlib as _hl
+ICON_VER = _hl.sha1((Path(__file__).parent / "assets" / "favicon.svg").read_bytes()).hexdigest()[:10]
 CSS_VER = _hl.sha1((Path(__file__).parent / "assets" / "style.css").read_bytes()).hexdigest()[:10]
 AUTHOR = CFG["author"]
 FONTS = ("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700"
@@ -301,7 +302,9 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 {robots}
 <link rel="canonical" href="{e(canonical)}">
 <link rel="alternate" type="application/rss+xml" title="{e(CFG['title'])}" href="{SITE}/feed.xml">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico?v={ICON_VER}" sizes="any">
+<link rel="icon" href="/assets/favicon.svg?v={ICON_VER}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v={ICON_VER}">
 <meta property="og:site_name" content="{e(CFG['title'])}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:title" content="{e(title)}">
@@ -515,6 +518,9 @@ def build():
         shutil.rmtree(OUT)
     OUT.mkdir()
     shutil.copytree(ROOT / "assets", OUT / "assets")
+    for icon in ("favicon.ico", "apple-touch-icon.png"):  # root copies for browsers that ask for them directly
+        if (ROOT / "assets" / icon).exists():
+            shutil.copy(ROOT / "assets" / icon, OUT / icon)
     (OUT / "CNAME").write_text(CFG["domain"] + "\n")
     og.card(OUT / "og" / "home.png", "Plain answers for homeowners going electric: solar, batteries, heat pumps and rebates.", CFG["tagline"])
     og.card(OUT / "og" / "sponsor.png", f"Founding sponsors: feature your business on EveryHour for {CFG.get('sponsor', {}).get('price', '$25')}", "Sponsor a post")
