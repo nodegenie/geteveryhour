@@ -1,0 +1,57 @@
+{
+  "slug": "ai-phone-answering-contractors-california-recording-law",
+  "title": "Using AI to Answer Contractor Calls in California: Consent Rules",
+  "dek": "California requires all-party consent to record calls, and its bot law bars hiding an AI's identity to make a sale. Disclose both up front.",
+  "topic": "AI & Tools",
+  "publisherNote": false,
+  "tags": [
+    "ai",
+    "california",
+    "call answering",
+    "privacy",
+    "customer service"
+  ],
+  "keywords": [
+    "ai answering service contractors",
+    "california call recording consent",
+    "ai receptionist hvac",
+    "sb 1001 bot disclosure"
+  ],
+  "publishedAt": "2026-10-04T23:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "California Penal Code 632 makes it unlawful to record a confidential call without the consent of all parties.",
+    "People whose calls are recorded illegally can seek $5,000 in civil damages per call.",
+    "California's bot law (B&P Code 17941) bars using a bot online to mislead people about its artificial identity to drive a sale; clear disclosure avoids liability.",
+    "The Attorney General can seek up to $2,500 per violation of the bot law.",
+    "A short opening line that the caller is speaking with an AI assistant and the call is recorded covers both concerns."
+  ],
+  "sources": [
+    {
+      "title": "California Call Recording Law - California Consumer Protection Attorneys",
+      "url": "https://www.kazlg.com/california-call-recording-laws/"
+    },
+    {
+      "title": "California Code, Business and Professions Code - BPC § 17941",
+      "url": "https://codes.findlaw.com/ca/business-and-professions-code/bpc-sect-17941/"
+    },
+    {
+      "title": "I Am Robot: California's New Law Requires Disclosure of Use of Bots",
+      "url": "https://perkinscoie.com/insights/update/i-am-robot-californias-new-law-requires-disclosure-use-bots"
+    }
+  ],
+  "body": [
+    "AI phone answering is one of the most practical uses of AI for service contractors. A missed call after hours on a no-cool or no-heat day often turns into a booked job for whoever picks up first. Most AI answering tools record and transcribe calls so they can book appointments and hand notes to dispatch. In California, that recording and the AI itself both come with disclosure duties.",
+    "Recording consent. California is an all-party consent state. Under Penal Code 632, it is unlawful to record a confidential conversation, including a phone call, without the consent of everyone on it. People whose calls are recorded in violation of the law can seek civil damages of $5,000 for each call. Because nearly every AI answering tool records or transcribes, plan on telling every caller.",
+    "Bot disclosure. California's bot law, Business and Professions Code Section 17941, in effect since July 1, 2019, makes it unlawful to use a bot to communicate with a person in California online with the intent to mislead them about its artificial identity in order to encourage a purchase or sale. Disclosure that is clear, conspicuous and reasonably designed to inform the person that it is a bot avoids liability. The law focuses on online communications, and the Attorney General can seek up to $2,500 per violation. Website chat widgets and text bots fit squarely within it. For phone calls, disclosing the AI is still the safest and most courteous practice.",
+    "A setup checklist:",
+    "Step 1: Write the greeting first. For example: \"Thanks for calling. You're speaking with our AI assistant, and this call is recorded so we can help you. You can ask for a person at any time.\" Keep it short so callers do not hang up.",
+    "Step 2: Give callers a way to reach a human, whether that is a live transfer during business hours or a guaranteed callback time after hours.",
+    "Step 3: Limit what the AI is allowed to say. Let it collect the address, equipment, symptoms and preferred time, and keep pricing, safety instructions, code questions and warranty decisions with your team. If the AI mentions prices, use your published rates only.",
+    "Step 4: Review where recordings and transcripts are stored, who can see them, and how long they are kept. Ask the vendor in writing whether call data is used to train their models and how to delete it.",
+    "Step 5: Add the same disclosure to your website chat and any text-message bot, since those are online communications under the bot law.",
+    "Step 6: Listen to a sample of calls every week for the first month. Check that bookings landed in your field service software correctly and that the AI never promised something your techs cannot deliver.",
+    "This is general information. Ask an attorney to review your call scripts and vendor contract for your own business.",
+    "Today's next step: call your own after-hours line and note whether the caller hears an AI disclosure and a recording notice in the first few seconds."
+  ]
+}
