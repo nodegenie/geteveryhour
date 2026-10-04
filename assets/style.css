@@ -133,6 +133,7 @@ footer.site a{color:var(--muted)}
 .an-list li.an-empty::before{content:none}
 .an-list a{grid-area:t;font-family:var(--display);font-size:16px;line-height:1.3;text-decoration:none;min-width:0}
 .an-list a:hover{color:var(--accent)}
+.an-foot{font-size:13px;color:var(--muted);margin:8px 0 0}
 .an-meta{grid-area:m;font-family:var(--mono);font-size:11.5px;color:var(--muted)}
 .an-list b{grid-area:c;font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:500;white-space:nowrap;align-self:center;font-variant-numeric:tabular-nums}
 .an-note{font-size:14px;color:var(--muted);margin-top:12px}

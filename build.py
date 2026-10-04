@@ -45,28 +45,42 @@ def visitors_script():
     return f'<script data-goatcounter="https://{e(code)}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 
 
-def analytics_panel(posts):
-    """Readership from GoatCounter's public counters: total visits and the most-read posts, fetched live."""
+def analytics_panel(posts, topics=()):
+    """Readership from GoatCounter's public counters: total visits, top pages and the most-read posts, fetched live."""
     code = goat_code()
     if not code:
         return ""
     items = [{"p": p["path"], "t": p["title"], "h": hour_label(p["local"]).replace("\u2009", " "), "d": f"{p['local']:%b} {p['local'].day}"} for p in posts[:150]]
     data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
+    pages = [{"p": "/", "t": "Home page"}, {"p": "/stats/", "t": "Stats page"}, {"p": "/about/", "t": "About page"},
+             {"p": "/archive/", "t": "Archive"}, {"p": "/sponsor/", "t": "Sponsor page"}]
+    pages += [{"p": f"/topics/{slug}/", "t": f"Topic: {name}"} for slug, name in topics]
+    pdata = json.dumps(pages, ensure_ascii=False).replace("</", "<\\/")
     base = f"https://{e(code)}.goatcounter.com/counter/"
     return f"""<section class="analytics" aria-labelledby="an-h">
   <h2 id="an-h" class="day" style="color:var(--ink)">Readership</h2>
   <div class="an-row"><div class="stat"><small>Total visits</small><b id="an-total">&ndash;</b><span>all pages, counted without cookies</span></div>
   <div class="stat"><small>Posts with readers</small><b id="an-read">&ndash;</b><span id="an-of">of the latest {len(items)} posts</span></div></div>
+  <h3 class="an-sub">Top pages</h3>
+  <ol class="an-list" id="an-pages"><li class="an-empty">Loading visit counts&hellip;</li></ol>
+  <p class="an-foot">Every page on the site counts toward total visits. Visits to individual posts are added together under &ldquo;All posts.&rdquo;</p>
   <h3 class="an-sub">Most-read posts</h3>
   <ol class="an-list" id="an-list"><li class="an-empty">Loading visit counts&hellip;</li></ol>
   <p class="an-note" id="an-note" hidden>Visit counts are not available yet. In GoatCounter, open Settings and turn on &ldquo;Allow adding visitor counts on your website.&rdquo;</p>
 </section>
-<script>(()=>{{const P={data},B="{base}",L=document.getElementById("an-list");
+<script>(()=>{{const P={data},G={pdata},B="{base}",L=document.getElementById("an-list"),PL=document.getElementById("an-pages");
 const num=n=>Number(String(n).replace(/[^0-9]/g,""))||0;
 const get=u=>fetch(B+encodeURIComponent(u)+".json").then(r=>r.ok?r.json():null).catch(()=>null);
 get("TOTAL").then(j=>{{if(j)document.getElementById("an-total").textContent=j.count;else document.getElementById("an-note").hidden=false}});
 const out=[];let i=0;const next=()=>{{if(i>=P.length)return Promise.resolve();const it=P[i++];return get(it.p).then(j=>{{if(j)out.push({{...it,n:num(j.count)}})}}).then(next)}};
-Promise.all(Array.from({{length:6}},next)).then(()=>{{const r=out.filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
+const row=(x,meta)=>{{const li=document.createElement("li");const a=document.createElement("a");a.href=x.p;a.textContent=x.t;
+const m=document.createElement("span");m.className="an-meta";m.textContent=meta;const c=document.createElement("b");c.textContent=x.n.toLocaleString()+(x.n==1?" visit":" visits");
+li.append(a,m,c);return li}};
+const pages=()=>Promise.all(G.map(g=>get(g.p).then(j=>({{...g,n:j?num(j.count):0}}))));
+Promise.all([Promise.all(Array.from({{length:6}},next)),pages()]).then(([_,pg])=>{{const r=out.filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
+const sum=r.reduce((t,x)=>t+x.n,0);const all=pg.filter(x=>x.n>0);if(sum)all.push({{p:"/archive/",t:"All posts",n:sum,meta:r.length+(r.length==1?" post":" posts")+" with readers"}});
+all.sort((a,b)=>b.n-a.n);PL.innerHTML="";if(!all.length)PL.innerHTML='<li class="an-empty">No visits recorded yet.</li>';
+else all.forEach(x=>PL.append(row(x,x.meta||x.p)));
 document.getElementById("an-read").textContent=r.length;
 L.innerHTML="";if(!r.length){{L.innerHTML='<li class="an-empty">No visits recorded on posts yet.</li>';return}}
 r.slice(0,15).forEach(x=>{{const li=document.createElement("li");const a=document.createElement("a");a.href=x.p;a.textContent=x.t;
@@ -510,7 +524,7 @@ def build():
     body = f"""<h1 class="page">EveryHour in numbers</h1>
 <p class="pagedek">Built in public. These numbers update every hour; visits update live.</p>
 <div class="stats">{grid}</div>
-{analytics_panel(posts)}
+{analytics_panel(posts, topics)}
 {map_panel(fetch_locations(st['launch']))}
 <p class="pagedek" style="margin-top:24px">Updated {e(long_date(now))}, {hour_label(now)} Pacific.</p>"""
     write("/stats/", page(f"Stats | {CFG['title']}", f"EveryHour in numbers: day {st['day']}, {st['posts']} posts published, visits and sponsors, updated every hour.", SITE + "/stats/", body))
