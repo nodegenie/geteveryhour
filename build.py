@@ -24,6 +24,8 @@ OUT = ROOT / "_site"
 CFG = json.loads((ROOT / "config.json").read_text())
 TZ = ZoneInfo(CFG["timezone"])
 SITE = CFG["site_url"].rstrip("/")
+import hashlib as _hl
+CSS_VER = _hl.sha1((Path(__file__).parent / "assets" / "style.css").read_bytes()).hexdigest()[:10]
 AUTHOR = CFG["author"]
 FONTS = ("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700"
          "&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400"
@@ -317,7 +319,7 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={CSS_VER}">
 {ld}
 </head>
 <body>
@@ -376,30 +378,33 @@ def dial(posts, now):
     and hovering or tapping any hour shows what is there. The current hour is highlighted live."""
     today = {p["local"].hour: p for p in posts if p["local"].date() == now.date()}
     slots = {h: (name, about) for h, name, about in SLOTS}
-    cells = []
+    cells, names = [], []
+    short = {7: "Bill", 10: "Solar", 13: "Home", 16: "Money", 19: "Next"}
     for h in range(24):
         hl = f'{(h % 12) or 12} {"AM" if h < 12 else "PM"}'
         p = today.get(h)
+        names.append(f'<span>{e(short.get(h, "")) if h in slots else ""}</span>')
         if p:
             name = slots.get(h, (p["topic"], ""))[0]
-            label = f"{hl} \u00b7 {name} \u00b7 {p['title']}"
-            cells.append(f'<a class="hr on" href="{p["path"]}" data-h="{h}" data-label="{e(label)}" aria-label="{e(label)}"></a>')
+            label = f"{hl} \u00b7 {name} \u00b7 Read: {p['title']}"
+            cells.append(f'<a class="hr post on" href="{p["path"]}" data-h="{h}" data-label="{e(label)}" aria-label="{e(label)}"></a>')
         elif h in slots:
-            label = f"{hl} \u00b7 {slots[h][0]} \u00b7 " + ("coming up" if h > now.hour else "no post today")
-            cells.append(f'<span class="hr slot" tabindex="0" data-h="{h}" data-label="{e(label)}" aria-label="{e(label)}"></span>')
+            label = f"{hl} \u00b7 {slots[h][0]} \u00b7 " + ("new post coming at " + hl if h > now.hour else "no post this hour today")
+            cells.append(f'<span class="hr post soon" tabindex="0" data-h="{h}" data-label="{e(label)}" aria-label="{e(label)}"></span>')
         else:
-            cells.append(f'<span class="hr" data-h="{h}" data-label="{e(hl)}"></span>')
+            cells.append(f'<span class="hr" data-h="{h}"></span>')
     up = sum(1 for h in slots if h in today)
-    default = "Hover or tap an hour to see what's posted. Bright hours are ready to read."
+    default = "Tap a green hour to read it. Bright green is ready now; soft green is coming later today."
     return f"""<section class="dial" aria-label="Today on EveryHour">
   <div class="dial-head"><span>{e(now.strftime('%a, %b'))} {now.day} &middot; {up} of {len(SLOTS)} posts up</span><span>Pacific time</span></div>
   <div class="hours" id="hours">{"".join(cells)}</div>
+  <div class="hours-names" aria-hidden="true">{"".join(names)}</div>
   <div class="hours-ticks"><span>12 AM</span><span>6 AM</span><span>Noon</span><span>6 PM</span></div>
   <p class="hours-cap" id="hours-cap" aria-live="polite">{e(default)}</p>
 </section>
 <script>(()=>{{const H=document.getElementById("hours"),C=document.getElementById("hours-cap"),D=C.textContent;
 try{{const h=+new Intl.DateTimeFormat("en-US",{{hour:"numeric",hourCycle:"h23",timeZone:"America/Los_Angeles"}}).format(new Date());const c=H.querySelector('[data-h="'+h+'"]');if(c)c.classList.add("now")}}catch(_){{}}
-const show=t=>{{const x=t.closest&&t.closest("[data-label]");C.textContent=x?x.dataset.label:D}};
+const show=t=>{{const x=t.closest&&t.closest(".post[data-label]");C.textContent=x?x.dataset.label:D}};
 H.addEventListener("mouseover",ev=>show(ev.target));H.addEventListener("focusin",ev=>show(ev.target));
 H.addEventListener("mouseleave",()=>{{C.textContent=D}});
 H.addEventListener("click",ev=>{{const x=ev.target.closest("span[data-label]");if(x)show(x)}});}})();</script>"""
