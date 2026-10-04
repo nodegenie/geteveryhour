@@ -1,15 +1,13 @@
-/* EveryHour. Layout: one calm reading column; a 24-hour strip marks which hours of today have a post. */
+/* EveryHour. One calm reading column on a dark navy base; five day-part cards mark which of today's posts are up. */
 :root{
-  --bg:#f7f8f6; --surface:#ffffff; --ink:#1b2126; --muted:#5d6870; --rule:#dfe3e0;
-  --accent:#1f6f5c; --accent-soft:#e2efe9; --dot:#cfd6d2;
+  /* Dark navy base in the TaskHatch family, with a violet nod to Glorp and a bright mint accent */
+  --bg:#11113b; --surface:#191a4a; --ink:#f2f2fa; --muted:#a9abcf; --rule:#2a2b62;
+  --accent:#7cf5b0; --accent-soft:#1f2a5e; --dot:#3a3b78; --violet:#a99bff;
   --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
   --body:"Source Serif 4",Georgia,"Times New Roman",serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-  color-scheme:light;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root{
-  --bg:#12171a; --surface:#182024; --ink:#e7ecea; --muted:#9aa7a2; --rule:#28333a;
-  --accent:#6fcfb2; --accent-soft:#1d3530; --dot:#2f3b40; color-scheme:dark}}
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -160,3 +158,6 @@ a.slot.on:hover{border-color:var(--ink)}
 .now-list span{font-size:13.5px;color:var(--muted)}
 .now-empty{font-size:15px;color:var(--muted);margin:4px 0}
 .now-links{font-size:13px;margin:10px 0 0;color:var(--muted)}
+.pubnote{margin-top:28px;padding:14px 16px;border:1px solid var(--violet);border-radius:12px;font-size:15.5px;color:var(--ink);background:var(--surface)}
+.pubnote small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--violet);margin-bottom:4px}
+.pubnote a{color:var(--accent)}
