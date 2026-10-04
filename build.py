@@ -177,6 +177,13 @@ def load_posts():
             p["path"] = f"/{p['local']:%Y/%m/%d}/{p['slug']}/"
             p["url"] = SITE + p["path"]
             p["topic_slug"] = slugify(p["topic"])
+            p["updated_dt"] = None
+            if p.get("updatedAt"):
+                try:
+                    u = datetime.fromisoformat(str(p["updatedAt"]).replace("Z", "+00:00")).astimezone(timezone.utc)
+                    p["updated_dt"] = u if u > p["dt"] else None
+                except ValueError:
+                    pass
             p["tags"] = p.get("tags") or []
             p["keywords"] = p.get("keywords") or p["tags"]
             p["readMin"] = p.get("readMin") or max(1, round(sum(len(x.split()) for x in p["body"]) / 230))
@@ -365,18 +372,37 @@ SLOTS = [(7, "Your bill", "Rates, bills and outages"),
 
 
 def dial(posts, now):
-    """Today's five parts of the day, marking the ones whose post is up."""
+    """Interactive 24-hour bar for today: the five post slots are marked, published posts link,
+    and hovering or tapping any hour shows what is there. The current hour is highlighted live."""
     today = {p["local"].hour: p for p in posts if p["local"].date() == now.date()}
+    slots = {h: (name, about) for h, name, about in SLOTS}
     cells = []
-    for h, name, about in SLOTS:
+    for h in range(24):
+        hl = f'{(h % 12) or 12} {"AM" if h < 12 else "PM"}'
         p = today.get(h)
-        label = f'<b>{e(name)}</b><span>{(h % 12) or 12} {"AM" if h < 12 else "PM"} &middot; {e(about)}</span>'
-        cells.append(f'<a class="slot on" href="{p["path"]}">{label}</a>' if p else f'<div class="slot">{label}</div>')
-    up = sum(1 for h, _, _ in SLOTS if h in today)
+        if p:
+            name = slots.get(h, (p["topic"], ""))[0]
+            label = f"{hl} \u00b7 {name} \u00b7 {p['title']}"
+            cells.append(f'<a class="hr on" href="{p["path"]}" data-h="{h}" data-label="{e(label)}" aria-label="{e(label)}"></a>')
+        elif h in slots:
+            label = f"{hl} \u00b7 {slots[h][0]} \u00b7 " + ("coming up" if h > now.hour else "no post today")
+            cells.append(f'<span class="hr slot" tabindex="0" data-h="{h}" data-label="{e(label)}" aria-label="{e(label)}"></span>')
+        else:
+            cells.append(f'<span class="hr" data-h="{h}" data-label="{e(hl)}"></span>')
+    up = sum(1 for h in slots if h in today)
+    default = "Hover or tap an hour to see what's posted. Bright hours are ready to read."
     return f"""<section class="dial" aria-label="Today on EveryHour">
   <div class="dial-head"><span>{e(now.strftime('%a, %b'))} {now.day} &middot; {up} of {len(SLOTS)} posts up</span><span>Pacific time</span></div>
-  <div class="slots">{"".join(cells)}</div>
-</section>"""
+  <div class="hours" id="hours">{"".join(cells)}</div>
+  <div class="hours-ticks"><span>12 AM</span><span>6 AM</span><span>Noon</span><span>6 PM</span></div>
+  <p class="hours-cap" id="hours-cap" aria-live="polite">{e(default)}</p>
+</section>
+<script>(()=>{{const H=document.getElementById("hours"),C=document.getElementById("hours-cap"),D=C.textContent;
+try{{const h=+new Intl.DateTimeFormat("en-US",{{hour:"numeric",hourCycle:"h23",timeZone:"America/Los_Angeles"}}).format(new Date());const c=H.querySelector('[data-h="'+h+'"]');if(c)c.classList.add("now")}}catch(_){{}}
+const show=t=>{{const x=t.closest&&t.closest("[data-label]");C.textContent=x?x.dataset.label:D}};
+H.addEventListener("mouseover",ev=>show(ev.target));H.addEventListener("focusin",ev=>show(ev.target));
+H.addEventListener("mouseleave",()=>{{C.textContent=D}});
+H.addEventListener("click",ev=>{{const x=ev.target.closest("span[data-label]");if(x)show(x)}});}})();</script>"""
 
 
 ALERT_LINKS = [("NWS alerts for California", "https://alerts.weather.gov/search?area=CA"),
@@ -486,7 +512,7 @@ def build():
     shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / "CNAME").write_text(CFG["domain"] + "\n")
     og.card(OUT / "og" / "home.png", "Plain answers for homeowners going electric: solar, batteries, heat pumps and rebates.", CFG["tagline"])
-    og.card(OUT / "og" / "sponsor.png", f"Feature your business on EveryHour for {CFG.get('sponsor', {}).get('price', '$5')}", "Sponsor a post")
+    og.card(OUT / "og" / "sponsor.png", f"Founding sponsors: feature your business on EveryHour for {CFG.get('sponsor', {}).get('price', '$25')}", "Sponsor a post")
     (OUT / ".nojekyll").write_text("")
 
     counts = {}
@@ -543,7 +569,7 @@ def build():
   <div class="eyebrow">{e(p['topic'])}</div>
   <h1>{e(p['title'])}</h1>
   <p class="dek">{e(p['dek'])}</p>
-  <div class="meta"><span>By <a href="/about/" rel="author">{e(AUTHOR)}</a></span><span class="sep"></span><a href="/about/#how-posts-are-made">Written with AI</a><span class="sep"></span><time datetime="{p['dt'].isoformat()}">{e(long_date(p['local']))}, {hour_label(p['local'])}</time><span class="sep"></span><span>{p['readMin']} min read</span></div>
+  <div class="meta"><span>By <a href="/about/" rel="author">{e(AUTHOR)}</a></span><span class="sep"></span><a href="/about/#how-posts-are-made">Written with AI</a><span class="sep"></span><time datetime="{p['dt'].isoformat()}">{e(long_date(p['local']))}, {hour_label(p['local'])}</time>{f'<span class="sep"></span><span>Updated {e(long_date(p["updated_dt"].astimezone(TZ)))}</span>' if p.get("updated_dt") else ''}<span class="sep"></span><span>{p['readMin']} min read</span></div>
   {keybox}
   <div class="body">{paras}</div>
   {srcs}
@@ -555,7 +581,7 @@ def build():
 </article>"""
         ld = [{
             "@context": "https://schema.org", "@type": "BlogPosting", "headline": p["title"], "description": p["dek"],
-            "datePublished": p["dt"].isoformat(), "dateModified": p["dt"].isoformat(),
+            "datePublished": p["dt"].isoformat(), "dateModified": (p.get("updated_dt") or p["dt"]).isoformat(),
             "mainEntityOfPage": p["url"], "url": p["url"], "articleSection": p["topic"],
             "keywords": ", ".join(p["keywords"]), "wordCount": sum(len(x.split()) for x in p["body"]),
             "author": person(), "publisher": person(), "inLanguage": "en-US",
@@ -626,13 +652,14 @@ def build():
     sp = CFG.get("sponsor", {})
     link = (sp.get("payment_link") or "").strip()
     price = sp.get("price", "$5")
-    cta = (f'<p><a class="sponsor-cta" href="{e(link)}" rel="noopener">Sponsor a post for {e(price)}</a></p>'
+    cta = (f'<p><a class="sponsor-cta" href="{e(link)}" rel="noopener">Become a founding sponsor for {e(price)}</a></p>'
            if link else '<p class="pagedek"><strong>Sponsorships open soon.</strong></p>')
     body = f"""<p class="sponsor" id="paid-note" hidden><strong>Thank you. Your payment went through.</strong> Your business will appear in one of the next day's posts, and you will receive a Stripe receipt by email.</p>
 <script>if(/[?&]paid=1/.test(location.search))document.getElementById('paid-note').hidden=false;</script>
 <h1 class="page">Feature your business on EveryHour</h1>
 <div class="post"><div class="body" style="border:0;padding-top:12px">
 <p>EveryHour publishes five practical posts a day for homeowners deciding on solar, batteries, heat pumps and other electric upgrades. For {e(price)}, your business can sponsor one of those posts.</p>
+<p><strong>Founding sponsor rate.</strong> EveryHour is new, so the first sponsors get a founding price of {e(price)} per post. The price will go up as readership grows, and founding sponsors keep their placement permanently.</p>
 <h2 class="day" style="color:var(--ink)">What you get</h2>
 <p>Your business name, a link to your website, and one sentence about what you do appear in a clearly labeled "Sponsored" box on one post. Each post has only one sponsor. The post stays on the site permanently, and it is included in the archive, the topic pages, the RSS feed and the sitemap.</p>
 <p>Where it makes sense, I match your business to a post about a related topic. A solar installer might appear on a post about batteries, and an HVAC company on a post about heat pumps. Your listing never changes what the post says.</p>

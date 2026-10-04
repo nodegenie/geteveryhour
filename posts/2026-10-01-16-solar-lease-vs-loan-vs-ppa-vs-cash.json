@@ -1,0 +1,64 @@
+{
+  "slug": "solar-lease-vs-loan-vs-ppa-vs-cash",
+  "title": "Solar lease vs loan vs PPA vs cash: tradeoffs and questions to ask",
+  "dek": "With cash or a loan you own the panels; with a lease or PPA a company does. How each option works in California and what to ask before you sign.",
+  "topic": "Money & Rebates",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "financing",
+    "solar loans",
+    "california",
+    "consumer protection"
+  ],
+  "keywords": [
+    "solar lease vs loan",
+    "solar ppa vs lease",
+    "solar loan dealer fee",
+    "should i lease or buy solar panels",
+    "solar escalator clause"
+  ],
+  "publishedAt": "2026-10-01T23:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "The CFPB found hidden fees on solar loans typically run 10% to 30% of the cash price and can exceed 50%.",
+    "Lease and PPA payments usually rise 1% to 3% a year through an escalator, according to the CPUC.",
+    "The IRS says the Residential Clean Energy Credit is not available for property placed in service after December 31, 2025.",
+    "In California you have at least three business days to cancel a solar contract, or five if you are 65 or older."
+  ],
+  "sources": [
+    {
+      "title": "California Solar Consumer Protection Guide Overview & FAQ",
+      "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/california-solar-consumer-protection-guide"
+    },
+    {
+      "title": "Issue Spotlight: Solar Financing",
+      "url": "https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-solar-financing/"
+    },
+    {
+      "title": "Residential Clean Energy Credit",
+      "url": "https://www.irs.gov/credits-deductions/residential-clean-energy-credit"
+    }
+  ],
+  "body": [
+    "How you pay for solar can matter as much as which panels you get. A 2024 report from the Consumer Financial Protection Bureau (CFPB) found hidden fees on solar loans that typically run 10% to 30% of the system's cash price and can exceed 50%. In the CFPB's example, a system with a $30,000 cash price and a 30% fee becomes a $39,000 loan.",
+    "California's Solar Consumer Protection Guide, from the California Public Utilities Commission (CPUC), sorts the options by one question: who owns the system.",
+    "Cash. You own the system. The CPUC guide says owning offers a greater return on investment and may add to your home's value, and that you are responsible for repairs and maintenance. There is no interest and no loan fee.",
+    "Loan. You also own the system and pay it off over time. The CPUC guide warns that some loans place a lien on your property. The CFPB found that lenders commonly file UCC liens on the panels, which can muddy your home's title and must be released or made subordinate to a mortgage, something that can come up when you refinance or sell.",
+    "The CFPB also found it is common for solar loans to re-amortize to a higher monthly payment at the 19th month unless you make a substantial prepayment, frequently 30% of the loan. Separately, check how a quote treats federal tax credits: the IRS says the Residential Clean Energy Credit is not available for any property placed in service after December 31, 2025.",
+    "Lease. The solar company owns the system and rents it to you for a scheduled monthly payment. There is little or no upfront cost, and the company handles maintenance. The tradeoff the CPUC names is that selling your home becomes more complicated.",
+    "Power purchase agreement (PPA). The solar company owns the system and sells you the electricity it produces at a fixed price per kilowatt-hour. You pay for all the power the system generates, whether or not you needed it at that moment.",
+    "Escalators. Lease and PPA payments typically rise every year under an escalation clause, which the CPUC says is usually 1% to 3% a year. As a hypothetical example, a $150 monthly payment with a 3% escalator would be about $263 a month in year 20.",
+    "Selling your home. With a lease or PPA, the CPUC guide says that if you sell before the contract ends, you will have to pay the company the remaining value or transfer the contract to the buyer.",
+    "PACE. A fifth path adds the cost to your property tax bill, and you own the system. The CPUC guide warns that PACE creates a first-priority lien on your property and that missed payments could lead to foreclosure.",
+    "Questions to ask before you sign:",
+    "Step 1: Ask for the cash price in writing, even if you plan to finance, and compare it with the total you would pay over the full term.",
+    "Step 2: Ask whether a dealer fee or markup is built into the loan amount, and how much it is.",
+    "Step 3: Ask whether the monthly payment changes at any point, such as month 19, and what it becomes if you do not make a prepayment.",
+    "Step 4: For a lease or PPA, ask for the escalator rate and the payment in the final year.",
+    "Step 5: Ask who repairs the system, whether any lien or UCC filing will be placed on your home, and what happens if you sell.",
+    "You also have time to change your mind. The CPUC says you have at least three business days to cancel a solar contract for any reason, or five business days if you are 65 or older.",
+    "One step for today: copy the five questions above into a note on your phone so you have them in front of you at the next sales meeting."
+  ]
+}

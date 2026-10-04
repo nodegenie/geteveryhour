@@ -1,0 +1,64 @@
+{
+  "slug": "how-big-a-battery-to-keep-essentials-on-in-an-outage",
+  "title": "How big a home battery do you need to keep essentials running?",
+  "dek": "Add up watts × hours for the fridge, lights, Wi-Fi and medical devices. One example comes to about 6 kWh a day, plus a startup surge.",
+  "topic": "Batteries",
+  "publisherNote": false,
+  "tags": [
+    "batteries",
+    "backup power",
+    "outages",
+    "california",
+    "solar"
+  ],
+  "keywords": [
+    "how big a battery do i need for an outage",
+    "battery backup for refrigerator",
+    "home battery sizing",
+    "kwh to run fridge during outage"
+  ],
+  "publishedAt": "2026-10-02T17:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Daily kWh = watts × hours used ÷ 1,000. Do it for each device and add them up.",
+    "PG&E lists a refrigerator at 700 W running and 2,200 W at startup; a home internet router at 5 W.",
+    "A fridge compressor runs about a third of the time, so 700 W works out to about 5.6 kWh a day.",
+    "In the example, fridge, four LED bulbs, router and phone charging total about 6 kWh a day.",
+    "Check two specs: usable energy (kWh) for how long, and power output (kW) for startup surges."
+  ],
+  "sources": [
+    {
+      "title": "Backup Power Transfer Meter Manual (PG&E)",
+      "url": "https://www.pge.com/assets/pge/docs/outages-and-safety/outage-preparedness-and-support/backup-power-transfer-meter-manual.pdf"
+    },
+    {
+      "title": "ENERGY SERIES: Estimating Appliance and Home Electronic Energy Use",
+      "url": "https://www.pubs.ext.vt.edu/2901/2901-9014/2901-9014.html"
+    },
+    {
+      "title": "Shopping for Light Bulbs",
+      "url": "https://consumer.ftc.gov/articles/shopping-light-bulbs"
+    }
+  ],
+  "body": [
+    "When the power goes out for a day or two, most people care about a short list: the food in the fridge, a few lights, the internet, phones and any medical device. That list is far smaller than a whole house, and you can estimate how much battery it needs with one formula and a few numbers from official sources.",
+    "Two numbers matter. Energy, in kilowatt-hours (kWh), decides how long a battery lasts. Power, in kilowatts (kW) or watts (W), decides how many things it can run at the same moment. Some appliances, like a refrigerator, briefly pull much more power when they start.",
+    "The formula. Virginia Cooperative Extension's guide, developed with the U.S. Department of Energy's building science program, uses: watts × hours used per day ÷ 1,000 = daily kWh. For a refrigerator, it notes that the compressor does not run all the time, and suggests dividing the hours it is plugged in by three.",
+    "Example calculation (for illustration, using conservative published wattages):",
+    "Refrigerator: PG&E's backup power manual lists 700 W running. Running about 8 of 24 hours: 700 × 8 ÷ 1,000 = 5.6 kWh.",
+    "Lights: the FTC says an LED bulb making the same 800 lumens as an old 60-watt bulb uses about 9 W. Four bulbs for 5 hours: 4 × 9 × 5 ÷ 1,000 = 0.18 kWh.",
+    "Internet: PG&E lists a home internet router at 5 W. All day: 5 × 24 ÷ 1,000 = 0.12 kWh.",
+    "Phones: PG&E lists a cell phone charger at 25 W. Two hours: 25 × 2 ÷ 1,000 = 0.05 kWh.",
+    "Total: about 5.95 kWh, so call it 6 kWh a day. For two days without sun to recharge, that is about 12 kWh before any losses. For scale, Tesla's datasheet lists the Powerwall 3 at 13.5 kWh of nominal energy, so these loads would fit in a battery of that size with a little room to spare. Your own numbers will differ.",
+    "The startup surge. PG&E lists a refrigerator's surge at 2,200 W. Add the other running loads and this example needs about 2.3 kW for a moment when the fridge kicks on. A battery's spec sheet lists its power output in kW; compare it with your biggest startup load.",
+    "Medical devices. Do not guess. Read the wattage on the device's label or power supply, multiply by the hours you use it each day, and add it to your total. Ask the device maker or your care provider how long it must run without interruption, and size for the longest outage you want to cover.",
+    "Why your fridge may use less. The 700 W figure is a conservative planning number. If your refrigerator has an EnergyGuide label or you can find it by model number, use its energy figure instead.",
+    "How to size your own:",
+    "Step 1: List only the devices you truly need during an outage.",
+    "Step 2: Find each one's wattage on its nameplate or label, and estimate hours per day.",
+    "Step 3: Multiply, divide by 1,000 and add. Then multiply by the number of days you want to cover.",
+    "Step 4: Note the largest startup surge and ask installers to show both the usable kWh and the power rating on their quotes, along with which circuits will be backed up.",
+    "Today's next step: walk your kitchen and write down the wattage label on your refrigerator, router and any medical device."
+  ]
+}

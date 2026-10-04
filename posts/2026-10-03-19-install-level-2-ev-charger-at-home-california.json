@@ -1,0 +1,56 @@
+{
+  "slug": "install-level-2-ev-charger-at-home-california",
+  "title": "Installing a Level 2 EV charger at home in California",
+  "dek": "A Level 2 charger needs a 240-volt circuit, often a permit and enough panel capacity. California cities must offer a streamlined charger permit.",
+  "topic": "Electric Home",
+  "publisherNote": false,
+  "tags": [
+    "ev charging",
+    "permits",
+    "california",
+    "electrical panel"
+  ],
+  "keywords": [
+    "install level 2 ev charger at home california",
+    "ev charger permit california",
+    "ev charger panel capacity",
+    "ev charger rebate california"
+  ],
+  "publishedAt": "2026-10-04T02:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Level 2 charging needs a 240-volt circuit, installed by a qualified electrician.",
+    "State law (AB 1236 and AB 970) requires every California city and county to streamline EV charger permits.",
+    "For 1 to 25 chargers at one site, a city must check completeness within 5 business days and decide within 20.",
+    "The federal 30C charger credit ended for equipment placed in service after June 30, 2026.",
+    "PG&E's Empower EV program closed on December 31, 2024. Check DriveClean and your utility for current offers."
+  ],
+  "sources": [
+    {
+      "title": "Charging Electric Vehicles at Home | Alternative Fuels Data Center",
+      "url": "https://www.afdc.energy.gov/fuels/electricity-charging-home"
+    },
+    {
+      "title": "Plug-in Readiness Frequently Asked Questions | California Governor's Office of Business and Economic Development",
+      "url": "https://business.ca.gov/industries/zero-emission-vehicles/plug-in-readiness/frequently-asked-questions"
+    },
+    {
+      "title": "FAQs for modification of sections 25C, 25D, 25E, 30C, 30D, 45L, 45W, and 179D under Public Law 119-21 (One, Big, Beautiful Bill)",
+      "url": "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-obbb"
+    }
+  ],
+  "body": [
+    "Most EV drivers do their charging at home overnight, and a Level 2 charger is the usual upgrade from plugging into a regular outlet. The job is simple on some homes and involved on others. The difference usually comes down to one thing: how much spare capacity your electrical panel has.",
+    "What Level 2 needs. Level 2 charging runs on a 240-volt circuit. The Department of Energy's Alternative Fuels Data Center says a qualified electrician can add the circuit and can tell you whether your home has enough electrical capacity for charging. It recommends safety-certified equipment, such as ENERGY STAR certified chargers, which are tested by a nationally recognized testing laboratory.",
+    "Permits in California. Installations must meet local and state codes, and a permit may be required. Under AB 1236 (2015) and AB 970 (2021), every city and county must streamline EV charger permits by limiting review to health and safety. That includes an online checklist, electronic signatures and electronic submittal, and one complete set of comments if anything is missing. For projects with 1 to 25 chargers at one site, the application must be checked for completeness within 5 business days and approved or denied within 20 business days. The same checklist applies to homes and businesses.",
+    "Rebates and credits, as checked in October 2026. The federal Alternative Fuel Vehicle Refueling Property Credit (section 30C), which covered home chargers, is not allowed for property placed in service after June 30, 2026, according to the IRS. PG&E's Empower EV program, which gave income-qualified customers a free Level 2 charger and up to $2,000 toward a panel upgrade, closed on December 31, 2024. Some utilities and local programs still offer help, and they change often. The California Air Resources Board's DriveClean site has an incentive search you can filter by charger incentives and household income.",
+    "How the job usually goes:",
+    "Step 1: Note where you park, where the panel is, and the main breaker size printed on the panel.",
+    "Step 2: Have a licensed electrician check whether your panel can handle a new 240-volt circuit or needs an upgrade. If capacity is tight, ask what your options are before agreeing to a full panel upgrade.",
+    "Step 3: Choose a charger that is safety certified, and decide whether you want smart features such as charging timers.",
+    "Step 4: The electrician pulls the permit using your city's checklist, installs the circuit and charger, and schedules the inspection.",
+    "Step 5: Ask your utility about time-of-use or EV rates. The data center notes some utilities offer lower prices for charging at certain hours, which can matter more than the charger itself.",
+    "Today's next step: take a photo of your electrical panel label and main breaker, so any electrician you call can give you a better first answer."
+  ]
+}

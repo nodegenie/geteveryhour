@@ -1,0 +1,59 @@
+{
+  "slug": "do-you-need-a-panel-upgrade-to-go-electric",
+  "title": "Do you need a panel upgrade to go electric? Options to compare",
+  "dek": "Many homes with a 100-amp panel can add a heat pump, EV charger and induction without an upgrade, using lower-power appliances and load sharing.",
+  "topic": "Electric Home",
+  "publisherNote": false,
+  "tags": [
+    "panel upgrade",
+    "heat pumps",
+    "ev chargers",
+    "induction",
+    "california"
+  ],
+  "keywords": [
+    "do i need a panel upgrade for a heat pump",
+    "100 amp panel ev charger",
+    "smart panel vs panel upgrade",
+    "avoid electrical panel upgrade"
+  ],
+  "publishedAt": "2026-10-02T20:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Check panel size on the meter box label, the main breaker or the panel label (PG&E).",
+    "Under 100 amps usually means an upgrade; 100 to 150 amps can often be fully electrified with planning (Rewiring America).",
+    "Upgrades typically run $2,000 to $4,000, and $5,000 to $25,000 if utility service or a transformer must change.",
+    "Alternatives: 120-volt appliances, circuit sharing devices, smart panels or breakers, and Level 1 or lower-amp EV charging.",
+    "An electrician can use your PG&E interval data to find your real peak demand."
+  ],
+  "sources": [
+    {
+      "title": "Your home electrification project: How to switch to electric appliances (PG&E)",
+      "url": "https://www.pge.com/assets/pge/docs/clean-energy/building-electrification/home-electrification-avoid-electrical-panel-upgrade.pdf"
+    },
+    {
+      "title": "Pros and cons of a panel upgrade",
+      "url": "https://homes.rewiringamerica.org/articles/electrical-panel/electrical-panel-upgrade-pros-cons"
+    },
+    {
+      "title": "Yes, you can “KonMari” your electric panel",
+      "url": "https://www.switchison.org/learn/articles/you-might-not-need-a-panel-upgrade"
+    }
+  ],
+  "body": [
+    "A contractor quoting a heat pump or EV charger may tell you the electrical panel has to go first, and that can add thousands of dollars and months of waiting. Sometimes it is true. Often there is another way, and it helps to know the numbers before you agree to either.",
+    "What an upgrade costs. Rewiring America puts a standard panel upgrade at typically $2,000 to $4,000. If the utility also has to upgrade your service line or transformer, it lists $5,000 to $25,000, with underground service among the most expensive. Utility coordination can also mean months-long scheduling delays in some regions.",
+    "When an upgrade is likely. Rewiring America says a panel under 100 amps, such as 40 or 60 amps, will likely need one, as will a panel that is very old, degraded or unsafe. With 100 to 150 amps, it says full electrification is usually possible with planning. Above 150 amps, it is usually feasible without much special planning.",
+    "How to find your panel size. PG&E suggests three places to look: a label on your utility meter box outside, the amp rating on your panel's main breaker, or a label on the panel itself. PG&E notes that older homes can have anywhere from 60 to 150 amps, and homes built after about 1960 often have 200 amps or more.",
+    "The real question is your peak use. A load calculation compares what your appliances could draw with what your panel can carry. PG&E's guide says to find each appliance's wattage on its nameplate, and to have an electrician use your PG&E interval data to find your actual maximum demand. To turn watts into amps, divide by volts. For example, the 2,362-watt, 240-volt heat pump water heater in PG&E's sample works out to about 9.8 amps.",
+    "Ways to fit more on the same panel:",
+    "Choose lower-power appliances. PG&E's sample project lists a 120-volt heat pump water heater at 998 watts, and a heat pump dryer at 1,800 watts. The Switch Is On notes that a resistance dryer uses almost three times as much power as a heat pump dryer.",
+    "Share a circuit. PG&E describes circuit sharing devices that automatically prioritize loads, for example pausing the EV charger when another big appliance is running.",
+    "Go low and slow on EV charging. The Switch Is On points out that many commuters can get by on a 15-amp Level 1 circuit instead of a 50-amp Level 2 circuit.",
+    "Use smarter hardware. Smart panels give real-time usage and can manage loads; smart breakers control individual circuits; slim breakers can free up space when the panel is out of slots.",
+    "What this can add up to. In PG&E's sample 100-amp home, the standard approach would need an upgrade to 125 amps, while the planned approach with smart devices fit without one. PG&E estimates avoiding an upgrade could save $2,000 to $6,000. The Switch Is On describes a 100-amp panel planned to run a heat pump, heat pump dryer, heat pump water heater and EV charger at 99.7 amps.",
+    "Every home is different, and the final call belongs to a licensed electrician and your local building department.",
+    "Today's next step: find your panel's amp rating and ask any contractor quoting you to show a written load calculation before recommending an upgrade."
+  ]
+}

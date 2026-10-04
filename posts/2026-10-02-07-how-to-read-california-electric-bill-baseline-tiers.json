@@ -1,0 +1,60 @@
+{
+  "slug": "how-to-read-california-electric-bill-baseline-tiers",
+  "title": "How to read your California electric bill: baseline and tiers",
+  "dek": "Your first block of electricity each month, the baseline allowance, is the cheapest. Use above it and every extra kWh costs more.",
+  "topic": "Your Bill",
+  "publisherNote": false,
+  "tags": [
+    "bills",
+    "pg&e",
+    "sce",
+    "california",
+    "rates"
+  ],
+  "keywords": [
+    "how to read pg&e bill",
+    "what is baseline allowance",
+    "sce tier 1 tier 2",
+    "california electric bill tiers",
+    "base services charge"
+  ],
+  "publishedAt": "2026-10-02T14:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "Baseline allowance = your daily kWh amount × days in the billing cycle. It depends on your region, season and heating type.",
+    "On tiered plans, use above baseline moves you to Tier 2. SCE lists about 30¢ vs 39¢ per kWh as of Oct. 1, 2026.",
+    "SCE adds a 79¢ daily Base Services Charge, even if you use zero kWh.",
+    "PG&E prints your Baseline Territory under Service Information on page 3 of your bill.",
+    "Electric winter season runs Oct. 1 to May 31 for PG&E and SCE, so allowances just changed."
+  ],
+  "sources": [
+    {
+      "title": "Baseline Allowance",
+      "url": "https://www.pge.com/en/account/rate-plans/how-rates-work/baseline-allowance.html"
+    },
+    {
+      "title": "Tiered Rate Plan for Energy",
+      "url": "https://www.sce.com/save-money/rates-financing/residential-rate-plans/tiered-rate-plan"
+    },
+    {
+      "title": "Understanding Your Tiered Bill (SCE)",
+      "url": "https://www.sce.com/sites/default/files/custom-files/PDF_Files/Tiered_Bill_Guide_20251113.pdf"
+    }
+  ],
+  "body": [
+    "If your electric bill jumped and you did not change much at home, the answer is often printed on the bill itself. California's big utilities sell you a first block of electricity each month at their lowest price. That block is called your baseline allowance, and once you use more than it, the price per kilowatt-hour (kWh) goes up.",
+    "What a baseline allowance is. PG&E describes it as the amount of energy sold at the lowest price. It depends on three things: where you live (your baseline territory or region), whether your home heats with electricity or gas, and the season. The math is simple: your daily allowance times the number of days in your billing cycle. PG&E applies it on its Tiered Rate Plan (E-1) and on its E-TOU-C and E-TOU-D time-of-use plans.",
+    "Why your bill can change this month. For both PG&E and SCE, the electric summer season runs June 1 through September 30, and winter runs October 1 through May 31. Your daily allowance switches with the season, so a bill that spans the start of October is built on two sets of numbers.",
+    "How tiers work. SCE's Tiered Rate Plan (Schedule D) starts every billing period at the Tier 1 price. When you pass your baseline allocation, the rest of your usage is billed at the higher Tier 2 price. SCE's page, showing rates as of October 1, 2026, lists about 30 cents per kWh for Tier 1 and 39 cents for Tier 2, plus a 79-cent daily Base Services Charge. Those prices are for customers who get both delivery and generation from SCE, and other charges also appear on the bill.",
+    "An example with SCE's numbers. SCE gives baseline region 10 a winter allocation of 12.1 kWh a day. For example, a home in region 10 with a 30-day winter bill gets 363 kWh at Tier 1. If that home uses 500 kWh, the energy part of the bill works out roughly like this: 363 kWh × $0.30 = $108.90, plus 137 kWh × $0.39 = $53.43, plus 30 days × $0.79 = $23.70. That is about $186 before taxes and other line items. Every kWh you trim above 363 saves about 39 cents in this example, more than a kWh trimmed inside the allowance would.",
+    "All-electric homes. SCE lists larger winter allocations for homes that heat with electricity. In region 10 it is 16.4 kWh a day instead of 12.1, which is worth checking if you recently switched to a heat pump.",
+    "How to read your own bill:",
+    "Step 1: Find your rate plan and billing period. SCE shows these together on the bill; check the plan name before comparing anything.",
+    "Step 2: Find your territory or region. On a PG&E bill, your Baseline Territory is under Service Information on page 3. SCE customers can match their community to a region number using the map on SCE's Tiered Rate Plan page.",
+    "Step 3: Multiply your daily allowance by the days in the billing period, and compare it with the kWh you used.",
+    "Step 4: Look at the delivery and generation sections. SCE's bill guide explains that delivery charges are the cost of bringing power to you and generation charges are the cost of producing it. The SCE prices above are for customers who get both delivery and generation from SCE, so if another provider supplies your generation, check its rates for that part.",
+    "Rates change, so use the numbers on your own bill and your utility's current rate page. If something looks wrong, SCE's bill guide includes a disputed-bills section with how to contact the utility or the CPUC.",
+    "Today's next step: open your latest bill, find your territory and billing days, and do the Step 3 math to see how much of last month was Tier 2."
+  ]
+}

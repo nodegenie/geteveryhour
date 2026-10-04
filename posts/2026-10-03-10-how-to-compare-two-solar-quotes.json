@@ -1,0 +1,56 @@
+{
+  "slug": "how-to-compare-two-solar-quotes",
+  "title": "How to compare two solar quotes: price per watt and beyond",
+  "dek": "Divide each quote's price by its size in watts, then compare production estimates, equipment, warranties and financing terms line by line.",
+  "topic": "Solar",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "quotes",
+    "california",
+    "installers"
+  ],
+  "keywords": [
+    "how to compare solar quotes",
+    "solar price per watt",
+    "solar quote red flags",
+    "solar energy system disclosure document"
+  ],
+  "publishedAt": "2026-10-03T17:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Price per watt is the total system cost divided by the system size in watts. It is the fairest first comparison.",
+    "The CPUC recommends bids from at least 3 solar providers and notes the cheapest bid is not always the best one.",
+    "California installers must give you a Solar Energy System Disclosure Document showing total costs.",
+    "You can cancel within 3 business days, or 5 if you are 65 or older.",
+    "The federal 25D credit ended for systems installed after December 31, 2025. Question any quote that counts it for a home you own."
+  ],
+  "sources": [
+    {
+      "title": "California Solar Consumer Protection Guide (CPUC, 2025)",
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/solar-guide/2025-versions/solarguide25.pdf"
+    },
+    {
+      "title": "Decisions, Decisions: Choosing a Solar Installer",
+      "url": "https://www.energy.gov/cmei/systems/articles/decisions-decisions-choosing-solar-installer"
+    },
+    {
+      "title": "Residential Clean Energy Credit | Internal Revenue Service",
+      "url": "https://www.irs.gov/credits-deductions/residential-clean-energy-credit"
+    }
+  ],
+  "body": [
+    "Two solar quotes can differ by thousands of dollars and still be hard to compare, because one system is bigger, one uses different panels and one comes with a loan. The California Public Utilities Commission recommends getting bids from at least three solar providers, and it warns that the cheapest bid is not necessarily the best. Here is a way to line them up fairly.",
+    "Step 1: Convert each quote to price per watt. The U.S. Department of Energy suggests dividing the cost of the system by its capacity in watts. A 7.2 kW system is 7,200 watts.",
+    "Step 2: Compare the production estimates. Each quote should estimate how many kilowatt-hours (kWh) the system will make in a year. Divide that by the system size in kW. If one installer's estimate is much higher per kW for the same roof, ask what assumptions it used. You can check estimates yourself with PVWatts, a calculator from the Department of Energy's national lab at pvwatts.nrel.gov.",
+    "Step 3: Compare equipment. Note the panel and inverter brands and models on each quote. The Department of Energy suggests asking installers which modules they use and why.",
+    "Step 4: Compare warranties. Ask each installer, in writing, what is covered if a component fails or the system has problems after installation, and who you call. Ask about both the equipment and the installation work.",
+    "Step 5: Compare the financing, if any. For a loan, compare the interest rate, term, monthly payment and the total you will pay over the life of the loan. Loans, leases and power purchase agreements all come with a monthly bill on top of your utility bill.",
+    "Step 6: Read the disclosure document. California law requires providers to give you a Solar Energy System Disclosure Document, created by the Contractors State License Board, that shows the total cost and other financial details. Make sure each quote's numbers match its disclosure.",
+    "A labeled example. These are made-up round numbers to show the math, not market prices. Quote A is a 7.2 kW system for $21,600, which is $3.00 per watt, with an estimated 10,800 kWh a year (1,500 kWh per kW). Quote B is a 6.4 kW system for $20,480, which is $3.20 per watt, with an estimated 10,880 kWh a year (1,700 kWh per kW). Quote B looks like more energy for less money until you notice its production estimate per kW is much higher for the same roof. That is a question to put to Installer B before comparing anything else.",
+    "Red flags. The CPUC's guide warns about claims of free solar, promises that you will never have another electric bill, pressure to sign immediately, and claims that you can get business tax credits through an LLC; it says homeowners getting solar or storage at home will not qualify for business tax credits. Also be careful with any quote that subtracts a 30% federal tax credit for a system you will own. The IRS says the Residential Clean Energy Credit is not available for property placed in service after December 31, 2025.",
+    "If you sign and change your mind, you have at least three business days to cancel for any reason, or five if you are 65 or older.",
+    "Today's next step: put your quotes side by side and write the price per watt and kWh per kW at the top of each one."
+  ]
+}

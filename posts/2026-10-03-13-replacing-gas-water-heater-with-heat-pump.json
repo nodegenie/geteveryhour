@@ -1,0 +1,54 @@
+{
+  "slug": "replacing-gas-water-heater-with-heat-pump",
+  "title": "Replacing a gas water heater with a heat pump: what to know",
+  "dek": "A heat pump water heater moves heat from the air into the tank. Plan for space, cool exhaust air, a condensate drain and the right electrical circuit.",
+  "topic": "Heat Pumps",
+  "publisherNote": false,
+  "tags": [
+    "heat pump water heater",
+    "heat pumps",
+    "electrification",
+    "california"
+  ],
+  "keywords": [
+    "heat pump water heater replace gas",
+    "heat pump water heater space requirements",
+    "heat pump water heater 240 volt",
+    "120 volt heat pump water heater"
+  ],
+  "publishedAt": "2026-10-03T20:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Heat pump water heaters can be 2 to 3 times more efficient than standard electric water heaters, per the Department of Energy.",
+    "ENERGY STAR says a household of four could save about $550 a year compared with a standard electric model.",
+    "Space guidance varies: ENERGY STAR cites at least 450 cubic feet of air; the Department of Energy cites 1,000. Check your model's manual.",
+    "Most need a 240-volt supply; 120-volt plug-in models are emerging and may avoid electrical upgrades.",
+    "Plan for a condensate drain, cooler air near the unit, and a capped gas line."
+  ],
+  "sources": [
+    {
+      "title": "Heat Pump Water Heaters | Department of Energy",
+      "url": "https://www.energy.gov/energysaver/heat-pump-water-heaters"
+    },
+    {
+      "title": "What Goes into the Cost of Installing a Heat Pump Water Heater? | ENERGY STAR",
+      "url": "https://www.energystar.gov/products/ask-the-experts/what-goes-cost-installing-heat-pump-water-heater"
+    },
+    {
+      "title": "All About Heat Pump Water Heaters - NYSERDA",
+      "url": "https://www.nyserda.ny.gov/Featured-Stories/All-About-Heat-Pump-Water-Heaters"
+    }
+  ],
+  "body": [
+    "Water heaters tend to fail without warning, and that is the worst time to learn that switching from gas to a heat pump model takes some planning. ENERGY STAR estimates a household of four could save about $550 a year on energy with a certified heat pump water heater compared with a standard electric one. Getting that result starts with knowing what the unit needs.",
+    "How it works. A heat pump water heater pulls heat from the surrounding air and moves it, at a higher temperature, into the water in its tank. Because it moves heat instead of making it, the Department of Energy says it can be two to three times more efficient than a conventional electric resistance water heater. Most are hybrids, with standard electric elements that can help when you use a lot of hot water at once.",
+    "It needs air. The unit draws its heat from the room, so room size matters. ENERGY STAR says these units need at least 450 cubic feet of surrounding air space. The Department of Energy's guidance is more cautious, at 1,000 cubic feet, in a space that stays between 40 and 90 degrees Fahrenheit year-round. Because the advice differs, check the installation manual for the model you are considering. A garage or basement often works. A small closet may need louvered doors or ducting.",
+    "It makes the room cooler. The unit releases cooler air as it works. The Department of Energy notes it will not run efficiently in a cold space, while a warm space, such as a room with a furnace, improves its efficiency. A garage that stays mild can work well; one that gets very cold in winter will cut efficiency.",
+    "It makes some noise and some water. ENERGY STAR says most new models run at about 45 to 60 decibels, so a closet next to a bedroom may not be the best spot. They also produce condensation, which needs a drain, and ENERGY STAR notes that can add cost.",
+    "The electrical question. A gas water heater usually has no 240-volt circuit nearby. ENERGY STAR says a 240-volt supply needs to be available at the installation site, and if you are switching from a fuel-based water heater, you may need more electrical capacity at your breaker panel. NYSERDA notes that 120-volt models that plug into a standard outlet are now emerging, which could avoid some electrical upgrades. Ask your installer whether one fits your household's hot water needs.",
+    "What it costs. ENERGY STAR's figures for a gas-to-electric switch are $1,500 to $3,000 for the unit and $1,000 to $3,000 for installation labor and materials, before rebates. The installer must also cap the gas line, which ENERGY STAR describes as usually a small cost. Your city may require an electrical permit.",
+    "Rebates change often. Check your utility and the TECH Clean California site for what is open now, and ask any installer whether a rebate shown in a quote is actually reserved.",
+    "Today's next step: measure the space around your current water heater (length times width times height) and note whether there is an outlet or a 240-volt circuit nearby, so you can share both with installers."
+  ]
+}

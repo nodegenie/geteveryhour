@@ -1,0 +1,55 @@
+{
+  "slug": "california-base-services-charge-fixed-charge",
+  "title": "California's $24 fixed electric charge: who pays and how much",
+  "dek": "PG&E, SCE and SDG&E bills now carry a monthly Base Services Charge of about $24, or $6 to $12 for CARE and FERA households, with lower per-kWh prices.",
+  "topic": "Rules & What's Next",
+  "publisherNote": false,
+  "tags": [
+    "fixed charge",
+    "pg&e",
+    "sce",
+    "sdg&e",
+    "california"
+  ],
+  "keywords": [
+    "base services charge",
+    "california fixed charge electric bill",
+    "income graduated fixed charge",
+    "pg&e $24 fixed charge",
+    "sce base services charge"
+  ],
+  "publishedAt": "2026-10-02T02:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 2,
+  "keyPoints": [
+    "SCE lists $24.15 a month for most customers, $12.08 for FERA and $6.00 for CARE, charged daily.",
+    "SDG&E started in October 2025, SCE in November 2025 and PG&E in March 2026.",
+    "SDG&E cut delivery rates by roughly 5 cents per kWh; SCE says its per-kWh cost fell about 10%.",
+    "Solar customers pay the charge too, according to SCE and SDG&E."
+  ],
+  "sources": [
+    {
+      "title": "PG&E's Restructured Electric Bill: Base Services Charge",
+      "url": "https://www.pge.com/en/newsroom/currents/energy-savings/pg-e-s-restructured-electric-bill-debuts-in-march-2026-.html"
+    },
+    {
+      "title": "Base Service Charge",
+      "url": "https://www.sce.com/save-money/rates-financing/residential-rate-plans/bsc"
+    },
+    {
+      "title": "Base Services Charge",
+      "url": "https://www.sdge.com/electric-billing"
+    }
+  ],
+  "body": [
+    "Bills from California's three big investor-owned electric utilities now include a flat monthly line called the Base Services Charge. For most households it is about $24 a month, and the price per kilowatt-hour (kWh) was lowered to offset it.",
+    "What it is. The California Public Utilities Commission approved this income-graduated fixed charge in May 2024. It moves some fixed costs of serving every home, such as meters, transformers and customer service, out of the per-kWh price and into a set monthly amount. PG&E says the change does not increase the revenue it collects from customers.",
+    "How much. SCE lists $24.15 a month for customers not enrolled in assistance programs, $12.08 for FERA customers and $6.00 for CARE customers, charged as a daily amount. SDG&E and PG&E list about $24, $12 for FERA and qualifying deed-restricted affordable housing, and $6 for CARE.",
+    "When it started. SDG&E began in October 2025, SCE in November 2025, and PG&E in March 2026.",
+    "What changed per kWh. SDG&E says it cut volumetric delivery rates by about 10%, roughly 5 cents per kWh. SCE says the per-kWh cost fell by approximately 10%.",
+    "Will your bill go up or down? The charge is the same whether you use a little or a lot, while the per-kWh savings grow with use. As a labeled example using SDG&E's figure, a home using 480 kWh a month would save about $24 from a 5-cent cut, roughly matching the full charge. Homes using more would save more than the charge, and homes using less would save less. PG&E notes that, because usage varies, lower prices may or may not lead to a lower total bill. Households adding a heat pump or EV use more kWh, so the lower price applies to more of their bill.",
+    "Solar customers pay it too. SCE and SDG&E both say solar customers still rely on the grid and pay the same charge.",
+    "PG&E says customers enrolled in CARE or FERA are automatically billed at the discounted level.",
+    "One step for today: find the Base Services Charge line on your latest bill. If it shows the full amount and your household income may qualify for CARE or FERA, apply through your utility for the lower level."
+  ]
+}

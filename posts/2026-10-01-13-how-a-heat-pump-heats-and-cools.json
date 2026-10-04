@@ -1,0 +1,59 @@
+{
+  "slug": "how-a-heat-pump-heats-and-cools",
+  "title": "How a heat pump heats and cools, and what to know before you switch",
+  "dek": "A heat pump moves heat instead of making it, so one system can replace a furnace and an AC. Here is how it works and what to check before you replace yours.",
+  "topic": "Heat Pumps",
+  "publisherNote": false,
+  "tags": [
+    "heat pumps",
+    "hvac",
+    "furnace",
+    "electrification",
+    "california"
+  ],
+  "keywords": [
+    "how does a heat pump work",
+    "replace furnace and ac with heat pump",
+    "heat pump manual j sizing",
+    "heat pump vs gas furnace",
+    "seer2 hspf2"
+  ],
+  "publishedAt": "2026-10-01T20:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "In winter a heat pump can deliver up to three times more heat energy than the electricity it uses, per ENERGY STAR.",
+    "Ask for a Manual J load calculation; the DOE checklist calls for equipment chosen with Manual S from Manual J loads.",
+    "Leaky ducts can cut efficiency by up to 30%, and so can a poor installation.",
+    "The DOE checklist lists federal minimums of 14.3 SEER2 for cooling and 7.5 HSPF2 for heating.",
+    "Ask whether your electrical service can carry the added load before you sign."
+  ],
+  "sources": [
+    {
+      "title": "Air-Source Heat Pumps",
+      "url": "https://www.energy.gov/energysaver/air-source-heat-pumps"
+    },
+    {
+      "title": "Clean Heating and Cooling",
+      "url": "https://www.energystar.gov/products/energy_star_home_upgrade/clean_heating_cooling"
+    },
+    {
+      "title": "Heat Pump Space Heating Permitting & Inspection Checklist",
+      "url": "https://bsesc.energy.gov/sites/default/files/2024-10/HP-Space-Heating-Permitting-and-Inspection-Checklist.pdf"
+    }
+  ],
+  "body": [
+    "If your furnace and air conditioner are both getting old, you may be looking at two big replacement bills. A heat pump does both jobs with one system, and ENERGY STAR says that in winter it can deliver up to three times more heat energy than the electrical energy it uses.",
+    "How it works. In summer a heat pump cools the way a central air conditioner does, pulling heat out of the house and releasing it outside. In winter it runs in reverse. The U.S. Department of Energy explains that liquid refrigerant in the outdoor coil absorbs heat from the outside air and evaporates into a gas, and the indoor coil releases that heat into your home as the refrigerant condenses back into a liquid. Cool outdoor air still holds heat that can be moved indoors.",
+    "That is why the efficiency numbers look unusual. A gas furnace makes heat by burning fuel, and an electric space heater makes it by running current through a heating element. A heat pump moves heat that already exists outdoors, so it can deliver more heat energy than the electric energy it consumes. For example, at the three-to-one ratio ENERGY STAR describes, 1 kWh of electricity would bring about 3 kWh worth of heat into your home.",
+    "ENERGY STAR also notes that a central air conditioner can usually be replaced with a heat pump for a modest additional cost, which could let you remove or downsize your furnace. If your AC is the one that fails first, that is worth knowing before an emergency replacement.",
+    "Before you replace your furnace and AC, here is what to ask.",
+    "Step 1: Ask for a load calculation. ENERGY STAR advises having your contractor size the system using Manual J, a calculation of how much heating and cooling your home needs. A Department of Energy permitting and inspection checklist says the equipment should be selected with ACCA Manual S based on those Manual J loads.",
+    "Step 2: Check your ducts. A ducted heat pump can use your existing ductwork, and ENERGY STAR says poorly sealed ducts can cost up to 30% in efficiency, so ask whether yours will be tested or sealed. If you have no ducts, or want to heat one room or an addition, DOE says ductless mini-splits need only about a three-inch hole through the wall to connect the outdoor unit to the indoor heads.",
+    "Step 3: Ask about your electrical panel. The DOE checklist calls for showing, with an electrical load calculation, that your service rating can handle the home's load. Moving heat from gas to electricity adds load, so ask the contractor whether your panel can carry it or whether an upgrade is needed, and get that answer before you sign.",
+    "Step 4: Ask how backup heat works. Many systems include electric resistance backup heat. The DOE checklist says controls should keep that backup off when the heat pump can meet the heating load on its own, except during defrost. If you live where winters get very cold, ask about a cold climate heat pump, which ENERGY STAR says is designed to work at low outdoor temperatures without a furnace.",
+    "Step 5: Compare efficiency ratings. SEER2 rates cooling and HSPF2 rates heating; higher numbers are more efficient. The DOE checklist lists the federal minimums as 14.3 SEER2 and 7.5 HSPF2. DOE also suggests looking for the ENERGY STAR label.",
+    "Step 6: Check the installation plan. ENERGY STAR says improper installation can reduce efficiency by up to 30% and suggests installers with recognized HVAC certification, such as NATE. A permitted job also gets an inspection, which covers items like sizing, refrigerant lines, condensate drains and backup heat controls on the DOE checklist.",
+    "One step for today: write down the brand, model number and install date from the labels on your current furnace and AC. Any contractor you call will ask for them, and having them ready makes it easier to compare answers to the questions above."
+  ]
+}

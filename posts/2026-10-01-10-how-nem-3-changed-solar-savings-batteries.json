@@ -1,0 +1,57 @@
+{
+  "slug": "how-nem-3-changed-solar-savings-batteries",
+  "title": "NEM 3.0 explained: why California solar now pairs with batteries",
+  "dek": "New solar customers of California's big utilities earn far less for power sent to the grid, so storing it for evening use is worth more than it was.",
+  "topic": "Solar",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "batteries",
+    "nem 3.0",
+    "pg&e",
+    "california"
+  ],
+  "keywords": [
+    "nem 3.0 explained",
+    "net billing tariff california",
+    "solar billing plan pg&e",
+    "is solar worth it nem 3.0",
+    "solar battery nem 3.0"
+  ],
+  "publishedAt": "2026-10-01T17:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "PG&E's Solar Billing Plan covers customers who applied to connect after April 14, 2023.",
+    "Export credits vary by hour, day and month and are set through a CPUC proceeding.",
+    "pv magazine puts the cut in export credits at roughly 75% to 80% compared with NEM 2.0.",
+    "PG&E customers who enroll by December 31, 2027 can earn an extra Energy Export Bonus Credit for nine years.",
+    "Older NEM customers move to the Solar Billing Plan when their 20-year agreement ends; PG&E began those moves in March 2026."
+  ],
+  "sources": [
+    {
+      "title": "Solar Billing Plan",
+      "url": "https://www.pge.com/en/clean-energy/solar/getting-started-with-solar/solar-billing-plan.html"
+    },
+    {
+      "title": "For residential customers Solar Billing Plan guide",
+      "url": "https://www.pge.com/assets/pge/localized/en/docs/clean-energy/solar/pge-solar-billing-plan-guide.pdf"
+    },
+    {
+      "title": "U.S. court upholds California's current net billing mechanism, dealing blow to rooftop solar - pv magazine Global",
+      "url": "https://www.pv-magazine.com/2026/03/11/u-s-court-upholds-current-net-billing-mechanism-dealing-blow-to-rooftop-solar-in-california/"
+    }
+  ],
+  "body": [
+    "If you add rooftop solar with PG&E, SCE or SDG&E today, the power your panels send to the grid earns much less than it did for neighbors who went solar before April 2023. pv magazine, reporting on a March 2026 California appeals court ruling that upheld the current rules, put the cut in export credits at roughly 75% to 80%. That one change reshapes how a system pays for itself.",
+    "What NEM 3.0 is. Net energy metering (NEM 1.0 and NEM 2.0) is the older arrangement for rooftop solar. \"NEM 3.0\" is the common nickname for its replacement, which the CPUC calls the Net Billing Tariff and utilities call the Solar Billing Plan. PG&E says the plan applies to solar customers who submitted their interconnection application, the request to connect to the grid, after April 14, 2023.",
+    "How exports are credited now. Under the Solar Billing Plan, the credit for each kilowatt-hour (kWh) you export depends on when you export it. PG&E says the values are set through a public CPUC proceeding and vary by hour, day and month to reflect the value of the electricity at that time. You get a monthly statement showing what you used and what you sent out, plus an annual true-up that settles the 12 months. PG&E says leftover export credits at true-up go toward remaining charges and then roll over into the next 12-month period.",
+    "Solar customers are also placed on a time-of-use rate. PG&E automatically enrolls them in its Electric Home plan, where peak is 4 to 9 p.m., partial peak is 3 to 4 p.m. and 9 p.m. to midnight, and off-peak is midnight to 3 p.m.",
+    "Why batteries matter more. Panels produce the most in the middle of the day, which falls in the off-peak window, and power you buy costs the most from 4 to 9 p.m., when panels produce little. When exports earned more, sending midday power out and buying it back in the evening cost you less. Now each exported kWh is worth much less, so keeping that midday power in a battery and using it during the evening peak replaces power you would otherwise buy at the highest price. PG&E's own guide says adding battery storage can maximize your benefits and savings for this reason.",
+    "A labeled example. Say a home's solar exports would have earned $1,000 in credits over a year under the old rules. Using pv magazine's 75% to 80% figure, the same exports would earn roughly $200 to $250 under the new rules. The more of your solar you use at home, directly or through a battery, the less that cut affects you.",
+    "Will it pay off before you move? That depends on how much of your solar you use yourself, what the battery costs, and your rate plan. With exports worth less, a quote that counts on selling a lot of power to the grid deserves a closer look. Ask each installer how much of the system's output they expect you to use at home versus export, and what export credit values they assumed.",
+    "A deadline to know. PG&E offers an Energy Export Bonus Credit, an extra credit at a constant value set when your system is turned on, to customers who enroll in the Solar Billing Plan by December 31, 2027. It lasts nine years. CARE and FERA customers, and those in disadvantaged communities or on tribal lands, receive a higher value.",
+    "Already have solar? Older NEM customers stay on their plan until their 20-year agreement ends, and then move to the Solar Billing Plan. PG&E says those transitions began in March 2026.",
+    "One step for today: if you have solar, open your utility account and check whether you are on NEM or the Solar Billing Plan and which month your true-up falls in. If you are collecting quotes, ask each installer for the share of production they expect you to export."
+  ]
+}

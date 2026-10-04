@@ -1,0 +1,55 @@
+{
+  "slug": "how-time-of-use-rates-work-california",
+  "title": "California time-of-use rates: peak hours for PG&E, SCE and SDG&E",
+  "dek": "On most California time-of-use plans, power costs the most from 4 to 9 p.m. Here are the hours for PG&E, SCE and SDG&E, with a worked example.",
+  "topic": "Your Bill",
+  "publisherNote": false,
+  "tags": [
+    "time-of-use",
+    "pg&e",
+    "sce",
+    "sdg&e",
+    "california"
+  ],
+  "keywords": [
+    "time-of-use rates california",
+    "pg&e peak hours",
+    "sce tou-d-4-9pm",
+    "sdg&e on-peak hours",
+    "how time of use rates work"
+  ],
+  "publishedAt": "2026-10-01T14:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "PG&E E-TOU-C: peak is 4 to 9 p.m. every day. E-TOU-D: peak is 5 to 8 p.m. on weekdays only.",
+    "SCE TOU-D-4-9PM: on-peak is 4 to 9 p.m. on summer weekdays; the same hours are mid-peak on summer weekends and all winter.",
+    "SDG&E: on-peak is 4 to 9 p.m. every day; TOU-DR1 adds super off-peak hours overnight and on weekend mornings.",
+    "Example on SCE's listed winter prices: moving 3 kWh a day from 6 p.m. to 10 a.m. saves about $16 a month."
+  ],
+  "sources": [
+    {
+      "title": "Time-of-Use Rate Plans",
+      "url": "https://www.pge.com/en/account/rate-plans/time-of-use-rate-plans.html"
+    },
+    {
+      "title": "Time-of-Use Residential Rate Plans",
+      "url": "https://www.sce.com/save-money/rates-financing/residential-rate-plans/time-of-use-plans"
+    },
+    {
+      "title": "Residential pricing plans - San Diego",
+      "url": "https://www.sdge.com/residential/pricing-plans"
+    }
+  ],
+  "body": [
+    "On a time-of-use plan, the same kilowatt-hour of electricity can cost very different amounts depending on the clock. On one Southern California Edison plan, a kilowatt-hour used at 6 p.m. on a summer weekday is listed at 59 cents, and the same kilowatt-hour at 2 p.m. is 33 cents. Knowing your plan's hours is one of the easiest ways to lower a bill by changing when you use power.",
+    "A quick vocabulary note. A kilowatt-hour (kWh) is the unit on your bill: something that draws 1,000 watts for one hour uses 1 kWh. A time-of-use (TOU) plan charges a different price per kWh at different hours. The most expensive window is called peak or on-peak. Cheaper windows are called off-peak, and some plans add an even cheaper super off-peak window.",
+    "PG&E. PG&E's time-of-use page lists two main residential plans. On E-TOU-C, 4 to 9 p.m. is the higher-priced peak every day, weekends included, and all other hours are off-peak. On E-TOU-D, peak is 5 to 8 p.m. on weekdays only, and all weekend and holiday hours are off-peak.",
+    "SCE. On SCE's TOU-D-4-9PM plan, 4 to 9 p.m. is on-peak on summer weekdays (June through September). On summer weekends, and every day in winter (October through May), 4 to 9 p.m. is mid-peak instead, and winter adds a super off-peak window from 8 a.m. to noon. SCE also offers TOU-D-5-8PM, which moves the high-priced window to 5 to 8 p.m., and TOU-D-PRIME, a 4 to 9 p.m. plan for homes with an electric vehicle, battery storage or a heat pump.",
+    "SDG&E. SDG&E lists on-peak as 4 to 9 p.m. every day. On TOU-DR1, weekday super off-peak includes midnight to 6 a.m., and on weekends and holidays super off-peak runs from midnight to 2 p.m. TOU-DR2 is simpler, with on-peak from 4 to 9 p.m. and off-peak the rest of the day. Time of Use Plus (TOU-DR-P) uses the TOU-DR1 hours and adds $1.16 per kWh during peak hours on Reduce Your Use event days, based on the prices SDG&E lists as effective August 1, 2026.",
+    "A labeled example. These numbers use the prices on SCE's TOU-D-4-9PM page as checked in October 2026. Say a household runs appliances that together use 3 kWh once a day. In winter, running them at 6 p.m. (mid-peak, 50 cents) costs about $1.50. Running them at 10 a.m. (super off-peak, 32 cents) costs about 96 cents. That is 54 cents a day, or about $16 over a 30-day month. On a summer weekday the gap is wider: about $1.77 on-peak (59 cents) versus 99 cents off-peak (33 cents).",
+    "SCE's listed prices come before its baseline credit of 9 cents per kWh, which applies up to your monthly baseline allocation. The credit is the same in every time period, so the gap between peak and off-peak stays about the same.",
+    "Do you have to stop cooking dinner at 5 p.m.? No. Peak prices only apply to the power you use in that window, and the easiest savings usually come from loads that can wait a few hours: laundry, the dishwasher and EV charging. Which plan costs you the least depends on when your household uses power. SDG&E, for example, points customers to a Compare My Pricing Plans tool in My Account.",
+    "One step for today: find your rate plan's name on your bill (it will look like E-TOU-C, TOU-D-4-9PM or TOU-DR1), look up its peak hours on your utility's page, and move one regular load, such as laundry, outside that window."
+  ]
+}

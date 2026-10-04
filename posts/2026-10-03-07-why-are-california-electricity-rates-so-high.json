@@ -1,0 +1,46 @@
+{
+  "slug": "why-are-california-electricity-rates-so-high",
+  "title": "Why are California electricity rates so high? What the LAO found",
+  "dek": "California rates rose far faster than inflation from 2019 to 2023. Wildfire costs, the solar cost shift and grid spending explain much of it.",
+  "topic": "Your Bill",
+  "publisherNote": false,
+  "tags": [
+    "rates",
+    "california",
+    "pg&e",
+    "sce",
+    "your bill"
+  ],
+  "keywords": [
+    "why are california electricity rates so high",
+    "california electricity rates lao report",
+    "pg&e rates wildfire costs",
+    "why is pg&e so expensive"
+  ],
+  "publishedAt": "2026-10-03T14:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "The LAO found California residential rates rose about 47% from 2019 to 2023, while overall prices rose about 18%.",
+    "Wildfire costs grew from almost nothing before 2019 to 7% to 13% of the average non-CARE bill at the three big utilities.",
+    "The CPUC estimated the older rooftop solar rules added 11% to 20% to non-solar, non-CARE bills in 2023.",
+    "Investor-owned utility rates average more than 50% higher than public utilities such as SMUD and LADWP.",
+    "Example: on a $200 non-CARE, non-solar bill, wildfire costs and the solar cost shift could together account for $36 to $66."
+  ],
+  "sources": [
+    {
+      "title": "Assessing California's Climate Policies: Residential Electricity Rates in California (LAO, January 2025)",
+      "url": "https://lao.ca.gov/reports/2025/4950/Residential-Electricity-Rates-010725.pdf"
+    }
+  ],
+  "body": [
+    "If your electric bill feels heavier every year, the official numbers agree with you. The Legislative Analyst's Office, the Legislature's nonpartisan fiscal advisor, found that average residential electricity rates in California rose about 47 percent from 2019 to 2023, while overall prices rose about 18 percent. At the three large investor-owned utilities (PG&E, Southern California Edison and San Diego Gas & Electric), the increases ranged from 48 to 67 percent.",
+    "California now has the second highest residential rates in the country after Hawaii, and the LAO says the state's average is close to double the rest of the nation. Its January 2025 report breaks down where the money goes.",
+    "Wildfire costs. Before 2019, wildfire-related costs were a negligible part of rates at the big three utilities. They have grown to 7 to 13 percent of the average bill for customers who are not on the CARE discount. That covers work to reduce the chance of utility-caused fires, plus contributions to the California Wildfire Fund, a kind of insurance created under AB 1054. The LAO notes the three utilities have proposed spending roughly $9 billion a year, often recovered along with a return for shareholders.",
+    "The rooftop solar cost shift. Under the older net metering rules, NEM 1.0 and 2.0, solar customers received bill credits that let them avoid much of the fixed cost of the grid. Those costs were then built into the per-kWh price (the price for each kilowatt-hour of electricity) that everyone else pays. The CPUC estimated this added 11 to 20 percent to the bills of non-CARE customers without solar in 2023, up from 8 to 17 percent a year earlier.",
+    "Programs everyone pays for. The CARE discount for income-qualified households adds 2 to 4 percent to other customers' bills. Public purpose programs, including climate-related ones, make up about 4 percent of average rates. The rest pays for generating and buying power and for the transmission and distribution lines that deliver it.",
+    "Why a SMUD or LADWP customer may pay less. On average, investor-owned utility rates are more than 50 percent higher than rates at publicly owned utilities. The LAO lists several reasons. Investor-owned utilities must earn returns for shareholders, and they cannot use the tax-exempt borrowing that public utilities can. PG&E also serves large rural areas, where wildfire and distribution costs can run higher. And public utility customers generally do not pay for the same public purpose programs. In 2023, PG&E's residential rates were more than double SMUD's.",
+    "What this looks like on a bill. For example, take a $200 monthly bill for a customer of one of the big three utilities who is not on CARE and has no solar. Using the LAO's ranges, $14 to $26 of it would go to wildfire-related costs, and $22 to $40 would reflect the CPUC's estimate of the rooftop solar cost shift. Those two items alone could be $36 to $66 of that $200. The exact shares differ by utility.",
+    "Today's next step: check whether you have a publicly owned utility such as SMUD or LADWP or one of the big three, since that single fact explains much of what you pay. It is printed at the top of your bill."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "how-psps-power-shutoffs-work-and-how-to-prepare",
+  "title": "PG&E and SCE power shutoffs: how PSPS works and how to prepare",
+  "dek": "Utilities cut power in high fire risk weather, often with 1 to 2 days of notice. Sign up for alerts, look into Medical Baseline and plan backup power safely.",
+  "topic": "Rules & What's Next",
+  "publisherNote": false,
+  "tags": [
+    "psps",
+    "outages",
+    "pg&e",
+    "sce",
+    "california"
+  ],
+  "keywords": [
+    "what is a public safety power shutoff",
+    "pg&e psps alerts",
+    "sce psps notification",
+    "medical baseline psps",
+    "generator safety power outage"
+  ],
+  "publishedAt": "2026-10-03T02:00:00Z",
+  "updatedAt": "2026-10-04T16:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Shutoffs follow strong winds, low humidity and dry vegetation. PG&E also weighs Red Flag Warnings.",
+    "PG&E aims for 1 to 2 days' notice; SCE may notify 2 days, 1 day and 1 to 4 hours ahead.",
+    "Anyone can get address alerts: PG&E Address Alerts, or scepsps.com for SCE.",
+    "Medical Baseline customers get extra PSPS alerts, possibly in person. PG&E: pge.com/mblapp, signed form within 90 days.",
+    "Run generators outdoors only, at least 20 feet from the house, with CO alarms inside (CPSC)."
+  ],
+  "sources": [
+    {
+      "title": "Public Safety Power Shutoffs (PG&E)",
+      "url": "https://www.pge.com/en/outages-and-safety/safety/community-wildfire-safety-program/public-safety-power-shutoffs.html"
+    },
+    {
+      "title": "Public Safety Power Shutoff (PSPS) (SCE)",
+      "url": "https://www.sce.com/outages-safety/outage-preparedness/outage-types/public-safety-power-shutoff-psps"
+    },
+    {
+      "title": "CPSC Issues Winter Weather Safety Tips to Prevent Fires and Carbon Monoxide Poisoning",
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2026/CPSC-Issues-Winter-Weather-Safety-Tips-to-Prevent-Fires-and-Carbon-Monoxide-Poisoning"
+    }
+  ],
+  "body": [
+    "In fall, a strong offshore wind forecast can mean your power is turned off on purpose for a day or more. California utilities call this a Public Safety Power Shutoff, or PSPS. Knowing how the alerts work, and setting up a few things ahead of time, makes it far easier to handle.",
+    "Why it happens. SCE describes a PSPS as temporarily shutting off power to reduce the risk that its equipment starts a fire. SCE looks at strong winds, low humidity and dry vegetation. PG&E lists similar factors, including forecasted high winds, dry material on the ground and vegetation near power lines, along with Red Flag Warnings from the National Weather Service and real-time observations.",
+    "How much warning you get. PG&E's fact sheet says its goal is to notify customers one to two days before a shutoff, with updates by call, text and email. PG&E also warns that forecasts can shift, and in some cases the first alert may come the same day. SCE describes a longer runway: modeling four to seven days out, possible areas on its outage map about three days out, refined notices two days and one day ahead, then an alert one to four hours before the shutoff.",
+    "Getting power back. SCE says crews inspect the lines before turning power back on, which typically takes up to eight hours. Plan for an outage that lasts longer than the windy weather itself.",
+    "How to prepare:",
+    "Step 1: Update your contact details. PG&E customers can do this at pge.com/myalerts. SCE account holders can set contacts, preferences and language in My Account.",
+    "Step 2: Get alerts for places you care about. PG&E offers Address Alerts for any address, such as a parent's home or a rental. With SCE, anyone can sign up for address-level alerts at scepsps.com.",
+    "Step 3: If someone in your home relies on powered medical equipment, look into Medical Baseline. At PG&E, it adds about 500 kWh a month at your lowest price and extra PSPS alerts, which may include a door knock. PG&E bases eligibility on medical need, and there is no income limit. Apply at pge.com/mblapp; a medical practitioner completes part of the form, and PG&E needs it within 90 days of their signature. SCE offers a Medical Baseline Allowance and a Critical Care Backup Battery Program with free portable batteries for medical devices for eligible customers.",
+    "Step 4: Plan backup power safely. The Consumer Product Safety Commission says to never run a portable generator inside a home, garage, basement, crawlspace or shed, to keep it outside at least 20 feet from the house with exhaust pointed away, and to install battery-powered or battery-backup carbon monoxide alarms on each level. It reports that nearly 100 people die in the U.S. each year from carbon monoxide from portable generators. If you want a generator to power home circuits, have a licensed electrician install the right transfer equipment.",
+    "Step 5: Know where to go. SCE runs Community Resource Centers during shutoffs with charging, Wi-Fi, water and supplies. PG&E customers can call 211 for help finding resources and backup power programs.",
+    "Today's next step: confirm your phone number for PSPS alerts and add Address Alerts for any relative who lives alone."
+  ]
+}
