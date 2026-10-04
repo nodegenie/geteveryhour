@@ -2,7 +2,7 @@
 from pathlib import Path
 
 W, H = 1200, 630
-BG, INK, MUTED, ACCENT, LIGHT = "#f7f8f6", "#1b2126", "#5d6870", "#1f6f5c", "#f7f8f6"
+BG, INK, MUTED, ACCENT, LIGHT, SURFACE = "#150c28", "#f3effc", "#b4a9d3", "#c6f432", "#c6f432", "#1f1338"
 FONTS = Path(__file__).parent / "fonts"
 
 try:
@@ -30,7 +30,7 @@ def _wrap(draw, text, font, width):
 
 
 def _mark(draw, x, y, s):
-    draw.rounded_rectangle([x, y, x + s, y + s], radius=int(s * .22), fill=ACCENT)
+    draw.rounded_rectangle([x, y, x + s, y + s], radius=int(s * .22), fill=SURFACE)
     c, r, w = (x + s / 2, y + s / 2), s * .28, max(3, int(s * .08))
     draw.ellipse([c[0] - r, c[1] - r, c[0] + r, c[1] + r], outline=LIGHT, width=w)
     draw.line([c, (c[0], c[1] - r * .62)], fill=LIGHT, width=w)

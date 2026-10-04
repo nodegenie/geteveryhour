@@ -26,6 +26,7 @@ TZ = ZoneInfo(CFG["timezone"])
 SITE = CFG["site_url"].rstrip("/")
 import hashlib as _hl
 ICON_VER = _hl.sha1((Path(__file__).parent / "assets" / "favicon.svg").read_bytes()).hexdigest()[:10]
+OG_VER = _hl.sha1((Path(__file__).parent / "og.py").read_bytes()).hexdigest()[:10]
 CSS_VER = _hl.sha1((Path(__file__).parent / "assets" / "style.css").read_bytes()).hexdigest()[:10]
 AUTHOR = CFG["author"]
 FONTS = ("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700"
@@ -310,12 +311,12 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{e(canonical)}">
-<meta property="og:image" content="{SITE}{image}">
+<meta property="og:image" content="{SITE}{image}?v={OG_VER}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{e(title)}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{SITE}{image}">
+<meta name="twitter:image" content="{SITE}{image}?v={OG_VER}">
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
 {extra_head}
