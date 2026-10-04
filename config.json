@@ -2,8 +2,8 @@
   "site_url": "https://geteveryhour.lol",
   "domain": "geteveryhour.lol",
   "title": "EveryHour",
-  "tagline": "Every hour of a contractor's day",
-  "description": "Useful answers for every hour of a contractor's day: permits, AI and software, new bills, crews and the business side of the trades. Written with AI and published by Tineessa Nelson.",
+  "tagline": "Going electric, one hour at a time",
+  "description": "Plain answers for homeowners going electric: solar, batteries, heat pumps, panel upgrades and rebates, California first. Written with AI and published by Tineessa Nelson.",
   "author": "Tineessa Nelson",
   "author_bio": "Tineessa Nelson runs EveryHour. The posts are written with AI, using topics researched each day, and she is responsible for what the site publishes. She is based in California.",
   "timezone": "America/Los_Angeles",
@@ -22,8 +22,8 @@
   "launch_at": "2026-09-28T19:00:00-07:00",
   "goatcounter": "everyhour",
   "publisher_note": {
-    "text": "EveryHour is published by Tineessa Nelson, who runs TaskHatch, a remote permitting and inspection service for residential contractors.",
-    "link_text": "See how TaskHatch works",
+    "text": "EveryHour is published by Tineessa Nelson, who runs TaskHatch, a permitting and inspection service for solar, battery and heat pump installers.",
+    "link_text": "Learn about TaskHatch",
     "url": "https://gettaskhatch.com/"
   }
 }

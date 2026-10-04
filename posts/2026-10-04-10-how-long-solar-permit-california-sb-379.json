@@ -1,0 +1,52 @@
+{
+  "slug": "how-long-solar-permit-california-sb-379",
+  "title": "How long does a solar permit take in California? SB 379 explained",
+  "dek": "Under SB 379, most California cities and larger counties must offer instant online permits for home solar up to 38.4 kW and paired batteries.",
+  "topic": "Solar",
+  "publisherNote": true,
+  "tags": [
+    "solar",
+    "permits",
+    "california",
+    "batteries"
+  ],
+  "keywords": [
+    "how long does a solar permit take california",
+    "sb 379 solar permit",
+    "instant solar permit california",
+    "solarapp+"
+  ],
+  "publishedAt": "2026-10-04T17:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Cities of 50,000+ people and counties of 150,000+ had to offer automated solar permits by September 30, 2023.",
+    "Cities of 5,000 to 50,000 people had until September 30, 2024. Smaller cities and counties are exempt.",
+    "It covers home solar up to 38.4 kW and batteries installed with solar.",
+    "The CEC's online dashboard shows which jurisdictions report having a platform."
+  ],
+  "sources": [
+    {
+      "title": "Residential Solar Permit Program Status Dashboard",
+      "url": "https://www.energy.ca.gov/programs-and-topics/programs/residential-solar-permit-reporting-program-sb-379/residential-solar"
+    },
+    {
+      "title": "Automated Permitting for Solar Energy Systems - California Building Officials",
+      "url": "https://www.calbo.org/post/automated-permitting-solar-energy-systems"
+    },
+    {
+      "title": "California SB379",
+      "url": "https://legiscan.com/CA/text/SB379/id/2597273"
+    }
+  ],
+  "body": [
+    "If you are getting quotes for solar, one of the first questions is how long you will wait between signing and having panels on the roof. Permits used to be a big part of that wait. In much of California, a state law called Senate Bill 379 now means a standard home solar permit can be issued online in real time instead of sitting in a plan-review queue.",
+    "Who has to offer instant permits. SB 379 requires cities with 50,000 or more residents and counties with 150,000 or more to run an online, automated permitting platform. Those larger places had to have one by September 30, 2023. Cities with 5,000 to 50,000 residents had until September 30, 2024. Cities under 5,000 people and counties under 150,000 are exempt, so many rural areas can still use traditional plan review. The California Energy Commission counts about 429 jurisdictions that are covered.",
+    "What systems qualify. The automated path covers residential solar systems up to 38.4 kilowatts, plus home batteries installed with solar. Larger systems, or projects that do not fit a platform's rules, still go through the regular process. Jurisdictions can use SolarAPP+, which is free for them to use, a commercial platform such as Symbium, or their own system.",
+    "What it means for your timeline. A quick permit does not mean the whole project is quick. Your installer still has to design the system, schedule the install, pass the final inspection and get permission to operate from your utility. But if your city is covered, permitting should no longer be the reason a simple job drags on for weeks.",
+    "How to check your city:",
+    "Step 1: Look up your city or county on the CEC's Residential Solar Permit Program Status Dashboard. The CEC notes it does not certify whether a platform complies, so treat it as a starting point.",
+    "Step 2: Ask each installer you are considering whether they use your jurisdiction's automated permit and how long their permits usually take there.",
+    "Step 3: Get the expected timeline for each stage in writing with your quote: permit, install, inspection and utility approval.",
+    "Today's next step: find your city on the CEC dashboard before your next call with an installer, so you know what to expect."
+  ]
+}

@@ -285,7 +285,7 @@ def page(title, desc, canonical, body, *, og_type="website", jsonld=None, extra_
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#11113b">
+<meta name="theme-color" content="#150c28">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="author" content="{e(AUTHOR)}">
@@ -357,11 +357,11 @@ def grouped_list(posts, now):
     return '<div class="list">' + "".join(out) + "</div>"
 
 
-SLOTS = [(7, "On the job", "Crews, safety and the field"),
-         (10, "Permits", "Permits, inspections and codes"),
-         (13, "The business", "Money, pricing, hiring and software"),
-         (16, "AI and tools", "AI and new tools for the trades"),
-         (19, "What's next", "Bills, rules and where the industry is going")]
+SLOTS = [(7, "Your bill", "Rates, bills and outages"),
+         (10, "Solar and batteries", "Panels, batteries and backup"),
+         (13, "The electric home", "Heat pumps, panels, EV chargers"),
+         (16, "Money", "Rebates, financing and quotes"),
+         (19, "What's next", "Laws, utility rules and what's coming")]
 
 
 def dial(posts, now):
@@ -380,7 +380,6 @@ def dial(posts, now):
 
 
 ALERT_LINKS = [("NWS alerts for California", "https://alerts.weather.gov/search?area=CA"),
-               ("Cal/OSHA heat illness rules", "https://www.dir.ca.gov/dosh/heatillnessinfo.html"),
                ("Air quality (AirNow)", "https://www.airnow.gov/"),
                ("Cal Fire incidents", "https://www.fire.ca.gov/incidents"),
                ("PG&amp;E outages", "https://pgealerts.alerts.pge.com/outagecenter/"),
@@ -442,7 +441,7 @@ def alerts_panel(alerts, now):
         more = f'<p class="now-empty">Plus {len(alerts) - 8} more alert types.</p>' if len(alerts) > 8 else ""
         inner = f'<ul class="now-list">{"".join(rows)}</ul>{more}'
     return f"""<section class="now" aria-labelledby="now-h">
-  <div class="dial-head"><span id="now-h">This hour for crews in California</span><span>{e(stamp)}</span></div>
+  <div class="dial-head"><span id="now-h">This hour in California</span><span>{e(stamp)}</span></div>
   {inner}
   <p class="now-links">Alerts from the National Weather Service. More: {links}</p>
 </section>"""
@@ -486,7 +485,7 @@ def build():
     OUT.mkdir()
     shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / "CNAME").write_text(CFG["domain"] + "\n")
-    og.card(OUT / "og" / "home.png", "Useful answers for every hour of a contractor's day.", CFG["tagline"])
+    og.card(OUT / "og" / "home.png", "Plain answers for homeowners going electric: solar, batteries, heat pumps and rebates.", CFG["tagline"])
     og.card(OUT / "og" / "sponsor.png", f"Feature your business on EveryHour for {CFG.get('sponsor', {}).get('price', '$5')}", "Sponsor a post")
     (OUT / ".nojekyll").write_text("")
 
@@ -513,7 +512,7 @@ def build():
 {'<p class="more"><a href="/archive/">See every post in the archive</a></p>' if len(posts) > CFG['home_post_count'] else ''}"""
     else:
         body = dial(posts, now) + '<p class="pagedek" style="margin-top:32px">The first post is on its way.</p>'
-    write("/", page(f"{CFG['title']} by {AUTHOR}: every hour of a contractor's day", CFG["description"], SITE + "/", body, jsonld=[site_ld]))
+    write("/", page(f"{CFG['title']} by {AUTHOR}: solar, batteries and heat pumps for homeowners", CFG["description"], SITE + "/", body, jsonld=[site_ld]))
 
     # posts
     for i, p in enumerate(posts):
@@ -581,7 +580,7 @@ def build():
         tp = [p for p in posts if p["topic_slug"] == slug]
         body = (f'<h1 class="page">{e(name)}</h1><p class="pagedek">{len(tp)} post{"s" if len(tp) != 1 else ""} about {e(name.lower())} from {e(AUTHOR)}.</p>'
                 + topic_chips(topics, slug) + grouped_list(tp, now))
-        write(f"/topics/{slug}/", page(f"{name} | {CFG['title']} by {AUTHOR}", f"{name} for residential contractors and the trades, by {AUTHOR}.", f"{SITE}/topics/{slug}/", body))
+        write(f"/topics/{slug}/", page(f"{name} | {CFG['title']} by {AUTHOR}", f"{name}: plain answers for homeowners going electric, by {AUTHOR}.", f"{SITE}/topics/{slug}/", body))
 
     # archive
     body = f'<h1 class="page">Archive</h1><p class="pagedek">All {len(posts)} posts, newest first.</p>' + grouped_list(posts, now)
@@ -590,15 +589,16 @@ def build():
     # about
     body = f"""<h1 class="page">About EveryHour</h1>
 <div class="post"><div class="body" style="border:0;padding-top:12px">
-<p>EveryHour is a daily publication by {e(AUTHOR)} for residential contractors and the trades: solar and battery, HVAC and heat pumps, electrical, roofing, plumbing, generators, windows and doors, and the general contractors who bring them together. Five posts go up each day, one for each part of a contractor's day: on the job, permits and inspections, running the business, AI and new tools, and the bills and rules that shape what comes next.</p>
-<p>Most posts answer a practical question you can come back to later, such as how a permit rule works, what a new bill would change, or how other contractors are using AI and software like ServiceTitan, Procore and Jobber. EveryHour is independent and is not affiliated with those companies.</p>
-<p>The home page also shows <strong>This hour for crews in California</strong>: active National Weather Service alerts for the state, refreshed every hour, with links to Cal/OSHA heat rules, air quality, fire and power outage pages.</p>
+<p>EveryHour is a daily publication by {e(AUTHOR)} for homeowners deciding whether to go electric: solar panels, home batteries, heat pumps, panel upgrades, EV chargers and the rebates and rules around them. California comes first, because that is where the rules and utility rates change fastest.</p>
+<p>Five posts go up each day: your utility bill in the morning, solar and batteries, the electric home, money and rebates in the afternoon, and the laws and utility rules that shape what comes next in the evening. Each post answers a real question before you spend thousands of dollars, with links to the official sources behind it.</p>
+<p>EveryHour does not sell equipment and is not paid by installers or manufacturers to recommend them. Sponsored posts are labeled.</p>
+<p>The home page also shows <strong>This hour in California</strong>: active National Weather Service alerts for the state, refreshed every hour, with links to air quality, fire and power outage pages.</p>
 <p>Posts are published on Pacific time. You can follow along here, through the <a href="/feed.xml">RSS feed</a>, or by email.</p>
 <h2 id="how-posts-are-made">How posts are made</h2>
-<p>EveryHour is written with AI. Each morning, an AI system researches the questions contractors are asking, along with new bills, rule changes and industry news, and writes that day's posts following a set of written guidelines. The posts are then scheduled for their part of the day.</p>
+<p>EveryHour is written with AI. Each morning, an AI system researches the questions homeowners are asking about going electric, along with new laws, utility rate changes and rebate programs, and writes that day's posts following a set of written guidelines. The posts are then scheduled for their part of the day.</p>
 <p>{e(AUTHOR)} created EveryHour, wrote the guidelines the posts follow, and is responsible for everything the site publishes. The guidelines require that posts only state facts found in search results at the time of writing, stay away from partisan opinions, and never invent personal stories or experiences. Posts include a short What to know summary and link to the sources their facts were checked against.</p>
 <p>AI can still get things wrong, and rules, prices and deadlines can change after a post is written. Please treat posts as general information, not professional advice, and check anything important with the official source linked in the post.</p>
-<p>Sponsored posts are clearly labeled, and sponsors do not choose or review what a post says. {e(AUTHOR)} also runs TaskHatch, a permitting and inspection service for residential contractors. Some posts end with a labeled note about it; it never changes what a post says.</p>
+<p>Sponsored posts are clearly labeled, and sponsors do not choose or review what a post says. {e(AUTHOR)} also runs TaskHatch, a permitting and inspection service for solar, battery and heat pump installers. Some posts about permits end with a labeled note about it; it never changes what a post says.</p>
 {'<p>Visits are counted with <a href="https://www.goatcounter.com/">GoatCounter</a>, which does not use cookies or collect personal data. The totals are public on the <a href="/stats/">stats page</a>.</p>' if goat_code() else ''}
 </div></div>"""
     about_ld = {"@context": "https://schema.org", "@type": "ProfilePage", "mainEntity": person()}
@@ -632,10 +632,10 @@ def build():
 <script>if(/[?&]paid=1/.test(location.search))document.getElementById('paid-note').hidden=false;</script>
 <h1 class="page">Feature your business on EveryHour</h1>
 <div class="post"><div class="body" style="border:0;padding-top:12px">
-<p>EveryHour publishes five practical posts a day for residential contractors and the trades, one for each part of a contractor's day. For {e(price)}, your business can sponsor one of those posts.</p>
+<p>EveryHour publishes five practical posts a day for homeowners deciding on solar, batteries, heat pumps and other electric upgrades. For {e(price)}, your business can sponsor one of those posts.</p>
 <h2 class="day" style="color:var(--ink)">What you get</h2>
 <p>Your business name, a link to your website, and one sentence about what you do appear in a clearly labeled "Sponsored" box on one post. Each post has only one sponsor. The post stays on the site permanently, and it is included in the archive, the topic pages, the RSS feed and the sitemap.</p>
-<p>Where it makes sense, I match your business to a post about a related topic. A supply house might appear on a post about the job site, and a software or insurance company on a post about running the business.</p>
+<p>Where it makes sense, I match your business to a post about a related topic. A solar installer might appear on a post about batteries, and an HVAC company on a post about heat pumps. Your listing never changes what the post says.</p>
 <p>You also get a link to the post that you can share with your own customers.</p>
 <h2 class="day" style="color:var(--ink)">How it works</h2>
 <p>At checkout, you enter your business name, your website and one sentence about your business. Payments received by 5 AM Pacific are placed in one of that day's posts. Payments received later are placed in the next day's posts.</p>
@@ -690,7 +690,7 @@ def build():
 
     # llms.txt: a plain summary for AI assistants and answer engines
     lines = [f"# {CFG['title']}", "", f"> {CFG['description']}", "",
-             f"EveryHour publishes five practical posts a day for residential contractors and the trades, one for each part of a contractor's day, Pacific time. Posts are written with AI and published by {AUTHOR}, "
+             f"EveryHour publishes five practical posts a day for homeowners going electric (solar, batteries, heat pumps, rebates), California first. Posts are written with AI and published by {AUTHOR}, "
              "who is responsible for the site. Posts list the sources their facts were checked against.", "",
              "## Pages", f"- [About and how posts are made]({SITE}/about/)", f"- [Archive]({SITE}/archive/)",
              f"- [RSS feed]({SITE}/feed.xml)", f"- [Sitemap]({SITE}/sitemap.xml)", "", "## Recent posts"]
