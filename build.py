@@ -347,13 +347,93 @@ def grouped_list(posts, now):
     return '<div class="list">' + "".join(out) + "</div>"
 
 
+SLOTS = [(7, "Morning", "Getting ready and the commute"),
+         (10, "Late morning", "Errands and appointments"),
+         (13, "Midday", "Work and money"),
+         (16, "Afternoon", "Home and family"),
+         (19, "Evening", "Tonight and tomorrow")]
+
+
 def dial(posts, now):
-    on = {p["local"].hour for p in posts if p["local"].date() == now.date()}
-    cells = "".join(f'<i class="{"on" if h in on else ""}" title="{(h % 12) or 12} {"AM" if h < 12 else "PM"}"></i>' for h in range(24))
-    return f"""<section class="dial" aria-label="Posts today">
-  <div class="dial-head"><span>{e(now.strftime('%a, %b'))} {now.day} &middot; {len(on)} of 24 hours</span><span>Pacific time</span></div>
-  <div class="hours">{cells}</div>
-  <div class="hours-ticks"><span>12 AM</span><span>6 AM</span><span>Noon</span><span>6 PM</span></div>
+    """Today's five parts of the day, marking the ones whose post is up."""
+    today = {p["local"].hour: p for p in posts if p["local"].date() == now.date()}
+    cells = []
+    for h, name, about in SLOTS:
+        p = today.get(h)
+        label = f'<b>{e(name)}</b><span>{(h % 12) or 12} {"AM" if h < 12 else "PM"} &middot; {e(about)}</span>'
+        cells.append(f'<a class="slot on" href="{p["path"]}">{label}</a>' if p else f'<div class="slot">{label}</div>')
+    up = sum(1 for h, _, _ in SLOTS if h in today)
+    return f"""<section class="dial" aria-label="Today on EveryHour">
+  <div class="dial-head"><span>{e(now.strftime('%a, %b'))} {now.day} &middot; {up} of {len(SLOTS)} posts up</span><span>Pacific time</span></div>
+  <div class="slots">{"".join(cells)}</div>
+</section>"""
+
+
+ALERT_LINKS = [("NWS alerts for California", "https://alerts.weather.gov/search?area=CA"),
+               ("Air quality (AirNow)", "https://www.airnow.gov/"),
+               ("Cal Fire incidents", "https://www.fire.ca.gov/incidents"),
+               ("PG&amp;E outages", "https://pgealerts.alerts.pge.com/outagecenter/"),
+               ("SCE outages", "https://www.sce.com/outage-center/check-outage-status"),
+               ("SDG&amp;E outages", "https://www.sdge.com/outage-map")]
+
+
+def fetch_alerts():
+    """Active National Weather Service alerts for California, grouped by type. Returns None if unavailable."""
+    if os.environ.get("EVERYHOUR_SKIP_ALERTS"):
+        return None
+    req = urllib.request.Request("https://api.weather.gov/alerts/active?area=CA",
+                                 headers={"User-Agent": f"EveryHour ({SITE})", "Accept": "application/geo+json"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = json.load(r)
+    except Exception as ex:  # never fail the build over this
+        print("alerts unavailable:", ex, file=sys.stderr)
+        return None
+    groups = {}
+    for f in data.get("features", []):
+        pr = f.get("properties") or {}
+        if pr.get("status", "Actual") != "Actual" or pr.get("messageType") == "Cancel":
+            continue
+        ev = (pr.get("event") or "").strip()
+        if not ev or ev.lower().startswith(("test", "special weather")):
+            continue
+        g = groups.setdefault(ev, {"event": ev, "areas": [], "ends": None, "severity": pr.get("severity") or ""})
+        for a in (pr.get("areaDesc") or "").split(";"):
+            a = a.strip()
+            if a and a not in g["areas"]:
+                g["areas"].append(a)
+        end = pr.get("ends") or pr.get("expires")
+        if end:
+            try:
+                d = datetime.fromisoformat(end).astimezone(TZ)
+                g["ends"] = max(g["ends"], d) if g["ends"] else d
+            except ValueError:
+                pass
+    rank = {"Extreme": 0, "Severe": 1, "Moderate": 2, "Minor": 3}
+    return sorted(groups.values(), key=lambda g: (rank.get(g["severity"], 4), g["event"]))
+
+
+def alerts_panel(alerts, now):
+    """'This hour in California': live NWS alerts, refreshed on every hourly rebuild."""
+    links = " &middot; ".join(f'<a href="{u}" rel="noopener">{t}</a>' for t, u in ALERT_LINKS)
+    stamp = f"Updated {hour_label(now)} PT"
+    if alerts is None:
+        inner = '<p class="now-empty">Live alerts are not available right now. Check the links below for current conditions.</p>'
+    elif not alerts:
+        inner = '<p class="now-empty">No active weather alerts for California this hour.</p>'
+    else:
+        rows = []
+        for g in alerts[:8]:
+            areas = g["areas"]
+            where = ", ".join(areas[:4]) + (f" and {len(areas) - 4} more areas" if len(areas) > 4 else "")
+            until = f' &middot; until {e(g["ends"].strftime("%a"))} {hour_label(g["ends"])}' if g["ends"] else ""
+            rows.append(f'<li><b>{e(g["event"])}</b><span>{e(where)}{until}</span></li>')
+        more = f'<p class="now-empty">Plus {len(alerts) - 8} more alert types.</p>' if len(alerts) > 8 else ""
+        inner = f'<ul class="now-list">{"".join(rows)}</ul>{more}'
+    return f"""<section class="now" aria-labelledby="now-h">
+  <div class="dial-head"><span id="now-h">This hour in California</span><span>{e(stamp)}</span></div>
+  {inner}
+  <p class="now-links">Alerts from the National Weather Service. More: {links}</p>
 </section>"""
 
 
@@ -395,8 +475,8 @@ def build():
     OUT.mkdir()
     shutil.copytree(ROOT / "assets", OUT / "assets")
     (OUT / "CNAME").write_text(CFG["domain"] + "\n")
-    og.card(OUT / "og" / "home.png", "Relatable thoughts on what the world is talking about, every hour.", CFG["tagline"])
-    og.card(OUT / "og" / "sponsor.png", f"Feature your business on EveryHour for {CFG.get('sponsor', {}).get('price', '$5')}", "Sponsor an hour")
+    og.card(OUT / "og" / "home.png", "Useful answers for every hour of your California day.", CFG["tagline"])
+    og.card(OUT / "og" / "sponsor.png", f"Feature your business on EveryHour for {CFG.get('sponsor', {}).get('price', '$5')}", "Sponsor a post")
     (OUT / ".nojekyll").write_text("")
 
     counts = {}
@@ -410,7 +490,7 @@ def build():
     # home
     if posts:
         lead, rest = posts[0], posts[1:CFG["home_post_count"]]
-        body = dial(posts, now) + f"""
+        body = dial(posts, now) + alerts_panel(fetch_alerts(), now) + f"""
 <section class="lead">
   <div class="eyebrow">Latest &middot; <a href="/topics/{lead['topic_slug']}/">{e(lead['topic'])}</a></div>
   <h1><a class="t" href="{lead['path']}">{e(lead['title'])}</a></h1>
@@ -422,7 +502,7 @@ def build():
 {'<p class="more"><a href="/archive/">See every post in the archive</a></p>' if len(posts) > CFG['home_post_count'] else ''}"""
     else:
         body = dial(posts, now) + '<p class="pagedek" style="margin-top:32px">The first post is on its way.</p>'
-    write("/", page(f"{CFG['title']} by {AUTHOR}: relatable thoughts, every hour", CFG["description"], SITE + "/", body, jsonld=[site_ld]))
+    write("/", page(f"{CFG['title']} by {AUTHOR}: useful answers for every hour of your California day", CFG["description"], SITE + "/", body, jsonld=[site_ld]))
 
     # posts
     for i, p in enumerate(posts):
@@ -489,7 +569,7 @@ def build():
         tp = [p for p in posts if p["topic_slug"] == slug]
         body = (f'<h1 class="page">{e(name)}</h1><p class="pagedek">{len(tp)} post{"s" if len(tp) != 1 else ""} about {e(name.lower())} from {e(AUTHOR)}.</p>'
                 + topic_chips(topics, slug) + grouped_list(tp, now))
-        write(f"/topics/{slug}/", page(f"{name} | {CFG['title']} by {AUTHOR}", f"Relatable, hourly thoughts on {name.lower()} by {AUTHOR}.", f"{SITE}/topics/{slug}/", body))
+        write(f"/topics/{slug}/", page(f"{name} | {CFG['title']} by {AUTHOR}", f"Useful California answers about {name.lower()} by {AUTHOR}.", f"{SITE}/topics/{slug}/", body))
 
     # archive
     body = f'<h1 class="page">Archive</h1><p class="pagedek">All {len(posts)} posts, newest first.</p>' + grouped_list(posts, now)
@@ -498,13 +578,14 @@ def build():
     # about
     body = f"""<h1 class="page">About EveryHour</h1>
 <div class="post"><div class="body" style="border:0;padding-top:12px">
-<p>EveryHour is a small daily publication by {e(AUTHOR)}. Every hour, a new short post goes up about something people are talking about that day. Some posts are about the news, some are about work or money, and some are about the ordinary parts of a day that everyone recognizes.</p>
-<p>Each post is meant to take a minute or two to read and to leave you with one practical thought you can use.</p>
+<p>EveryHour is a small daily publication by {e(AUTHOR)} with useful answers for every hour of your California day. Five posts go up each day, one for each part of the day: the morning commute, late-morning errands, midday work and money, afternoon home and family, and the evening, when it helps to plan for tomorrow.</p>
+<p>Most posts answer a practical question you can come back to later, such as how a bill works, what to do before a deadline, or how to get ready for the season. When something is happening that Californians need to act on, like a heat warning or a new law, a post covers that too.</p>
+<p>The home page also shows <strong>This hour in California</strong>: active National Weather Service alerts for the state, refreshed every hour, with links to air quality, fire and power outage pages.</p>
 <p>Posts are published on Pacific time. You can follow along here, through the <a href="/feed.xml">RSS feed</a>, or by email.</p>
 <h2 id="how-posts-are-made">How posts are made</h2>
-<p>EveryHour is written with AI. Each morning, an AI system searches for what people are talking about that day, including news, sports, weather, culture and observances, and writes that day's posts following a set of written guidelines. The posts are then scheduled so that one appears each hour.</p>
+<p>EveryHour is written with AI. Each morning, an AI system researches practical questions Californians are asking, along with anything happening that day that people need to act on, and writes that day's posts following a set of written guidelines. The posts are then scheduled for their part of the day.</p>
 <p>{e(AUTHOR)} created EveryHour, wrote the guidelines the posts follow, and is responsible for everything the site publishes. The guidelines require that posts only state facts found in search results at the time of writing, stay away from partisan opinions, and never invent personal stories or experiences. Posts include a short What to know summary and link to the sources their facts were checked against.</p>
-<p>AI can still get things wrong, and news can change after a post is written. Please treat posts as short reflections, not professional advice, and check anything important with a trusted source.</p>
+<p>AI can still get things wrong, and rules, prices and deadlines can change after a post is written. Please treat posts as general information, not professional advice, and check anything important with the official source linked in the post.</p>
 <p>Sponsored posts are clearly labeled, and sponsors do not choose or review what a post says.</p>
 {'<p>Visits are counted with <a href="https://www.goatcounter.com/">GoatCounter</a>, which does not use cookies or collect personal data. The totals are public on the <a href="/stats/">stats page</a>.</p>' if goat_code() else ''}
 </div></div>"""
@@ -515,10 +596,10 @@ def build():
     st = STATS
     tiles = [
         ("Day", f"{st['day']}", f"live since {long_date(st['launch'])}, {st['launch'].year}"),
-        ("Posts published", f"{st['posts']:,}", f"in {st['hours']:,} hours since launch"),
+        ("Posts published", f"{st['posts']:,}", f"in {st['day']:,} days since launch"),
         ("Sources cited", f"{st['sources']:,}", "links to the pages facts were checked against"),
         ("Words written", f"{st['words']:,}", "all written with AI"),
-        ("Sponsored hours", f"{st['sponsors']:,}", '<a href="/sponsor/">sponsor an hour</a>'),
+        ("Sponsored posts", f"{st['sponsors']:,}", '<a href="/sponsor/">sponsor a post</a>'),
     ]
     grid = "".join(f'<div class="stat"><small>{e(k)}</small><b>{v}</b><span>{d}</span></div>' for k, v, d in tiles)
     body = f"""<h1 class="page">EveryHour in numbers</h1>
@@ -533,23 +614,23 @@ def build():
     sp = CFG.get("sponsor", {})
     link = (sp.get("payment_link") or "").strip()
     price = sp.get("price", "$5")
-    cta = (f'<p><a class="sponsor-cta" href="{e(link)}" rel="noopener">Sponsor an hour for {e(price)}</a></p>'
+    cta = (f'<p><a class="sponsor-cta" href="{e(link)}" rel="noopener">Sponsor a post for {e(price)}</a></p>'
            if link else '<p class="pagedek"><strong>Sponsorships open soon.</strong></p>')
     body = f"""<p class="sponsor" id="paid-note" hidden><strong>Thank you. Your payment went through.</strong> Your business will appear in one of the next day's posts, and you will receive a Stripe receipt by email.</p>
 <script>if(/[?&]paid=1/.test(location.search))document.getElementById('paid-note').hidden=false;</script>
 <h1 class="page">Feature your business on EveryHour</h1>
 <div class="post"><div class="body" style="border:0;padding-top:12px">
-<p>EveryHour publishes a new post every hour about something people are talking about that day. For {e(price)}, your business can sponsor one of those posts.</p>
+<p>EveryHour publishes five practical posts a day for people in California, one for each part of the day. For {e(price)}, your business can sponsor one of those posts.</p>
 <h2 class="day" style="color:var(--ink)">What you get</h2>
 <p>Your business name, a link to your website, and one sentence about what you do appear in a clearly labeled "Sponsored" box on one post. Each post has only one sponsor. The post stays on the site permanently, and it is included in the archive, the topic pages, the RSS feed and the sitemap.</p>
-<p>Where it makes sense, I match your business to a post about a related topic. A coffee shop might appear on a morning post, and a gym on a post about fall routines.</p>
+<p>Where it makes sense, I match your business to a post about a related topic. A coffee shop might appear on a morning post, and a hardware store on a post about getting a home ready for the season.</p>
 <p>You also get a link to the post that you can share with your own customers.</p>
 <h2 class="day" style="color:var(--ink)">How it works</h2>
 <p>At checkout, you enter your business name, your website and one sentence about your business. Payments received by 5 AM Pacific are placed in one of that day's posts. Payments received later are placed in the next day's posts.</p>
 <p>Sponsor links are marked as sponsored, as search engines and advertising rules require. I review each business before it is published and will refund anything I cannot run, such as adult content, gambling, weapons or political campaigns.</p>
 {cta}
 </div></div>"""
-    write("/sponsor/", page(f"Sponsor an hour | {CFG['title']}", f"Feature your business in an EveryHour post for {price}.", SITE + "/sponsor/", body, image="/og/sponsor.png"))
+    write("/sponsor/", page(f"Sponsor a post | {CFG['title']}", f"Feature your business in an EveryHour post for {price}.", SITE + "/sponsor/", body, image="/og/sponsor.png"))
 
     # 404
     body = '<h1 class="page">That page is not here</h1><p class="pagedek">The link may be old or mistyped. The <a href="/">latest posts</a> and the <a href="/archive/">archive</a> are good places to start.</p>'
@@ -597,7 +678,7 @@ def build():
 
     # llms.txt: a plain summary for AI assistants and answer engines
     lines = [f"# {CFG['title']}", "", f"> {CFG['description']}", "",
-             f"EveryHour publishes one short post every hour, Pacific time. Posts are written with AI and published by {AUTHOR}, "
+             f"EveryHour publishes five practical posts a day for people in California, one for each part of the day, Pacific time. Posts are written with AI and published by {AUTHOR}, "
              "who is responsible for the site. Posts list the sources their facts were checked against.", "",
              "## Pages", f"- [About and how posts are made]({SITE}/about/)", f"- [Archive]({SITE}/archive/)",
              f"- [RSS feed]({SITE}/feed.xml)", f"- [Sitemap]({SITE}/sitemap.xml)", "", "## Recent posts"]
