@@ -1,0 +1,54 @@
+{
+  "slug": "do-solar-panels-work-during-a-power-outage",
+  "title": "Do solar panels work during a power outage? What you need for backup",
+  "dek": "Most grid-tied solar shuts off when the grid goes down. To keep power on, you need a battery that can island, or an inverter with a daytime backup outlet.",
+  "topic": "Solar",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "batteries",
+    "outages",
+    "psps",
+    "california"
+  ],
+  "keywords": [
+    "do solar panels work during a power outage",
+    "solar panels power outage california",
+    "solar without battery outage",
+    "solar backup power psps"
+  ],
+  "publishedAt": "2026-10-05T17:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "Standard grid-tied solar turns off in an outage to protect line workers from power flowing onto damaged lines.",
+    "A battery with an inverter designed to island can run essential loads at night and recharge from solar the next morning.",
+    "Some inverters offer a daytime-only backup outlet; SMA's Secure Power Supply provides up to about 2,000 watts in sun.",
+    "PG&E says transfer switches must be UL 1008 certified and backup systems may need an interconnection application.",
+    "Batteries usually cannot run central air, an electric stove or EV charging for long."
+  ],
+  "sources": [
+    {
+      "title": "Backup Power Options - San Jose Clean Energy",
+      "url": "https://sanjosecleanenergy.org/backup-power-options/"
+    },
+    {
+      "title": "Backup Power Installation Guide",
+      "url": "https://www.pge.com/assets/pge/docs/clean-energy/battery-storage/Backup-Power-Installation-Guide.pdf"
+    },
+    {
+      "title": "What Happens If You Have Solar And The Power Goes Out?",
+      "url": "https://www.solarreviews.com/blog/solar-can-help-survive-power-outage"
+    }
+  ],
+  "body": [
+    "Many California homeowners are surprised the first time a power shutoff hits: the sun is out, the panels are on the roof, and the house is still dark. That is how most solar systems are designed to work. Knowing why, and what changes it, can save you from paying for backup you do not need or skipping backup you do.",
+    "Why solar shuts off. A typical rooftop system is grid-tied, which means it sends power through your home's connection to the utility. When the grid goes down, the inverter stops producing on purpose. San Jose Clean Energy explains that unless you have battery storage and a special inverter designed to island during a PG&E shutoff, rooftop solar will not power your home. The reason is safety: it keeps solar power from flowing onto lines that utility crews are repairing.",
+    "Island is the key word. Islanding means your home disconnects from the grid and runs on its own. PG&E's backup power guide says customers with a home battery paired with solar may be able to island and use battery power during a Public Safety Power Shutoff.",
+    "Option 1: a battery that can island. San Jose Clean Energy says a properly set up system will power essential loads overnight and recharge from solar every morning. Essential loads means things like the refrigerator, lights, internet and some outlets. It also notes these systems cannot power large appliances such as air conditioning, electric stoves and EVs, because the battery runs out quickly. If you want to estimate the size you need, add up the watts and hours of the few things you truly need.",
+    "Option 2: a daytime backup outlet. Some inverters can send limited solar power to a dedicated outlet when the grid is down, but only while the sun shines. SolarReviews describes SMA's Sunny Boy with Secure Power Supply as providing up to 2,000 watts of opportunity power. That can charge phones, run a small fridge or power a fan during the day. It stops when clouds roll in or the sun sets.",
+    "Option 3: a generator. A generator works at night and in cloudy weather, but it needs fuel, makes noise and exhaust, and must be connected safely. Never plug a generator into a wall outlet. PG&E's guide says manual and automatic transfer switches must be certified under the UL 1008 standard.",
+    "Questions people ask before buying. Can I add a battery to the solar I already have? Ask an installer how a battery would connect to your system and whether it can island with your current inverter. Do I need to tell the utility? PG&E says customers may need to notify it or complete an interconnection application, and your city or county will likely require a permit. Will a battery run my whole house? Usually only a smaller set of circuits, unless you pay for more capacity.",
+    "How to check what you have. Step 1: Find your inverter's brand and model on the unit or in your installation paperwork. Step 2: Search the manual for terms like backup, islanding or secure power. Step 3: If you have a battery, ask your installer which circuits it backs up and how long it lasted on the last test. Step 4: Write the answer on a note near your electrical panel so everyone in the house knows what will work in an outage.",
+    "Today's step: look up your inverter model and check whether it lists any backup or daytime outlet feature. It takes five minutes and tells you what to expect before the next shutoff."
+  ]
+}

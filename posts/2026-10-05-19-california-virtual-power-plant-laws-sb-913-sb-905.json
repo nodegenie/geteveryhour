@@ -1,0 +1,48 @@
+{
+  "slug": "california-virtual-power-plant-laws-sb-913-sb-905",
+  "title": "California's new virtual power plant laws: what battery owners get",
+  "dek": "Newsom signed SB 913 and SB 905 on September 29, opening a path for pooled home batteries to be paid for grid value. Rules come by mid-2028.",
+  "topic": "Rules & What's Next",
+  "publisherNote": false,
+  "tags": [
+    "batteries",
+    "virtual power plants",
+    "cpuc",
+    "california",
+    "laws"
+  ],
+  "keywords": [
+    "sb 913 virtual power plant california",
+    "get paid for home battery california",
+    "sb 905 grid utilization",
+    "california virtual power plant law 2026"
+  ],
+  "publishedAt": "2026-10-06T02:00:00Z",
+  "readMin": 2,
+  "keyPoints": [
+    "SB 913 and SB 905, by Sen. Josh Becker, were signed September 29, 2026.",
+    "SB 913 tells the CPUC to expand ways pooled customer batteries and devices can count as resource adequacy capacity.",
+    "SB 905 makes the largest utilities track and report how fully they use their existing grids.",
+    "The CPUC has until June 30, 2028 to act, so payment amounts are not set yet.",
+    "Solar customers cannot be paid twice for the same exported electricity."
+  ],
+  "sources": [
+    {
+      "title": "Newsom finally says yes to virtual power plants",
+      "url": "https://www.canarymedia.com/articles/virtual-power-plants/newsom-yes-to-virtual-power-plants"
+    },
+    {
+      "title": "California Opens Resource Adequacy to Aggregated Batteries by 2028, and Vetoes Community Solar the Same Day",
+      "url": "https://mgrid.org/2026/10/02/california-opens-resource-adequacy-to-aggregated-batteries-by-2028-and-vetoes-community-solar-the-same-day/"
+    }
+  ],
+  "body": [
+    "If you own a home battery, or are pricing one, two new laws could eventually let it earn money by helping the grid on hot evenings. Governor Newsom signed Senate Bills 913 and 905, both by Senator Josh Becker, on September 29, 2026. Payment amounts have not been set yet, so for now this is a change to watch.",
+    "What a virtual power plant is. Thousands of home batteries, EV chargers and smart thermostats, pooled together by a company or utility, can lower demand or send stored power when the grid is strained. Together they act like a power plant, without building one.",
+    "SB 913. The law directs the California Public Utilities Commission (CPUC) to expand the pathways that let pooled customer devices qualify as resource adequacy capacity, the backup supply utilities must line up for peak hours. Canary Media reports it asks the CPUC and the grid operator to better measure and reward the value of devices that cut demand during peak hours, which today is often covered by older gas peaker plants. It became Chapter 987 of the 2026 statutes.",
+    "SB 905. The law requires the largest utilities to measure and report how fully they use their existing grids. That data can show where pooled home devices could avoid costly new equipment. Canary Media reports it also includes limits on utility profits on wildfire prevention investments.",
+    "Who it affects and when. Both laws give the CPUC until June 30, 2028 to develop and carry out changes. The law also says the CPUC must stop net metering and net billing customers from being paid twice for the same exported electricity. How the CPUC draws that line will shape what battery owners actually earn.",
+    "What did not pass. The same week, Newsom vetoed AB 1813, a community solar bill, saying it would require a set price for generation above the value it provides to the grid.",
+    "Today's step: if you are comparing battery quotes, ask each installer whether the battery can join a utility or third-party grid program, and get the answer in writing."
+  ]
+}
