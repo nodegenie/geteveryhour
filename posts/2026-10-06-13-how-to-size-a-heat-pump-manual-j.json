@@ -1,0 +1,54 @@
+{
+  "slug": "how-to-size-a-heat-pump-manual-j",
+  "title": "What size heat pump do I need? Why a Manual J matters",
+  "dek": "Square-foot rules of thumb often get heat pump size wrong. A Manual J load calculation sizes it to your house, which protects comfort and your bill.",
+  "topic": "Heat Pumps",
+  "publisherNote": false,
+  "tags": [
+    "heat pumps",
+    "hvac",
+    "sizing",
+    "electrification",
+    "efficiency"
+  ],
+  "keywords": [
+    "what size heat pump do i need",
+    "manual j load calculation",
+    "heat pump oversized problems",
+    "heat pump tons per square foot"
+  ],
+  "publishedAt": "2026-10-06T20:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "One ton of heat pump capacity equals 12,000 BTUs per hour.",
+    "Rewiring America found the common 30 BTUs per square foot rule oversized systems by an average of 31,000 BTUs in its analysis of 1,000 sq ft homes.",
+    "Oversizing can cost up to 25% in efficiency during low-load cycling, according to New York's Clean Heat program.",
+    "Ask for a Manual J load calculation and a Manual S equipment selection in writing.",
+    "Air sealing or insulation done first can let you buy a smaller unit."
+  ],
+  "sources": [
+    {
+      "title": "Heat pump sizing guide (Rewiring America)",
+      "url": "https://homes.rewiringamerica.org/articles/heating-and-cooling/heat-pump-sizing-guide"
+    },
+    {
+      "title": "Air Source Heat Pumps Don't Oversize (NY Clean Heat Connect)",
+      "url": "https://cleanheatconnect.ny.gov/do-not-oversize/"
+    }
+  ],
+  "body": [
+    "Two contractors walk through the same 2,000 square foot house. One quotes a 5-ton heat pump because that is what the old furnace and air conditioner were. The other wants to measure the house first. The second approach can save you money up front and every month after, because the right size is set by how your home loses and gains heat, and square footage is only one piece of that.",
+    "A quick vocabulary note. Heat pump capacity is measured in BTUs per hour, and contractors often talk in tons. One ton equals 12,000 BTUs per hour, so a 3-ton unit is 36,000 BTUs.",
+    "Why rules of thumb miss. Rewiring America looked at two common shortcuts. The \"30 BTUs per square foot\" rule would put a 2,000 square foot home at 60,000 BTUs, or 5 tons. In its analysis, that rule oversized heat pumps by an average of 31,000 BTUs for 1,000 square foot homes. A second shortcut, dividing square footage by 500 to get tons, did better, but it still left 30% of homes oversized by more than a ton and 32% badly undersized.",
+    "What goes wrong with too big. An oversized heat pump reaches the thermostat setting fast and shuts off, then starts again. New York's Clean Heat program lists the results: uneven temperatures, poor moisture removal because the system never runs long enough, extra wear, a higher purchase price, and an efficiency penalty of up to 25% during low-load cycling.",
+    "What goes wrong with too small. An undersized unit struggles on the coldest or hottest days. Many systems then lean on backup electric resistance heat, which costs far more to run than the heat pump itself.",
+    "How a proper sizing works:",
+    "Step 1: Air leakage test. Rewiring America recommends a blower door test, which uses a fan in a doorway to measure how leaky the house is.",
+    "Step 2: Manual J. This is the industry's standard load calculation from ACCA, the Air Conditioning Contractors of America. It accounts for your location's design temperatures, insulation, windows, orientation, air leakage and more to find how many BTUs your home needs on its hardest days.",
+    "Step 3: Manual S. This step picks real equipment that matches the Manual J result. A variable-speed heat pump with a wide operating range (a high turndown ratio) can run slowly on mild days and still cover peak days.",
+    "Step 4: Plan for upgrades. If you will add attic insulation or air sealing soon, ask the contractor to size for the house after that work. New York's guidance recommends considering future weatherization when sizing.",
+    "Questions worth asking each bidder: Did you do a Manual J for my home, and can I have a copy? What design temperatures did you use? What is this unit's minimum and maximum output? Why this size and not one smaller?",
+    "A contractor who sizes carefully is not necessarily more expensive, and the paperwork also makes two quotes easier to compare side by side.",
+    "A small step for today: when you schedule heat pump estimates, ask each company up front whether its quote includes a Manual J load calculation. The answer tells you a lot before anyone visits."
+  ]
+}

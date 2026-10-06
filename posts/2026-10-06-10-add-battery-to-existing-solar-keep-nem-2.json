@@ -1,0 +1,53 @@
+{
+  "slug": "add-battery-to-existing-solar-keep-nem-2",
+  "title": "Can you add a battery to NEM 2.0 solar without losing your rate?",
+  "dek": "Usually yes. PG&E says a battery can be added later without losing NEM 2.0, but adding much more solar can move you to the newer, lower-paying tariff.",
+  "topic": "Batteries",
+  "publisherNote": false,
+  "tags": [
+    "batteries",
+    "solar",
+    "nem 2.0",
+    "pg&e",
+    "california"
+  ],
+  "keywords": [
+    "add battery to existing solar nem 2",
+    "will adding a battery lose nem 2.0",
+    "how much solar can i add nem 2",
+    "nem 2 expansion 10 percent 1 kw"
+  ],
+  "publishedAt": "2026-10-06T17:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "PG&E's contractor FAQ says you can get Permission to Operate without a battery and submit a battery interconnection request later without losing NEM2 eligibility.",
+    "You can grow the solar side by up to 10% or 1 kW, whichever is greater, without moving to the successor tariff.",
+    "Going past that limit can move the whole system to NEM 3.0, which pays far less for exports.",
+    "NEM 1.0 and 2.0 protection lasts 20 years from your original interconnection approval.",
+    "Ask for the change to be filed as a battery addition and get the interconnection approval in writing."
+  ],
+  "sources": [
+    {
+      "title": "NEM2 sunset FAQ (PG&E)",
+      "url": "https://PGE.com/assets/pge/docs/about/doing-business-with-pge/nem2-sunset-faq.pdf"
+    },
+    {
+      "title": "How much solar can I add without losing NEM 1 or 2 benefits? (Baker Home Energy)",
+      "url": "https://bakerhomeenergy.com/kc/how-much-solar-can-i-add-without-losing-nem-1-or-2-benefits/"
+    }
+  ],
+  "body": [
+    "If you went solar in California before the newer NEM 3.0 rules took effect, you may be on NEM 2.0, an older net metering plan that credits the power you send to the grid at close to the retail price. That is valuable, and many owners worry that touching their system will cost them the plan. Nobody wants to pay for a battery and lose solar credits in the process.",
+    "The short answer is that a battery by itself usually does not cost you NEM 2.0. The risk comes from adding solar panels at the same time.",
+    "What PG&E says about batteries. In its NEM2 FAQ for contractors, PG&E says a system can receive Permission to Operate (PTO, the utility's go-ahead to switch on) without a battery, and the owner can \"submit an interconnection request for the battery later without losing NEM2 eligibility.\" One installer's guide adds that a battery keeps your NEM status when it is set up as non-exporting or paired with your solar under the existing NEM rules. SCE and SDG&E have their own interconnection processes, so ask your installer to confirm the rule with your utility.",
+    "What triggers a change. PG&E says you can increase your system size by up to 10% or 1 kW, whichever is greater, without moving to the successor tariff. For example, on a 6 kW system, 10% is 0.6 kW, so the 1 kW limit is the larger one and applies. On a 12 kW system, 10% is 1.2 kW. Installer guidance says this expansion is allowed once, and going past it can move your whole system to NEM 3.0, where export credits are much lower.",
+    "Your clock does not reset. NEM 1.0 and 2.0 customers keep their plan for 20 years from the date the original system was approved for interconnection. Adding a battery does not extend that date.",
+    "Does a battery make sense on NEM 2.0? This is the honest tradeoff. Under NEM 3.0, a battery earns its keep by storing solar power that would otherwise be exported for very little. On NEM 2.0, your exports already earn close to retail, so the bill savings from a battery are smaller. The bigger reasons NEM 2.0 owners add one are backup power during outages and power shutoffs, and shifting stored energy into expensive evening hours if your rate plan rewards it.",
+    "Questions to ask any battery installer:",
+    "Step 1: Will this be filed with my utility as a battery-only addition, with no change to my solar capacity?",
+    "Step 2: Will the battery be configured to stay within my current NEM rules, and will you show me the setting?",
+    "Step 3: Will I get a new PTO letter for the battery, and will my bill still show my NEM 2.0 plan afterward?",
+    "Step 4: If I want more panels later, how much can I add under the 10% or 1 kW limit?",
+    "A small step for today: find your original PTO letter or email from your utility and note the date. It tells you how many years remain on your NEM 2.0 plan and gives any installer the starting system size."
+  ]
+}

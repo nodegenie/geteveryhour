@@ -1,0 +1,58 @@
+{
+  "slug": "how-to-download-your-hourly-electricity-usage-data",
+  "title": "How to download your hourly electricity use from PG&E or SDG&E",
+  "dek": "Your smart meter records your use every 15 minutes or hour. The Green Button download turns it into a file that shows when and where your money goes.",
+  "topic": "Your Bill",
+  "publisherNote": false,
+  "tags": [
+    "your bill",
+    "pg&e",
+    "sdg&e",
+    "smart meter",
+    "california"
+  ],
+  "keywords": [
+    "pg&e green button download",
+    "download hourly electricity usage",
+    "sdg&e green button data",
+    "how to see my electricity usage by hour"
+  ],
+  "publishedAt": "2026-10-06T14:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "PG&E: sign in, open Usage and Rates, choose View Usage Details, then Green Button Download My Data.",
+    "PG&E's usage tools offer downloadable 15-minute electric interval data and daily gas data.",
+    "SDG&E: sign in to My Account, open the Usage tab, pick Electric or Gas, then use Green Button Download under the graph.",
+    "Pull at least the most recent 12 months so every season shows up.",
+    "The file helps you size solar or a battery, compare rate plans and spot always-on load."
+  ],
+  "sources": [
+    {
+      "title": "Understand my usage (PG&E)",
+      "url": "https://www.pge.com/en/save-energy-and-money/energy-usage-and-tips/understand-my-usage.html"
+    },
+    {
+      "title": "Download My Green Button Data (SDG&E)",
+      "url": "https://www.sdge.com/node/6186"
+    },
+    {
+      "title": "Download utility data from PG&E (QuitCarbon)",
+      "url": "https://www.quitcarbon.com/help/download-utility-data-pge"
+    }
+  ],
+  "body": [
+    "Your monthly bill gives you one big number, such as 600 kWh (kilowatt-hours, the unit you pay for). Your smart meter knows much more than that. It records how much power your home pulls in short intervals all day and night, and on a time-of-use plan, when you use power matters as much as how much. A kWh at 6 PM can cost more than the same kWh at 10 AM.",
+    "California's big utilities let you download that detailed record through a standard called Green Button. It takes a few minutes and costs nothing.",
+    "Step 1: Sign in to your utility account online. You need the same login you use to pay your bill.",
+    "Step 2 (PG&E): Under \"Usage and rates,\" select \"View Usage Details,\" then select \"Green Button Download my data.\" PG&E says its usage tools include downloadable 15-minute electric interval usage and daily gas usage. One user guide notes the box for choosing dates sits just below the electricity graph and can look very small, so you may need to scroll inside it.",
+    "Step 2 (SDG&E): Sign in to My Account, go to the Usage tab, choose Electric or Gas from the Meter menu, and find the Green Button Download option beneath the usage graph. You can choose a date range and file format there.",
+    "Step 3: Choose at least the most recent 12 months. Summer air conditioning and winter heating look very different, and a single month can mislead you.",
+    "Step 4: Pick the CSV option if it is offered. A CSV opens in Excel, Google Sheets or Numbers like any spreadsheet. SCE and other utilities also offer Green Button data; look for it in your account's usage section.",
+    "Once you have the file, here are three things worth looking for.",
+    "Your overnight floor. Look at the hours between about 2 AM and 4 AM, when most people are asleep. That number is your always-on load: fridges, routers, pool pumps, old electronics. As an example, a home that never drops below 0.3 kW uses about 216 kWh a month on those devices alone (0.3 kW times 24 hours times 30 days). Finding a forgotten second fridge or a pump running too long can trim that.",
+    "Your evening peak. Most California time-of-use plans charge the most in the late afternoon and evening. If your file shows big use from 4 PM to 9 PM, shifting laundry, dishwashing or EV charging to other hours can lower the bill without using less power overall.",
+    "Your real shape for solar or battery quotes. Under California's current solar rules (NEM 3.0, the net billing tariff), exported power earns much less than power you use yourself, so a good quote should be built around when you use electricity. Handing an installer a year of interval data lets them size a system to your actual pattern instead of a guess from one bill. The same file helps a contractor judge how a heat pump or EV charger would change your load.",
+    "If you would rather not do the analysis yourself, PG&E also has a \"Share My Data\" option that lets you authorize a third party to receive your data directly. Only share it with companies you have chosen to work with.",
+    "A small step for today: sign in, download the last 12 months, and look at one weeknight between 4 PM and 9 PM. That single view often explains a surprising bill."
+  ]
+}
