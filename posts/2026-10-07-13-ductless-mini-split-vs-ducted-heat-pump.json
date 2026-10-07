@@ -1,0 +1,57 @@
+{
+  "slug": "ductless-mini-split-vs-ducted-heat-pump",
+  "title": "Ductless mini-split or ducted heat pump: which fits your home?",
+  "dek": "Ducted systems suit homes with good ductwork; ductless mini-splits fit homes without ducts, additions and rooms that never feel right.",
+  "topic": "Heat Pumps",
+  "publisherNote": false,
+  "tags": [
+    "heat pumps",
+    "mini-split",
+    "hvac",
+    "efficiency"
+  ],
+  "keywords": [
+    "ductless mini split vs ducted heat pump",
+    "mini split pros and cons",
+    "do i need ducts for a heat pump",
+    "multi zone mini split"
+  ],
+  "publishedAt": "2026-10-07T20:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Leaky ducts in an unconditioned attic can account for more than 30% of the energy used for heating and cooling, per the Department of Energy and PNNL.",
+    "A ductless system can connect up to four indoor units to one outdoor unit, with the outdoor unit up to 50 feet away, per energy.gov.",
+    "The connection usually needs only about a three-inch hole through the wall.",
+    "Closed-off rooms without their own indoor head may not get enough heat or cooling. Ask how each room will be served.",
+    "Either way, ask for a Manual J load calculation so the system is sized for your home."
+  ],
+  "sources": [
+    {
+      "title": "Ductless Mini-Split Heat Pumps (Department of Energy)",
+      "url": "https://www.energy.gov/node/374281"
+    },
+    {
+      "title": "Ductless Mini-Split Heat Pumps (Building America Solution Center, PNNL)",
+      "url": "https://basc.pnnl.gov/resource-guides/ductless-mini-split-heat-pumps"
+    },
+    {
+      "title": "Ductless Heating & Cooling (ENERGY STAR)",
+      "url": "https://Energystar.gov/products/ductless_heating_cooling"
+    }
+  ],
+  "body": [
+    "When you get heat pump quotes, one of the first forks is whether to use ducts. Ducts in an attic can be a real energy drain: the Department of Energy says duct losses can account for more than 30% of the energy used for heating and cooling, especially when the ducts run through unconditioned space. Whether that applies to your home helps decide which kind of heat pump makes sense.",
+    "Both types work the same way at the core. An outdoor unit moves heat between the outside air and your home using refrigerant, heating in winter and cooling in summer. The difference is how the heat gets to your rooms.",
+    "A ducted heat pump uses an indoor air handler and your home's ductwork, much like a central furnace and air conditioner. You get vents in each room and one thermostat, or a few if the system is zoned.",
+    "A ductless mini-split sends refrigerant through a small line set to one or more wall, ceiling or floor units, often called heads. The Department of Energy says one outdoor unit can serve up to four indoor units, the outdoor unit can sit up to 50 feet away, and the connection usually needs only about a three-inch hole through the wall.",
+    "When ducted often fits best: your home already has ductwork in good condition, ideally inside the insulated part of the house; you want air delivered to every room, including small closed-off bedrooms; or you would rather not see indoor units on the walls.",
+    "When ductless often fits best: the home has no ducts, such as an older house with wall heaters or baseboard heat; you are adding a room, a garage conversion or an ADU; one area is always too hot or too cold; or the existing ducts are leaky and run through a hot attic. ENERGY STAR lists these same kinds of spaces as good matches.",
+    "The tradeoffs to ask about:",
+    "Room coverage. PNNL's Building America guide notes that one indoor head can condition an open floor plan well, while closed rooms without a head may need help moving air in. Ask your contractor which rooms each head will reach and how bedrooms will stay comfortable with the doors shut.",
+    "Upfront cost and rebates. Ductless systems can cost more to install than some alternatives, the Department of Energy notes, though lower operating costs and incentives can offset part of that. Get both options priced if your home could go either way.",
+    "Efficiency. The Department of Energy lists ductless mini-splits at 15.2 to 35 SEER2 and ducted systems at 15.2 to 25 SEER2. SEER2 is a cooling efficiency rating; higher numbers mean less electricity for the same cooling.",
+    "Sizing. Oversized or poorly placed indoor units can short cycle, turning on and off too often, which wastes energy and leaves rooms less comfortable. ENERGY STAR recommends a Manual J load calculation, which works out your home's heating and cooling needs room by room.",
+    "A third option some homes use is a mix: a ducted heat pump for the main floor and a mini-split for an addition or a stubborn room.",
+    "Your next step today: look in your attic or crawlspace with a flashlight and note where your ducts run and whether they look sealed and insulated. Bring that note, and photos, to your first contractor visit."
+  ]
+}
