@@ -1,0 +1,53 @@
+{
+  "slug": "how-long-does-a-home-battery-last-warranty",
+  "title": "How long does a home battery last? How to read the warranty",
+  "dek": "Major home battery warranties run 10 to 15 years, but they guarantee only part of the original capacity and can end early with heavy use.",
+  "topic": "Batteries",
+  "publisherNote": false,
+  "tags": [
+    "batteries",
+    "warranty",
+    "solar",
+    "backup power"
+  ],
+  "keywords": [
+    "how long does a home battery last",
+    "powerwall warranty",
+    "enphase battery warranty",
+    "solar battery lifespan",
+    "battery throughput warranty"
+  ],
+  "publishedAt": "2026-10-08T17:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "Tesla's US Powerwall warranty covers 10 years and promises 70% of 13.5 kWh, or 9.45 kWh, at year 10.",
+    "Powerwall cycles are unlimited for solar self-consumption, time-based control and backup; other uses are capped at 37.8 MWh of throughput.",
+    "Enphase's IQ Battery warranty, as reported when it launched in 2023, ends at 15 years, 6,000 cycles or 2.8 MWh per kWh of capacity, whichever comes first.",
+    "Heat and repeated deep discharges shorten battery life, so where the battery is installed matters.",
+    "Before you sign, ask who files warranty claims, whether labor is covered, and whether the battery must stay online."
+  ],
+  "sources": [
+    {
+      "title": "Powerwall Limited Warranty (USA) - Tesla",
+      "url": "https://digitalassets.tesla.com/tesla-contents/image/upload/Powerwall_Warranty_US-EN.pdf"
+    },
+    {
+      "title": "Enphase Now Offering 15-Year Limited Battery Warranty - Solar Optimum",
+      "url": "https://solaroptimum.com/enphase-now-offering-15-year-limited-battery-warranty/"
+    },
+    {
+      "title": "How long do residential energy storage batteries last? - pv magazine USA",
+      "url": "https://pv-magazine-usa.com/2021/09/21/how-long-do-residential-energy-storage-batteries-last/"
+    }
+  ],
+  "body": [
+    "A home battery is one of the most expensive parts of a solar project, and the panels are usually expected to outlast it. Solar installer Sunrun has said home batteries can last anywhere from 5 to 15 years, which means many homeowners will replace a battery at least once during the 20 to 30 year life of a solar system. The warranty is the best written promise you get about how long yours will hold up, so it is worth knowing how to read one.",
+    "Every battery warranty has three limits. The first is time, usually 10 to 15 years. The second is capacity retention: how much of the original storage the battery must still hold at the end. The third is use, written as a number of cycles or as throughput, which is the total energy that has passed through the battery. Coverage usually ends at whichever limit you reach first.",
+    "Tesla Powerwall. Tesla's US warranty, effective August 21, 2023, covers Powerwall 2, Powerwall+ and Powerwall 3 for 10 years from installation. It promises the battery will still hold 70% of its 13.5 kWh, which is 9.45 kWh, at year 10. Cycles are unlimited when the battery is used for solar self-consumption, time-based control and backup. For any other use, or a mix that includes one, coverage is capped at 37.8 MWh of throughput. Tesla also says it needs to send remote firmware updates to honor the full 10 years; if the battery stays offline for long periods, Tesla guarantees at least four years. A later owner can make claims with proof of ownership.",
+    "Enphase IQ Battery. When Enphase extended its warranty in 2023, an Enphase dealer reported the terms as 15 years, 6,000 cycles, or 2.8 MWh of throughput for each kWh of battery capacity, whichever comes first, with replacements free except for labor. Check the current Enphase warranty document for your exact model, since terms can change.",
+    "Here is what the use limits mean in practice. For example, a 5 kWh battery under a 2.8 MWh per kWh limit can deliver 14 MWh, or 14,000 kWh, during the warranty. If it fully empties and refills once a day, that is 2,800 days, or about 7.7 years. On the Powerwall, the 37.8 MWh cap for other uses also works out to about 2,800 full cycles. So a battery that works hard every day may reach its use limit long before its year limit. Many batteries do not fully cycle every day, so read how your warranty defines a cycle.",
+    "What wears a battery out. Heat matters. High temperatures break down the electrolyte and reduce capacity, while cold mostly slows performance without lasting damage. NREL advises against repeated deep discharging, since the more a battery is discharged, the shorter its life. A battery mounted in a shaded spot or a cooler part of the garage has an easier life than one on a sun-baked wall.",
+    "Questions to ask before you sign. Step 1: Who files warranty claims, the installer or the manufacturer, and what happens if the installer goes out of business? Step 2: Is labor for a replacement covered? Step 3: Does the battery need a constant internet connection? Step 4: If you join a utility or virtual power plant program, does that count as a use that limits the warranty? Step 5: Does the warranty transfer if you sell the house, and is there a fee?",
+    "A small step for today: if you already own a battery, find its warranty document and write down three numbers: the years, the capacity it must keep, and the throughput or cycle limit."
+  ]
+}

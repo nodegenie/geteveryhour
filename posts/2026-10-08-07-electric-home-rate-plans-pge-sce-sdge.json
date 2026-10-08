@@ -1,0 +1,54 @@
+{
+  "slug": "electric-home-rate-plans-pge-sce-sdge",
+  "title": "EV, battery or heat pump? California's electric home rate plans",
+  "dek": "PG&E, SCE and SDG&E offer time-of-use plans for homes with an EV, battery or heat pump. Here is who qualifies and how the prices compare.",
+  "topic": "Your Bill",
+  "publisherNote": false,
+  "tags": [
+    "rates",
+    "time-of-use",
+    "pg&e",
+    "sce",
+    "sdg&e"
+  ],
+  "keywords": [
+    "pg&e e-elec rate plan",
+    "sce tou-d-prime",
+    "sdg&e ev-tou-5",
+    "best electric rate plan for ev california",
+    "heat pump rate plan california"
+  ],
+  "publishedAt": "2026-10-08T14:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "PG&E E-ELEC is open to homes with an EV, home battery or heat pump; the home does not need to be all-electric.",
+    "SCE TOU-D-PRIME winter prices are 24 cents per kWh from 8 a.m. to 4 p.m. and 45 cents from 4 to 9 p.m., with a $0.79 daily base charge and no baseline credit.",
+    "SDG&E EV-TOU-5 charges about 12 cents per kWh from midnight to 6 a.m. in winter, versus about 53 cents from 4 to 9 p.m. (prices as of April 1, 2026).",
+    "Winter pricing runs October through May for PG&E and SCE, so this is a good month to recheck your plan.",
+    "Each utility's online account has a rate comparison based on your own usage; PG&E's is at pge.com/myaccount or 1-800-743-5000."
+  ],
+  "sources": [
+    {
+      "title": "Electric Home Rate Plan (E-ELEC) - PG&E",
+      "url": "https://www.pge.com/assets/pge/docs/account/rate-plans/electric-home-rate-plan-en.pdf"
+    },
+    {
+      "title": "Electric Vehicle Plans - SCE",
+      "url": "https://www.sce.com/residential/rates/electric-vehicle-plans"
+    },
+    {
+      "title": "Schedule EV-TOU-5 Total Rates Table, effective 4/1/26 - SDG&E",
+      "url": "https://www.sdge.com/sites/default/files/regulatory/4-1-26%20Schedule%20EV-TOU-5%20Total%20Rates%20Table.pdf"
+    }
+  ],
+  "body": [
+    "If you charge an electric car at home, the hour you plug in can change what a month of driving costs by about $60. For example, 300 kWh of charging on SCE's TOU-D-PRIME plan costs about $72 at the winter daytime price of 24 cents per kWh, and about $135 at the 4 to 9 p.m. price of 45 cents. (A kWh, or kilowatt-hour, is the unit your bill counts.)",
+    "All three big California utilities offer plans built for homes with an EV, a home battery or a heat pump. They trade a daily or monthly base charge for lower prices outside the evening peak. Winter pricing for PG&E and SCE runs October through May, so the numbers below are the ones on your bill right now.",
+    "PG&E: Electric Home (E-ELEC). You qualify if you own or lease an EV, battery storage, or a heat pump for water heating or space heating and cooling. PG&E says the home does not need to be all-electric. Peak is 4 to 9 p.m. every day, partial peak is 3 to 4 p.m. and 9 p.m. to midnight, and off-peak is midnight to 3 p.m., 15 hours a day. PG&E's price sheet effective March 1, 2026 lists E-ELEC winter prices between about 28 and 32 cents per kWh, and a summer peak price of about 55 cents. The plan includes a monthly Base Services Charge in exchange for those lower per-kWh prices. PG&E also offers EV2-A, which lists an off-peak price of about 23 cents in both seasons for drivers who can charge overnight.",
+    "SCE: TOU-D-PRIME. Open to EV and plug-in hybrid owners and lessees, and to homes with a battery or an electric heat pump for water or space heating. New enrollees attest that they have one. Winter prices are 24 cents per kWh from 8 a.m. to 4 p.m., 30 cents off-peak and 45 cents from 4 to 9 p.m. Summer weekdays reach 61 cents during the peak. The Base Services Charge is $0.79 a day, about $24 for a 30-day month, and there is no baseline credit.",
+    "SDG&E: EV-TOU-5. This plan is for customers who charge an EV at home. As of April 1, 2026, the winter super off-peak price is about 12 cents per kWh, mainly midnight to 6 a.m., compared with about 48 cents off-peak and 53 cents from 4 to 9 p.m. The Base Services Charge is about $0.79 a day. SDG&E has a separate plan for homes with an EV, storage or a heat pump.",
+    "Who tends to come out ahead: households that use a lot of electricity and can move charging, laundry, dishwashing and water heating out of the 4 to 9 p.m. window, often with a timer on the car or a battery set to cover the evening. Who may not: smaller users who are home and using power in the evening, especially on SCE, where the plan gives up the baseline credit.",
+    "Step 1: Log in to your utility account and open the rate comparison tool, which uses your past year of usage. Step 2: Compare your current plan with the electric home plan for both summer and winter. Step 3: If you switch, set your car, battery or water heater schedule to match the new cheap hours before your next billing cycle. If you have rooftop solar, ask your utility how a rate change interacts with your solar billing before you switch.",
+    "A small step for today: check what time your car or charger is set to start charging, and compare it with the cheapest hours on your plan."
+  ]
+}
