@@ -1,0 +1,47 @@
+{
+  "slug": "do-solar-panels-need-cleaning-california",
+  "title": "Do solar panels need cleaning in California? What the data shows",
+  "dek": "A UC San Diego study of 186 California systems found dust cut output by only 7.4% after 145 days without rain. Most homes rarely need a wash.",
+  "topic": "Solar",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "maintenance",
+    "california",
+    "cleaning"
+  ],
+  "keywords": [
+    "do solar panels need cleaning",
+    "how often to clean solar panels",
+    "solar panel cleaning worth it",
+    "dirty solar panels output loss",
+    "solar panel bird droppings"
+  ],
+  "publishedAt": "2026-10-09T17:00:00Z",
+  "readMin": 2,
+  "keyPoints": [
+    "UC San Diego engineers studied 186 California solar sites and found 145 days without rain cost only 7.4% of output.",
+    "Panels lost a little under 0.05% of output per day on average as dust built up.",
+    "For a typical 5 kW home system, a mid-summer wash was worth about $20 of electricity in that 2013 study.",
+    "Bird droppings, nearly flat panels (under 5 degrees) and sites next to highways, factories or farm fields are the exceptions.",
+    "Check your monitoring app before and after a good rain to see what dirt is actually costing you."
+  ],
+  "sources": [
+    {
+      "title": "Cleaning Solar Panels Often Not Worth the Cost, Engineers at UC San Diego Find",
+      "url": "https://today.ucsd.edu/story/cleaning_solar_panels_often_not_worth_the_cost_engineers_at_uc_san_diego_fi"
+    }
+  ],
+  "body": [
+    "After a long, dry California summer, your solar panels can look dusty, and someone may offer to wash them for you. Before you pay for it or climb a ladder, it helps to know how much output dust actually takes away. For most homes the answer is a few percent, and the first good rain usually takes care of it.",
+    "What the research found. Engineers at UC San Diego looked at output from 186 residential and commercial solar sites across California, from the Bay Area to the Mexico border, using 2010 data from the California Solar Initiative. They compared output after rains of more than 0.1 inch with output during a 145-day summer drought. Panels that went those 145 days without rain lost only 7.4 percent of their efficiency, a little less than 0.05 percent per day on average. The results were published in the journal Solar Energy in 2013.",
+    "What that means in dollars. For a typical 5-kilowatt home system, the researchers estimated that washing panels halfway through the summer would have gained about $20 of electricity before the drought ended roughly two and a half months later. Electricity prices are higher today than when the study was done, so that number would be somewhat larger now, but the loss is still small next to the cost of a professional wash or the risk of working on a roof.",
+    "Where the region matters. The study found the Los Angeles basin and the Central Valley had dirtier panels, though the differences between regions were not statistically significant during the drought.",
+    "When cleaning can be worth it. The researchers named a few exceptions:",
+    "Step 1: Look for bird droppings. Rain does not wash them away, and they block light on the cells underneath.",
+    "Step 2: Check your tilt. Panels mounted at less than 5 degrees lost more efficiency, because dirt slides off steeper panels. Many pitched roofs are well above that, while some flat-roof and carport systems are not.",
+    "Step 3: Think about what is upwind. Systems right next to and downwind of a highway, factory or agricultural field can collect much more grime than the average home.",
+    "How to tell for yourself. Most systems come with a monitoring app. Compare a few clear days of production before a solid rain with a few clear days right after it, at about the same time of year. If production barely changes, dirt is not costing you much. If it jumps noticeably, you have a case for an occasional cleaning. Before any cleaning, read your panel maker's instructions and warranty terms, and leave roof work to someone who is properly equipped for it.",
+    "A next step for today: open your solar monitoring app and note this week's daily production, so you have a baseline to compare after the first real rain of the season."
+  ]
+}

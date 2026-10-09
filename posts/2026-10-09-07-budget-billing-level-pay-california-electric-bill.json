@@ -1,0 +1,54 @@
+{
+  "slug": "budget-billing-level-pay-california-electric-bill",
+  "title": "Budget billing in California: how PG&E, SCE and SDG&E level pay works",
+  "dek": "Budget billing spreads your yearly energy costs into steady monthly payments. It does not lower the total, and solar customers on NEM cannot join.",
+  "topic": "Your Bill",
+  "publisherNote": false,
+  "tags": [
+    "pg&e",
+    "sce",
+    "sdg&e",
+    "billing",
+    "california"
+  ],
+  "keywords": [
+    "pg&e budget billing",
+    "sce budget billing plan",
+    "sdg&e level pay",
+    "level pay plan california",
+    "average monthly electric bill payment"
+  ],
+  "publishedAt": "2026-10-09T14:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "PG&E Budget Billing recalculates every month from a 12 to 13 month rolling average and is free to join.",
+    "SCE divides your last 12 months by 11, bills that amount for 11 months, then sends a settlement bill in month 12.",
+    "SDG&E Level Pay starts from your last 12 bills and adjusts the amount every three months.",
+    "All three exclude Net Energy Metering (rooftop solar) accounts.",
+    "PG&E: 1-877-660-6789. SCE: 1-800-434-2365. SDG&E: sign up in My Energy Center under Billing."
+  ],
+  "sources": [
+    {
+      "title": "Budget Billing Program | PG&E",
+      "url": "https://www.pge.com/en/account/billing-and-assistance/financial-assistance/budget-billing-program.html"
+    },
+    {
+      "title": "Budget Billing Plan | SCE",
+      "url": "https://www.sce.com/customer-service-center/help-center/billing-payments/paying-your-bill/budget-billing-plan"
+    },
+    {
+      "title": "Level Pay Program | SDG&E",
+      "url": "https://www.sdge.com/level-pay"
+    }
+  ],
+  "body": [
+    "If your energy bill swings from about $120 in a mild month to $300 in a cold or hot one, the total for the year may be manageable while the spikes are not. All three big California utilities offer a free plan that smooths those swings into a steadier monthly payment. It is worth understanding how each one settles up before you join, because the money you owe does not go away.",
+    "What it does and does not do. Budget billing changes when you pay, not how much. SDG&E says it plainly on its Level Pay page: the plan makes bills more predictable but will not necessarily lower them. You still pay for every kilowatt-hour (kWh) you use.",
+    "A simple example. Say your last 12 bills added up to $2,160 (an example amount). On an averaging plan you would pay around $180 a month instead of seeing $110 in spring and $280 in winter. If you use more this year than last, the difference catches up with you later, so the plan works best alongside watching your usage.",
+    "PG&E Budget Billing. Each month PG&E recalculates your payment using a 12 to 13 month rolling average of your energy costs, so the amount moves a little every month. Any gap between what you paid and what you used goes into an account balance, and 1/12 of that balance or credit is added to each bill so it does not pile up. If you leave, the remaining balance lands on your final bill. To stay enrolled, pay the exact amount on time; missing or underpaying two payments removes you, makes the balance due and blocks re-enrollment for six months. Residential customers on a Net Energy Metering (NEM) plan are not eligible, and past-due accounts cannot enroll. PG&E suggests having 12 months of usage at your address first. Enroll in your online account under All billing tasks, or call 1-877-660-6789.",
+    "SCE Budget Billing. SCE adds up your previous 12 months of electricity and divides by 11 to set a base payment for the next 11 months. In the 12th month you get a settlement bill that shows either an amount due or a credit. The base payment can change during the year. NEM accounts are not eligible; community choice (CCA) accounts may enroll. SCE lists phone enrollment at 1-800-434-2365, Monday through Friday, 8 a.m. to 6 p.m.",
+    "SDG&E Level Pay. SDG&E starts with the average of your last 12 bills and adjusts the payment every three months based on what you actually used. If you cancel, a settlement shows whether you owe money or are owed a credit. NEM customers cannot join, while CARE and Medical Baseline customers can. There is no enrollment fee and you can leave at any time. Sign up in My Energy Center under the Billing tab.",
+    "Who it suits. Averaging helps if your income is steady and your bills are seasonal, for example a home with electric heat in winter or heavy air conditioning in summer. It can be less helpful if your usage is changing a lot, such as after adding a heat pump or an EV, because the average is built on last year. If you are struggling to pay, ask your utility about CARE, FERA or a payment arrangement instead, since budget billing does not reduce the amount owed.",
+    "A next step for today: open your last 12 bills in your utility account, add up the totals and divide by 12. That number is close to what an averaging plan would ask you to pay each month."
+  ]
+}
