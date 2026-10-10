@@ -1,0 +1,51 @@
+{
+  "slug": "home-battery-vs-generator-for-power-outages",
+  "title": "Home battery or generator for power outages? Costs and tradeoffs",
+  "dek": "Generators run as long as fuel lasts but need fuel, upkeep and careful placement. Batteries are quiet and fuel-free but cost more and run for hours, not days.",
+  "topic": "Batteries",
+  "publisherNote": false,
+  "tags": [
+    "batteries",
+    "backup power",
+    "outages",
+    "generators",
+    "california"
+  ],
+  "keywords": [
+    "home battery vs generator",
+    "battery backup or generator",
+    "generator vs powerwall cost",
+    "best backup power for outages",
+    "standby generator cost"
+  ],
+  "publishedAt": "2026-10-10T17:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "A standby generator typically costs $3,000 to $10,000 installed, plus $150 to $300 a year in maintenance.",
+    "A typical 12.5 kWh home battery runs about $15,000 to $18,000 installed and covers essentials for hours to about a day.",
+    "A diesel standby unit can burn 8 to 10 gallons in a full-day outage; solar can refill a battery each sunny day.",
+    "CPSC says portable gas generators cause about 85 CO deaths a year in the U.S. Keep them at least 20 feet from the house.",
+    "Never run a generator in a garage, even with the door open."
+  ],
+  "sources": [
+    {
+      "title": "Battery backup vs. generator: which one earns its keep?",
+      "url": "https://aurorasolar.com/home-solar/blog/energy-101/battery-backup-vs-generator"
+    },
+    {
+      "title": "CPSC Releases New Report on Carbon Monoxide (CO) Fatalities; Urges Generator Safety in New PSA",
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2022/CPSC-Releases-New-Report-on-Carbon-Monoxide-CO-Fatalities-Urges-Generator-Safety-in-New-PSA"
+    }
+  ],
+  "body": [
+    "When the lights go out for a day or more, a generator and a home battery both keep the fridge cold and the phones charged. They get there in very different ways, and the right pick depends on how long your outages last, what you need to run, and how much you want to spend up front versus every year.",
+    "The up-front cost. Industry estimates put a permanently installed standby generator at about $3,000 to $10,000, depending on size, brand and whether you already have a natural gas line. A transfer switch, which safely separates your house from the grid, can add $500 to $900 if it is not included. A typical home battery of about 12.5 kWh (kilowatt-hours, a measure of stored energy) runs roughly $15,000 to $18,000 installed, and whole-home battery setups can pass $20,000.",
+    "The yearly cost. A generator needs oil changes, inspections and test runs, estimated at $150 to $300 a year, plus fuel. One estimate has a diesel standby unit burning 8 to 10 gallons in a full-day outage, about $35 to $60, plus $5 to $15 a month for routine test runs. A battery needs little more than software updates and occasional checks.",
+    "How long it lasts in an outage. This is where generators shine. A natural gas generator can run for days as long as gas keeps flowing, and a 100-gallon propane tank can run a 10 to 20 kW unit for roughly one to three days at half load. A 12.5 kWh battery usually keeps essential circuits like lights, the refrigerator, internet and phone charging going for several hours to about a day. Central air conditioning or a well pump needs more capacity.",
+    "The solar factor. If you have solar panels and a battery, the panels can refill the battery during the day, so on sunny days you can keep going through a multi-day outage. A battery also earns its keep when the grid is up: it can store daytime solar power for use in the evening, when time-of-use rates are highest. A generator only pays you back during outages.",
+    "Example: a five-day outage. Using the diesel estimate above, a standby generator would burn about 40 to 50 gallons, roughly $175 to $300 in fuel, and it would keep the whole house running. A single 12.5 kWh battery without solar would likely be empty by the second day unless you cut back to the bare essentials. With solar on a clear week, the battery could recharge each afternoon.",
+    "Safety. Batteries make no exhaust, so they can sit in a garage. Fuel generators produce carbon monoxide (CO). The U.S. Consumer Product Safety Commission says about 85 people die each year from CO from portable gasoline generators. Its advice: keep a portable generator at least 20 feet from the house, never run one inside a home, garage, basement, crawlspace, shed or porch (open doors and windows are not enough), and point the exhaust away from the house. Look for models with automatic CO shutoff, and put battery-powered CO alarms on every level and outside sleeping areas.",
+    "A simple way to decide. If your outages are rare and short, a modest battery may cover you. If you face long public safety power shutoffs, have a well pump or need medical equipment running, fuel-based runtime or a larger battery with solar starts to matter more. Get written quotes for both and compare total ten-year cost, not just the price tag.",
+    "Today's step: list the five things you would most need during a two-day outage. That short list is what any installer will ask for when sizing either option."
+  ]
+}
