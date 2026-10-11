@@ -1,0 +1,60 @@
+{
+  "slug": "solar-loan-dealer-fees-cash-price-vs-loan",
+  "title": "Solar loan dealer fees: why the loan costs more than the cash price",
+  "dek": "Many solar loans add a hidden fee of 10% to 30% or more to the price. Ask for the cash price in writing and compare it with the loan amount.",
+  "topic": "Money & Rebates",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "financing",
+    "loans",
+    "scams",
+    "california"
+  ],
+  "keywords": [
+    "solar loan dealer fee",
+    "solar loan hidden fees",
+    "solar cash price vs loan",
+    "solar loan re-amortization",
+    "solar loan low apr catch"
+  ],
+  "publishedAt": "2026-10-11T23:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "The CFPB found solar loan fees typically add 10% to 30% to the cash price and can exceed 50%.",
+    "These fees are often left out of the advertised APR, so a 1.99% loan can still cost far more than paying cash.",
+    "Many loans raise the payment around month 19 unless you make a large prepayment, often about 30% of the loan.",
+    "The federal 25D residential clean energy credit is not allowed for systems whose installation was completed after Dec. 31, 2025 (IRS).",
+    "Ask for the cash price and the loan principal side by side, in writing, before you sign."
+  ],
+  "sources": [
+    {
+      "title": "Issue Spotlight: Solar Financing (CFPB)",
+      "url": "https://www.consumerfinance.gov/data-research/research-reports/issue-spotlight-solar-financing/"
+    },
+    {
+      "title": "CFPB report finds lenders cramming markup fees and confusing terms into solar energy loans",
+      "url": "https://www.consumerfinance.gov/about-us/newsroom/cfpb-report-finds-lenders-cramming-markup-fees-and-confusing-terms-into-solar-energy-loans"
+    },
+    {
+      "title": "FAQs for modification of sections 25C, 25D, 25E, 30C, 30D, 45L, 45W and 179D (IRS)",
+      "url": "https://www.irs.gov/newsroom/faqs-for-modification-of-sections-25c-25d-25e-30c-30d-45l-45w-and-179d-under-public-law-119-21-139-stat-72-july-4-2025-commonly-known-as-the-one-big-beautiful-bill-act-obbb"
+    }
+  ],
+  "body": [
+    "A solar quote with a 1.99% loan can look like a bargain next to a credit card or a home equity line. The catch is often a fee you never see on the quote. The Consumer Financial Protection Bureau (CFPB) studied solar lending in 2024 and found that many loans quietly add thousands of dollars to the price of the system.",
+    "What a dealer fee is. The CFPB says lenders often add fees, called dealer fees, program fees or lending fees, that typically range from 10% to 30% of the cash price and can exceed 50%. The fee is added to the amount you borrow. The lender pays the installer the cash price and keeps the difference. These fees are often left out of the APR (annual percentage rate) that you are shown, which is how a loan can be advertised at a very low rate.",
+    "The math, using the CFPB's own example. A system has a cash price of $30,000. The lender adds a $9,000 fee, 30% of the cash price. Your loan is now $39,000 plus interest. On paper the rate is low, but you are paying interest on $9,000 that bought no panels. The CFPB says salespeople often do not explain the gap between the cash price and the loan amount.",
+    "The month 19 surprise. Many solar loans were built around the 30% federal tax credit. The CFPB found that many loans re-amortize, meaning the payment is recalculated, at a higher monthly amount in the 19th month unless the borrower makes a large prepayment, often about 30% of the loan. On the $39,000 example, that would be roughly $11,700. Borrowers who did not get the full credit, or were never told about the prepayment, can face a sharp jump in their monthly bill.",
+    "Why this matters more now. The IRS says the federal Residential Clean Energy Credit (section 25D) is not allowed for expenditures made after December 31, 2025, and an expenditure counts as made when the installation is completed. If a sales pitch or a net cost figure in 2026 still assumes a 30% federal credit for a system you would own, ask the seller to show you, in writing, where that money is coming from. For your own taxes, check with a tax professional.",
+    "Questions to ask before you sign.",
+    "Step 1: What is the cash price for this exact system? Get it in writing.",
+    "Step 2: What is the total loan principal, and what is the difference between the two? Who receives that difference?",
+    "Step 3: What is the APR with every fee included, and what is the total I will pay over the life of the loan?",
+    "Step 4: Does the payment change at any point? If so, when, by how much, and what prepayment avoids it?",
+    "Step 5: Are the savings figures guaranteed, and what electricity rates and production numbers do they assume?",
+    "Compare the options. With the cash price in hand, you can compare a solar company's loan against other ways to pay, such as a credit union loan, a home equity line or a state-backed program, on equal footing. A loan with a higher stated rate and no added fee can cost less in total, so run the numbers both ways before deciding.",
+    "If something felt wrong. The CFPB takes complaints online at consumerfinance.gov or by phone at (855) 411-2372.",
+    "Today's step: if you have a solar quote with financing, email the salesperson and ask for the cash price of the same system. The answer shows you the size of the fee in one line."
+  ]
+}

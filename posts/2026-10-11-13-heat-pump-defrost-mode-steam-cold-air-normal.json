@@ -1,0 +1,55 @@
+{
+  "slug": "heat-pump-defrost-mode-steam-cold-air-normal",
+  "title": "Heat pump steaming or blowing cool air? Defrost mode explained",
+  "dek": "Steam from the outdoor unit, a whoosh and a short pause in heat are usually defrost mode at work. Here is what is normal and when to call for service.",
+  "topic": "Heat Pumps",
+  "publisherNote": false,
+  "tags": [
+    "heat pumps",
+    "winter",
+    "maintenance",
+    "hvac",
+    "california"
+  ],
+  "keywords": [
+    "heat pump defrost mode",
+    "heat pump steaming outside",
+    "heat pump blowing cold air in winter",
+    "heat pump defrost cycle how long",
+    "heat pump iced up"
+  ],
+  "publishedAt": "2026-10-11T20:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "Defrost can start at outdoor temperatures in the low 40s, because the outdoor coil runs 10 to 20 degrees colder than the air.",
+    "A cycle typically lasts about 3 to 15 minutes, depending on the system and how much ice there is.",
+    "Many systems check for frost every 30 to 90 minutes and only defrost when ice is detected.",
+    "Normal signs: steam, a whooshing sound, the outdoor fan stopping, and AUX heat showing on the thermostat.",
+    "Call for service if defrost runs constantly, cycles keep getting longer, or ice covers the unit. Keep 2 feet clear around it."
+  ],
+  "sources": [
+    {
+      "title": "What is a heat pump defrost cycle? (Trane)",
+      "url": "https://www.trane.com/residential/en/resources/blog/what-is-heat-pump-defrost-cycle/"
+    },
+    {
+      "title": "Defrost cycle on my heat pump (Lennox)",
+      "url": "https://www.lennox.com/residential/lennox-life/consumer/heat-pump-defrost-cycle"
+    }
+  ],
+  "body": [
+    "On a cold, damp morning, a new heat pump owner may look outside and see a cloud of steam pouring off the outdoor unit, hear a loud whoosh, and notice the fan has stopped. It looks alarming. In most cases it is the heat pump doing exactly what it was built to do, a routine called defrost mode.",
+    "Why it happens. In heating mode, a heat pump pulls heat out of the outdoor air through a coil in the outdoor unit. Trane says that coil runs about 10 to 20 degrees colder than the air around it. Moisture in the air condenses on the cold coil and can freeze. A layer of frost blocks airflow, so the system has to clear it.",
+    "It does not need to be freezing. Trane says defrost can start when it is in the low 40s, and is more common in the 20s and 30s. Lennox notes a unit may defrost at 45 degrees. Cold, humid weather builds frost fastest, so foggy and rainy California winter mornings can bring more defrost cycles than dry, colder days.",
+    "How it works. The system briefly reverses, running like an air conditioner so warm refrigerant flows to the outdoor coil and melts the ice. Once the coil is clear, it switches back to heating. Lennox says most systems check for frost every 30 to 90 minutes and only defrost when there is real buildup. Trane says its sensor-based defrost usually lasts 3 to 5 minutes, and Lennox puts a typical cycle at 5 to 15 minutes.",
+    "What is normal.",
+    "Step 1: Steam rising from the outdoor unit as the ice melts.",
+    "Step 2: A whoosh or swoosh sound when the refrigerant changes direction, at the start and end of the cycle.",
+    "Step 3: The outdoor fan stopping while the compressor keeps running, with its sound rising or falling.",
+    "Step 4: AUX heat showing on the thermostat. Many systems turn on electric backup heat during defrost so the air inside stays warm.",
+    "Step 5: A brief dip in comfort. Systems without backup heat may blow cooler air for a few minutes.",
+    "When it is a problem. Both manufacturers point to the same warning signs. Defrost that seems to run constantly, cycles that keep getting longer, or ice that builds up and covers the unit mean it is time to call an HVAC technician. Lennox lists possible causes, including dirty or blocked coils, faulty sensors or controls, and low refrigerant. Some smart thermostats can send an alert when defrost runs too often.",
+    "Keep the outdoor unit clear. Lennox recommends at least two feet of clearance around the unit, free of leaves, mulch, plants, snow and ice, and a yearly tune-up so a technician can clean the coils and check the defrost controls. In snowy mountain areas, keep snow from piling against the unit.",
+    "Today's step: walk outside and look at your heat pump's outdoor unit. Pull back any plants, leaves or stored items so there are two feet of open space on every side before the rainy season settles in."
+  ]
+}

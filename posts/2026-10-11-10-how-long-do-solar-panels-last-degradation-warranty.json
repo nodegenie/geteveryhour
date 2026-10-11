@@ -1,0 +1,52 @@
+{
+  "slug": "how-long-do-solar-panels-last-degradation-warranty",
+  "title": "How long do solar panels last, and how much power do they lose?",
+  "dek": "Most panels lose about 0.5% of their output a year and are built for 25 to 30 years. The inverter usually needs replacing first.",
+  "topic": "Solar",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "warranties",
+    "inverters",
+    "maintenance",
+    "california"
+  ],
+  "keywords": [
+    "how long do solar panels last",
+    "solar panel degradation rate",
+    "solar panel performance warranty",
+    "solar inverter lifespan",
+    "solar panels after 25 years"
+  ],
+  "publishedAt": "2026-10-11T17:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "NREL data puts typical degradation at about 0.5% a year, so a 20-year-old panel still makes roughly 90% of its original output.",
+    "Most performance warranties promise at least 85% of original output after 25 years. Check your exact number.",
+    "String inverter warranties typically run 10 to 12 years; microinverter warranties can run up to 25.",
+    "NREL found a median failure rate of 5 panels per 10,000 a year across more than 50,000 U.S. systems.",
+    "Panels should not go in the trash at end of life; NREL models recycling at about $28 per module."
+  ],
+  "sources": [
+    {
+      "title": "How long do residential solar panels last?",
+      "url": "https://pv-magazine-usa.com/2025/08/04/how-long-do-residential-solar-panels-last-3/"
+    },
+    {
+      "title": "How long do solar panels last",
+      "url": "https://aurorasolar.com/home-solar/blog/solar-101/how-long-do-solar-panels-last"
+    }
+  ],
+  "body": [
+    "If you are paying off solar panels over 20 years, you want to know they will still be working in year 20. The good news from the long-term data is that panels age slowly and rarely fail outright. The part of a solar system most likely to need replacing is usually the inverter, and that is worth planning for.",
+    "How fast panels lose output. Panels make a little less power each year, a process called degradation. pv magazine, citing the National Renewable Energy Laboratory (NREL), reports a typical rate of about 0.5% a year. At that pace a 20-year-old panel still produces roughly 90% of what it did when new. Some premium panels have been rated around 0.3% a year, and some brands run as high as 0.8% a year, which works out to about 82.5% after 25 years.",
+    "Example with labeled numbers. Say a new system makes 8,000 kWh in its first year. At 0.5% a year, it would make about 7,600 kWh in year 10 and about 7,200 kWh in year 20. At 0.8% a year, year 20 would be closer to 6,800 kWh. That gap of about 400 kWh a year is why the degradation rate on the panel spec sheet is worth comparing between quotes.",
+    "How long they last. There is no fixed end date. NREL treats a panel's useful life as about 30 years, the point where output has dropped about 20%. Manufacturers commonly see 25 to 30 years as the point where replacing panels may make sense, and 25 years is the industry standard for a module warranty. Panels keep producing after that; they just produce less.",
+    "How often panels actually fail. An NREL study of more than 50,000 U.S. systems found a median failure rate of 5 panels per 10,000 each year. Systems installed after 2000 failed at about half the rate of older ones.",
+    "Two warranties, two different promises. A product warranty covers defects in materials and workmanship and typically runs 10 to 25 years, depending on the manufacturer. A performance warranty promises a minimum output over time; most guarantee at least 85% of original output after 25 years. Read both, and note who stands behind them, the panel maker or the installer.",
+    "The inverter usually goes first. The inverter turns the panels' direct current into the alternating current your home uses. pv magazine cites kWh Analytics data that 80% of solar plant downtime comes from failing inverters. A single string inverter typically carries a 10 to 12 year warranty, so expect to replace it at least once over the life of the panels. Microinverters, small units mounted under each panel, can carry warranties up to 25 years. If one quote uses a string inverter and another uses microinverters, a future inverter replacement belongs in your cost comparison.",
+    "Signs something is wrong. Check your monitoring app for a sudden drop, or a steady decline that weather, season, dirt and normal aging do not explain. Cracked glass, burn marks near the edges, cloudy spots or moisture inside a panel are reasons to call your installer.",
+    "At the end. Panels should not go in regular trash. Check with your local recycling agency or search Earth911. NREL has modeled recycling at about $28 per module, though real costs vary.",
+    "Today's step: find your solar contract or the panel and inverter spec sheets and write down three numbers, the yearly degradation rate, the guaranteed output after 25 years, and the inverter warranty length. Keep them with your house papers."
+  ]
+}

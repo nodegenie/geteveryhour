@@ -1,0 +1,59 @@
+{
+  "slug": "medical-baseline-allowance-pge-sce-how-to-apply",
+  "title": "Medical Baseline in California: who qualifies and how to apply",
+  "dek": "If someone at home relies on powered medical equipment or needs heating or cooling for a condition, PG&E and SCE offer extra low-priced power. No income limit.",
+  "topic": "Your Bill",
+  "publisherNote": false,
+  "tags": [
+    "medical baseline",
+    "pg&e",
+    "sce",
+    "california",
+    "bills"
+  ],
+  "keywords": [
+    "medical baseline allowance",
+    "pg&e medical baseline",
+    "sce medical baseline",
+    "medical baseline qualifying conditions",
+    "medical baseline application"
+  ],
+  "publishedAt": "2026-10-11T14:00:00Z",
+  "readMin": 3,
+  "keyPoints": [
+    "There is no income limit. Eligibility is based on medical need, verified by a doctor or other licensed medical professional.",
+    "PG&E adds about 500 kWh of electricity and/or 25 therms of gas a month at your lowest price. SCE adds 16.5 kWh a day.",
+    "On some time-of-use plans you get a discount instead: 12% at PG&E (E-ELEC, E-TOU-D, EV2-A), 11% at SCE on non-baseline rates.",
+    "Enrolled customers get extra warnings before Public Safety Power Shutoffs, which can include calls, texts or a visit.",
+    "Apply at pge.com/mblapp or 1-877-660-6789 (PG&E), or sce.com/mbl or 1-800-655-4555 (SCE)."
+  ],
+  "sources": [
+    {
+      "title": "Medical Baseline Program (PG&E)",
+      "url": "https://www.pge.com/vi/account/billing-and-assistance/financial-assistance/medical-baseline-program.html"
+    },
+    {
+      "title": "Medical Baseline Allowance (SCE fact sheet)",
+      "url": "https://sce.com/factsheet/medical-baseline-allowance"
+    },
+    {
+      "title": "Tiered Rate Plan (SCE)",
+      "url": "https://www.sce.com/save-money/rates-financing/residential-rate-plans/tiered-rate-plan"
+    }
+  ],
+  "body": [
+    "An oxygen concentrator, a CPAP machine or a home dialysis machine can run many hours a day, and in winter that use can push a bill into the higher price tier. California's big utilities have a program for exactly this situation. It is called Medical Baseline, and many households that qualify have never heard of it.",
+    "What it is. Your baseline allowance is the block of electricity your utility sells at its lowest price each month. Medical Baseline makes that block bigger, so more of the power your equipment uses is billed at the lower price. PG&E says enrolled customers on tiered plans receive about 500 kWh (kilowatt-hours, the unit your bill counts) of electricity and/or 25 therms of gas a month at the lowest rate, with the exact amount based on what a doctor certifies. SCE adds 16.5 kWh a day.",
+    "Who qualifies. Both utilities say the program is based on medical need, and there are no income limits. A full-time resident of the home must have a qualifying condition or use qualifying equipment. PG&E's list of equipment includes oxygen concentrators, ventilators, dialysis machines, suction machines, powered wheelchairs and CPAP-type respiratory masks. Its list of conditions includes paralysis, multiple sclerosis or scleroderma that requires heating or cooling, life-threatening or immune-suppressing conditions, and asthma or sleep apnea. SCE also covers temperature-sensitive conditions that need heating or cooling and electrically powered mobility devices. Hot tubs, saunas, pool heaters and humidifiers do not count at PG&E.",
+    "Example of what it can be worth. SCE's tiered plan, with rates as of October 1, 2026, charges about 30 cents per kWh in Tier 1 and 39 cents above your baseline in Tier 2. Over a 30-day month, SCE's extra 16.5 kWh a day is 495 kWh. If your home already uses more than its regular baseline, moving those 495 kWh from 39 cents to 30 cents saves about $45 that month. Your result depends on your plan and how much you use.",
+    "If you are on a time-of-use plan. Some plans have no baseline allowance, so the benefit takes a different form. PG&E says customers on E-ELEC, E-TOU-D and EV2-A may get a 12% discount instead. SCE gives a flat 11% discount on non-baseline rates, and says TOU-D-PRIME customers may qualify. Ask your utility which version fits your plan.",
+    "Outage warnings. Before a Public Safety Power Shutoff, PG&E sends standard alerts 48 hours, 24 hours and just before the power goes off. Medical Baseline customers get extra notices, which may include repeated calls, texts or a visit in person. PG&E asks you to confirm by answering the call or replying to the text. SCE also gives enrolled customers advance notice of shutoffs. These notices do not keep the power on, so a backup plan for your equipment still matters.",
+    "How to apply.",
+    "Step 1: For PG&E, start the form at pge.com/mblapp. For SCE, go to sce.com/mbl and choose the Apply tab. Both also accept paper forms.",
+    "Step 2: Send your doctor the confirmation number and instructions. A medical professional completes their part. PG&E requires the doctor's signature to be dated within 90 days of when you submit.",
+    "Step 3: Watch for a welcome letter or email. PG&E customers can also look for Medical Baseline under Enrolled Programs on the bill.",
+    "Step 4: Mark your calendar to recertify. At both utilities, permanent conditions need a self-certification every four years with no doctor's signature, and temporary conditions need a renewal every two years with medical verification.",
+    "The program does not change the duty to pay the bill, and PG&E notes service can still be shut off for non-payment. If you are with SDG&E, SMUD, LADWP or another utility, ask whether it offers a similar program.",
+    "Today's step: if someone at home uses powered medical equipment, call your utility (PG&E 1-877-660-6789, SCE 1-800-655-4555) and ask whether you qualify. The call takes a few minutes, and the application can be started the same day."
+  ]
+}

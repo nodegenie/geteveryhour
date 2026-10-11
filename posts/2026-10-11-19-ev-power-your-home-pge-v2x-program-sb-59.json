@@ -1,0 +1,52 @@
+{
+  "slug": "ev-power-your-home-pge-v2x-program-sb-59",
+  "title": "Can your EV power your home? PG&E's V2X program and California law",
+  "dek": "PG&E now pays up to $2,500 upfront, more in some areas, for approved bidirectional EV and charger pairs. Enrollment runs through June 30, 2027.",
+  "topic": "Rules & What's Next",
+  "publisherNote": false,
+  "tags": [
+    "ev",
+    "batteries",
+    "pg&e",
+    "backup power",
+    "california"
+  ],
+  "keywords": [
+    "vehicle to home california",
+    "pg&e v2x program",
+    "bidirectional ev charger incentive",
+    "sb 59 bidirectional charging",
+    "use ev as home backup"
+  ],
+  "publishedAt": "2026-10-12T02:00:00Z",
+  "readMin": 2,
+  "keyPoints": [
+    "PG&E's V2X program pays $2,500 upfront for residential customers, or $3,000 in disadvantaged communities.",
+    "The first 250 customers to enroll can get a $1,500 Early Adopter Incentive; some new pairs may qualify for up to $13,000 more through CEC grant funding.",
+    "Only approved vehicle and charger combinations qualify, such as a Kia EV9 with a Wallbox Quasar 2 or a 2018 to 2025 Nissan Leaf with a dcbel Ara.",
+    "Enrollment is open through June 30, 2027.",
+    "SB 59 (2024) lets the California Energy Commission require bidirectional capability in classes of EVs sold in the state."
+  ],
+  "sources": [
+    {
+      "title": "PG&E adds more EVs to its V2X programme",
+      "url": "https://www.electrive.com/2026/08/25/pge-adds-to-its-v2x-programme/"
+    },
+    {
+      "title": "PG&E Expands V2X Program to More EVs and Charging Systems",
+      "url": "https://www.ecmweb.com/electric-vehicles/news/55401953/pge-expands-v2x-program-to-more-evs-and-charging-systems"
+    },
+    {
+      "title": "Governor Newsom signs first-in-the-nation bidirectional EV charging bill into law",
+      "url": "https://theclimatecenter.org/community-energy-resilience/governor-newsom-signs-first-in-the-nation-bidirectional-ev-charging-bill-into-law/"
+    }
+  ],
+  "body": [
+    "With the right charger, an electric car parked in the garage can keep your lights and refrigerator on during an outage. PG&E is now paying customers to set this up, and California law gives the state a path to make the feature more common.",
+    "What PG&E offers. In late August 2026, PG&E expanded its vehicle-to-everything (V2X) program to more cars and chargers. Residential customers can get $2,500 upfront, or $3,000 in disadvantaged communities. The first 250 customers to enroll can add a $1,500 Early Adopter Incentive. PG&E also says some of the newly added vehicle and charger pairs may qualify for up to $13,000 more through California Energy Commission (CEC) grant funding, subject to eligibility rules. Enrollment is open through June 30, 2027.",
+    "Which cars qualify. Only approved pairs of vehicle and bidirectional charger count. New additions include 2018 to 2025 Nissan Leafs, the 2025 Volvo EX90 and the 2025 Polestar 3 with a dcbel Ara charger, and the 2024 and newer Kia EV9 and 2025 and newer EV6 with a Wallbox Quasar 2. The 2027 Chevrolet Bolt and some 2025 Cadillac models were added too. Some Ford, GM and Tesla models were already eligible; the Tesla Cybertruck was added in April 2026 with Tesla's Powershare Gateway. PG&E notes that what each pair can do varies, so a combination that backs up your home may not also send power to the grid.",
+    "What the law says. SB 59 (Skinner) was signed in September 2024. It lets the CEC require classes of electric vehicles sold in California to be capable of bidirectional charging, so their batteries can back up homes and support the grid. The law gives the CEC authority to act; it does not by itself require any car you can buy today to have the feature.",
+    "Questions to ask before you sign up. Does your exact model year and charger appear on PG&E's eligible list? Will the setup power your whole home or a few circuits? Does your panel need work for the charger? Get a written installed price for the charger and any electrical work, then subtract only the incentives you are sure to receive. If you are with SCE, SDG&E or a city utility, ask whether a similar program exists.",
+    "Today's step: look up your car's model year, then search \"V2X Pilot Programs\" on pge.com to see whether your car and charger are on the list."
+  ]
+}
