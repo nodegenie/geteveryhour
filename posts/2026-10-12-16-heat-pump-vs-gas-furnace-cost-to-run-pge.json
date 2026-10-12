@@ -1,0 +1,53 @@
+{
+  "slug": "heat-pump-vs-gas-furnace-cost-to-run-pge",
+  "title": "Heat pump vs gas furnace: which costs less to run on PG&E?",
+  "dek": "At October 2026 PG&E prices, a heat pump and a gas furnace cost about the same per unit of heat. Efficiency and your rate plan tip it.",
+  "topic": "Money & Rebates",
+  "publisherNote": false,
+  "tags": [
+    "heat pumps",
+    "pg&e",
+    "gas",
+    "payback",
+    "california"
+  ],
+  "keywords": [
+    "heat pump vs gas furnace cost",
+    "heat pump cheaper than gas california",
+    "pg&e heat pump operating cost",
+    "cost per therm vs kwh heating"
+  ],
+  "publishedAt": "2026-10-12T23:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "PG&E's residential gas rate for October 2026 is about $2.42 per therm within baseline and $2.93 above it.",
+    "PG&E's Electric Home rate (E-ELEC) lists winter prices of about 28 to 32 cents per kWh (sheet effective March 1, 2026).",
+    "Labeled example: 100,000 Btu of heat costs about $2.55 to $3.08 from a 95% furnace and about $2.74 to $3.13 from a heat pump working at 3 times efficiency.",
+    "An older 80% furnace costs more per unit of heat, about $3.03 to $3.66, so the heat pump often wins when replacing one.",
+    "Rates checked October 12, 2026. Community choice customers and other utilities will see different numbers."
+  ],
+  "sources": [
+    {
+      "title": "U 39 Oakland, California Revised Cal. P.U.C. Sheet No. 41043-G Cancelling",
+      "url": "https://www.pge.com/tariffs/assets/pdf/tariffbook/GAS_SCHEDS_G-1.pdf"
+    },
+    {
+      "title": "residential electric rate plan pricing.pdf.coredownload",
+      "url": "https://www.pge.com/assets/pge/docs/account/rate-plans/residential-electric-rate-plan-pricing.pdf.coredownload.pdf"
+    },
+    {
+      "title": "air source heat pumps",
+      "url": "https://www.energystar.gov/products/air_source_heat_pumps"
+    }
+  ],
+  "body": [
+    "If a contractor tells you a heat pump will cut your heating bill, it is fair to ask by how much. In PG&E territory, where electricity is expensive, the honest answer at today's prices is that running costs land close together. Which one wins depends on how efficient each machine is and which rate you pay.",
+    "Gas per unit of heat. PG&E's G-1 residential gas rate effective October 1, 2026, is about $2.42 per therm for gas within your baseline allowance and about $2.93 above it. A therm is 100,000 Btu of gas. A furnace rated 95% efficient turns about 95,000 Btu of that into heat. So 100,000 Btu of delivered heat costs about $2.55 to $3.08. An older 80% furnace needs more gas for the same heat, about $3.03 to $3.66.",
+    "Electricity per unit of heat. 100,000 Btu equals about 29.3 kWh. ENERGY STAR says an air-source heat pump can deliver up to three times more heat than the electricity it uses. At that efficiency, 100,000 Btu of heat takes about 9.8 kWh. PG&E's Electric Home rate (E-ELEC), on a price sheet effective March 1, 2026, lists winter prices of about 28 cents per kWh off-peak and 32 cents at peak. That puts the heat pump at about $2.74 to $3.13. On colder days a heat pump works less efficiently; at 2.5 times, the cost rises to about $3.28 to $3.75.",
+    "For example, a home that needs 50 therms' worth of heat in a cold month would pay about $128 with a 95% furnace on baseline gas, about $152 with an 80% furnace, and about $137 with a heat pump at 3 times efficiency on the 28-cent price. These are illustrations built from PG&E's published prices. Your home's heat needs and usage pattern will differ.",
+    "What the per-therm math leaves out. A heat pump also replaces your air conditioner, which matters if you were going to buy a new AC anyway. ENERGY STAR advises holding a steady temperature with a heat pump instead of deep setbacks. Gas and electric prices both change; PG&E's gas procurement charge moves monthly. If a community choice provider supplies your power, your electric price is different, and SCE, SDG&E and SMUD customers will see different results.",
+    "What this means for a decision. Replacing an old, inefficient furnace is where a heat pump most often comes out ahead on running costs. Replacing a newer 95% furnace in a mild PG&E climate, the yearly difference may be small either way, so comfort, cooling, equipment age and upfront price matter more. For your own numbers, ask a licensed contractor for a load calculation and an estimate of yearly kWh and therms.",
+    "Step 1: Find your furnace's efficiency (AFUE) on its label or manual. Step 2: Find your gas price per therm and your electric price per kWh on your bills. Step 3: Divide the gas price by the AFUE, then compare it with 9.8 times your electric price for a heat pump working at 3 times efficiency.",
+    "Today's next step: look at last winter's highest gas bill and note how many therms you used, so you can ask contractors for a like-for-like heat pump estimate."
+  ]
+}

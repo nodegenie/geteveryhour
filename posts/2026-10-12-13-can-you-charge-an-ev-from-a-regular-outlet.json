@@ -1,0 +1,52 @@
+{
+  "slug": "can-you-charge-an-ev-from-a-regular-outlet",
+  "title": "Can you charge an EV from a regular 120V outlet at home?",
+  "dek": "A standard outlet adds about 2 to 5 miles of range per hour. Here is the math on whether that covers your driving, and how to do it safely.",
+  "topic": "Electric Home",
+  "publisherNote": false,
+  "tags": [
+    "ev charging",
+    "electric home",
+    "pg&e",
+    "safety"
+  ],
+  "keywords": [
+    "level 1 charging enough",
+    "charge ev from regular outlet",
+    "120v ev charging miles per hour",
+    "do i need a level 2 charger"
+  ],
+  "publishedAt": "2026-10-12T20:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "Level 1 charging on a 120-volt outlet adds about 2 to 5 miles of range per hour; Level 2 on 240 volts adds about 10 to 20.",
+    "A 12-hour overnight plug-in at Level 1 adds roughly 24 to 60 miles.",
+    "One-vehicle households averaged about 50 miles a day in the 2022 National Household Travel Survey.",
+    "Skip extension cords. UL says the charger's interrupter should be within 12 inches of the outlet.",
+    "On PG&E's EV2-A plan, off-peak runs midnight to 3 PM; winter off-peak is about 22.6 cents per kWh versus about 41.1 cents at peak."
+  ],
+  "sources": [
+    {
+      "title": "Fact #919: April 4, 2016 Plug-in Electric Vehicle Charging Options and Times Vary Considerably",
+      "url": "https://www.energy.gov/cmei/vehicles/fact-919-april-4-2016-plug-electric-vehicle-charging-options-and-times-vary"
+    },
+    {
+      "title": "FOTW #1332, March 4, 2024: Daily Vehicle Miles Traveled Varies with the Number of Household Vehicles",
+      "url": "https://www.energy.gov/cmei/vehicles/articles/fotw-1332-march-4-2024-daily-vehicle-miles-traveled-varies-number-household"
+    },
+    {
+      "title": "No Extension Cords: Best Home EV Charging Practices",
+      "url": "https://www.batterytechonline.com/charging/no-extension-cords-best-home-ev-charging-practices"
+    }
+  ],
+  "body": [
+    "A Level 2 charger often means a new 240-volt circuit, and sometimes a panel upgrade. Before you spend that money, it is fair to ask whether the cord that came with your car and a regular outlet would be enough. For many drivers who park at home overnight, the math says yes.",
+    "The speeds. The U.S. Department of Energy says Level 1 charging, from a standard 120-volt household outlet, adds about 2 to 5 miles of range per hour. Level 2, on a 240-volt circuit like a dryer's, adds about 10 to 20 miles per hour. Charging also slows as the battery nears full, and cold weather affects it too.",
+    "Does it cover your driving? For example, if your car is plugged in for 12 hours overnight, Level 1 adds roughly 24 to 60 miles. The 2022 National Household Travel Survey found that in one-vehicle households, the car averaged about 50 miles a day. In two-car households, the second car averaged well under that. At 2 to 5 miles per hour, replacing 50 miles takes about 10 to 25 hours, so a long commute may fall short, while a shorter one may be fully covered. Weekends can catch you up.",
+    "Who it usually works for: drivers with a shorter daily commute, a second car used for errands, plug-in hybrids with smaller batteries, and renters or condo owners who cannot add a circuit. Who may want Level 2: long daily drives, two EVs sharing one outlet, or no regular overnight parking.",
+    "Safety first. Plug the charger directly into the wall. UL engineers say the charger's power interrupter should be within 12 inches of the outlet, and longer cords have more resistance and can overheat. Use an outlet rated for the charger, ideally on a circuit that is not shared with a microwave or space heater, and stop using any charger or plug that looks damaged or feels hot. Follow your automaker's instructions. If the outlet is old or loose, have an electrician check it; that is far cheaper than a new circuit.",
+    "Time it to cheaper hours. Slow charging rewards good timing. On PG&E's EV2-A rate, peak is 4 to 9 PM every day and off-peak is midnight to 3 PM. In winter, off-peak is about 22.6 cents per kWh and peak is about 41.1 cents. If you plug in at 6 PM without a schedule, the first hours land at peak. Most cars let you set a start time, so midnight is an easy default. Other utilities have different hours, so check your plan.",
+    "Step 1: Note your typical daily miles for a week. Step 2: Count the hours your car sits at home overnight. Step 3: Multiply those hours by 2 and by 5 to get your range. If your daily miles fall inside it, Level 1 may be all you need.",
+    "Today's next step: open your car's app and set charging to start at the beginning of your utility's off-peak period."
+  ]
+}

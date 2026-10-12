@@ -1,0 +1,49 @@
+{
+  "slug": "microinverters-vs-string-inverters-vs-optimizers",
+  "title": "Microinverters, optimizers or string inverter: which fits your roof?",
+  "dek": "The inverter on a solar quote affects shade losses, panel monitoring, warranties and battery options. Here is how the three types compare.",
+  "topic": "Solar",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "inverters",
+    "quotes",
+    "batteries"
+  ],
+  "keywords": [
+    "microinverters vs string inverter",
+    "power optimizers vs microinverters",
+    "which solar inverter is best",
+    "solar inverter warranty"
+  ],
+  "publishedAt": "2026-10-12T17:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "On a string inverter, each string of panels is limited by its weakest panel, so daily shade costs more.",
+    "Microinverters and optimizers handle each panel separately and allow panel-level monitoring.",
+    "Microinverters and optimizers typically carry 25-year warranties; the central inverter in an optimizer system usually has about 10 to 12 years.",
+    "Microinverter systems typically pair with AC-coupled batteries, so ask how your inverter choice affects battery options.",
+    "Fire code rapid shutdown rules require module-level equipment in many installations, which shapes what installers propose."
+  ],
+  "sources": [
+    {
+      "title": "Microinverters vs. string inverters: Which is right for you?",
+      "url": "https://www.energysage.com/solar/string-inverters-power-optimizers-microinverters-compared/"
+    },
+    {
+      "title": "Solar Power World",
+      "url": "https://www.solarpowerworldonline.com/2020/02/module-level-rapid-shutdown-new-requirements-for-fire-safety/"
+    }
+  ],
+  "body": [
+    "When you compare solar quotes, the inverter line is easy to skim past. Panels make direct current (DC). Your home runs on alternating current (AC). The inverter converts one to the other, and the type you choose affects how much a shady roof produces, what you can monitor, how long the warranty lasts and which batteries fit later.",
+    "String inverters. Panels are wired together in groups called strings, and each string feeds one central inverter. Each string can only produce as much as its weakest panel allows. They are the most affordable option and keep electronics off the roof, which makes repairs simpler. Monitoring is by string, so you cannot see a single panel's output. They suit simple roofs with little shade.",
+    "Microinverters. A small inverter sits behind each panel and converts power right there. Each panel works independently, you can watch every panel in an app, and one failed unit does not shut down the whole array. Adding panels later is easier. The tradeoffs are a higher price and electronics on the roof, so a repair means a trip up there. Warranties are typically 25 years.",
+    "Power optimizers. A small device behind each panel conditions the DC power, and a central inverter does the final conversion. You get panel-level monitoring, and a weak panel does not drag the others down. The optimizers usually carry 25-year warranties, but the central inverter is usually covered for about 10 to 12 years. If that inverter fails, the whole system stops until it is fixed.",
+    "What shade does. For example, picture a 20-panel system with two strings of 10, where a chimney shades one panel every afternoon. With a string inverter, that string's output follows the shaded panel down. With microinverters or optimizers, only the shaded panel loses output. On an open, unshaded roof the gap is much smaller.",
+    "Why installers often skip plain string inverters. The 2017 National Electrical Code added module-level rapid shutdown. Within 10 seconds of shutdown, rooftop wiring must drop to 30 volts or less so firefighters can work on a roof safely. That generally means an electronic device at each panel, which microinverters and optimizers provide. Plain string systems need added shutdown equipment.",
+    "Batteries. Both microinverters and optimizers work with home batteries, but microinverter systems typically pair with AC-coupled batteries. Under NEM 3.0, many California systems add a battery now or later, so it is worth settling this before you sign.",
+    "Questions to ask each installer: Step 1: Which inverter brand and model is in this quote, and why for my roof? Step 2: How long is the warranty on every part, including any central inverter, and who pays labor for a replacement? Step 3: Which batteries work with this system if I add one later? Step 4: Will I get panel-level monitoring?",
+    "Today's next step: find the inverter line on your solar quote, write down the model, and ask the installer for its warranty sheet in writing."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "solar-true-up-bill-explained-pge",
+  "title": "What is a solar true-up bill? How PG&E's annual NEM bill works",
+  "dek": "PG&E settles a year of solar credits and charges in one true-up bill. Here is how it is calculated and how to avoid a surprise.",
+  "topic": "Your Bill",
+  "publisherNote": false,
+  "tags": [
+    "solar",
+    "pg&e",
+    "true-up",
+    "bills",
+    "california"
+  ],
+  "keywords": [
+    "solar true-up bill",
+    "pg&e true-up statement",
+    "nem true-up explained",
+    "why is my true-up bill so high"
+  ],
+  "publishedAt": "2026-10-12T14:00:00Z",
+  "readMin": 4,
+  "keyPoints": [
+    "The true-up statement comes at the end of the 12th billing month of your NEM cycle and settles a year of energy charges and credits.",
+    "Since March 1, 2026, PG&E's Base Services Charge (about $24 a month for most homes) is the monthly minimum, and solar credits cannot offset it.",
+    "Leftover credits reset to zero after true-up. A true surplus is paid at a wholesale-based rate of a few cents per kWh.",
+    "Customers of a community choice provider such as Ava can have a separate generation true-up; Ava's happens every April.",
+    "PG&E offers payment arrangements for a true-up balance, and its Solar Customer Support line is 1-877-743-4112."
+  ],
+  "sources": [
+    {
+      "title": "The billing experience is different from the standard monthly and annual statements. Learn how to read your bill (PDF)",
+      "url": "https://PGe.com/en/account/billing-and-assistance/understand-your-bill/net-energy-metering-bill.html"
+    },
+    {
+      "title": "nem 2 bundled true up base services charge",
+      "url": "https://www.pge.com/assets/pge/docs/account/billing-and-assistance/nem-2-bundled-true-up-base-services-charge.pdf"
+    },
+    {
+      "title": "Benefit from energy and solar metering",
+      "url": "https://avaenergy.org/nem/"
+    }
+  ],
+  "body": [
+    "If you have rooftop solar with PG&E, one bill a year can be much larger than the other eleven. That bill is the true-up statement, and it settles every energy charge and credit from the past 12 months at once. Knowing how it works lets you see it coming and plan for it.",
+    "This post covers PG&E net energy metering (NEM) accounts, which is what PG&E's billing pages explain. Net energy is the difference between what your panels produce and what you pull from the grid. A special meter measures it every month.",
+    "What you pay each month. Your monthly bill shows the Base Services Charge plus any gas charges. Since March 1, 2026, the Base Services Charge has replaced the old Minimum Delivery Charge as the monthly minimum. PG&E says it is about $10 more than the old minimum, roughly $24 a month for most homes, with lower amounts for CARE and FERA customers. Solar generation credits cannot offset it.",
+    "What waits until true-up. The cost of the electricity you used beyond what your panels covered does not get collected monthly. PG&E's statement says the energy charge \"doesn't affect the monthly bill\" but can increase what you owe at true-up. Each month's net charge or credit carries forward, and your statement shows a running year-to-date total.",
+    "For example, suppose a home builds up $300 in credits over a sunny summer and then runs up $500 in net charges over a cloudy winter with the heater on. At true-up, the credits are applied and that home would owe $200. The numbers are made up to show the arithmetic; your statement has your real ones.",
+    "What happens to extra credits. By law, leftover credits reset to zero when the new 12-month cycle begins. If your system produced more energy than you used over the whole year, PG&E pays Net Surplus Compensation automatically. The rate follows wholesale prices and runs a few cents per kWh, far below what you pay for power, so producing much more than you use earns little.",
+    "Why a true-up can jump. PG&E lists common causes: a new household member, big new appliances, an electric vehicle, or a pool. System size, roof direction and weather matter too. If your bill jumped and nothing at home changed, check your solar monitoring app to make sure the panels and inverter are still producing.",
+    "Two true-ups for some customers. If a community choice provider buys your power, its generation charges may settle on a different schedule from PG&E's delivery charges. Ava Community Energy, for example, bills generation monthly by default and holds its generation true-up every April, separate from PG&E's.",
+    "If you owe more than you can pay at once. PG&E offers payment arrangements for the true-up balance at pge.com/paymentarrangement, and its Solar Customer Support Center is at 1-877-743-4112.",
+    "Step 1: Find your true-up month and year-to-date NEM charges on your latest statement. Step 2: Divide that total by the months that have passed. Step 3: Multiply by the months left to estimate what you will owe, and set that amount aside a little at a time.",
+    "Today's next step: open your most recent PG&E bill and write down the year-to-date NEM charge and your true-up date so the next big bill is not a surprise."
+  ]
+}
